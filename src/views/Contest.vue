@@ -1,11 +1,12 @@
 <template>
     <div class="root">
+        <h1> test </h1>
     </div>
 </template>
 
 <script>
 export default {
-  name: "Main"
+  name: "Contest"
 };
 </script>
 
@@ -15,6 +16,6 @@ export default {
     min-height: 100vh;
     height: 100%;
     overflow: auto;
-    background-color: aquamarine;
+    background-color: #E5E5E5;
 }
 </style>

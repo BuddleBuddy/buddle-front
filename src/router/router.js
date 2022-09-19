@@ -1,14 +1,26 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Main from "../views/Main.vue";
+import Intro from "../views/Introduce.vue";
+import Contest from "../views/Contest.vue";
+import History from "../views/History.vue";
+
+
 
 const routes = [
     {
       path: "/",
-      redirect: "/home",
+      component: Contest,
     },
     {
-      path: "/home",
-      component: Main,
+      path: "/intro",
+      component: Intro,
+    },
+    {
+      path: "/contest",
+      component: Contest,
+    },
+    {
+      path: "/history",
+      component: History,
     }
 ];
 

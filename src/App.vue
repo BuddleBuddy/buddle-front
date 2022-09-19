@@ -1,16 +1,17 @@
 <template>
-<div>
-    <router-view />
-</div>
+  <div>
+      <Header />
+      <router-view />
+  </div>
 </template>
 
 <script>
-import Main from './views/Main.vue';
+import Header from './components/Header.vue';
 
 export default {
   name: 'App',
   components: {
-    Main
+    Header
   }
 }
 </script>
@@ -32,5 +33,6 @@ body{
   margin-left: auto; 
   margin-right: auto;
   color: #2c3e50;
+  background-color: #E5E5E5;
 }
 </style>
