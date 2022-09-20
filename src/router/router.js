@@ -7,6 +7,10 @@ import History from "../views/History.vue";
 
 const routes = [
     {
+      path: "/index.html",
+      redirect: "/contest",
+    },
+    {
       path: "/",
       component: Contest,
     },
