@@ -1,6 +1,6 @@
 <template>
     <div class="root">
-        <h1> test </h1>
+        <img class="hbti" alt="hbti" src="../assets/hbti.png">
     </div>
 </template>
 
@@ -17,5 +17,9 @@ export default {
     height: 100%;
     overflow: auto;
     background-color: #E5E5E5;
+}
+
+.root .hbti{
+    width: 100%;
 }
 </style>
