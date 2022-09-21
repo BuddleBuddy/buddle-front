@@ -20,14 +20,19 @@
             </div>
         </div>
         <router-link to="/event1" class = "part"> 참여하기 </router-link>
-        <div class="third"> </div>
+        <div class="third"> 00명 <p /> 참여중! </div>
         <div class="fourth"> </div>
     </div>
 </template>
 
 <script>
 export default {
-  name: "Contest"
+  name: "Contest",
+  methods: {
+    getData() {
+
+    }
+  }
 };
 </script>
 
@@ -110,6 +115,12 @@ export default {
     border-radius: 50px;
     margin-top: 100px;
     
+}
+
+.root .third{
+    display: flex;
+    flex-direction: column;
+    margin-top: 97px;
 }
 
 .part{
