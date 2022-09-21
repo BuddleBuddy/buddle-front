@@ -21,7 +21,7 @@
         </div>
         <router-link to="/event1" class = "part"> 참여하기 </router-link>
         <div class="third"> 
-            <div class="itemfont1"> {{ count }} 명 </div>
+            <div class="itemfont1"> {{ count }}명 </div>
             <div class="itemfont2"> 참여중 </div>
         </div>
         <div class="fourth"> 
@@ -78,6 +78,7 @@ export default {
     margin-top: 60px;
     width: 108px;
     height: 38px;
+    line-height: 38px;
     font-size: 20px;
     left: 50%;
     right: 50%;
@@ -109,6 +110,7 @@ export default {
     position: absolute;
     width: 132px;
     height: 38px;
+    line-height: 38px;
     background-color: #D9D9D9;
     left: 50%;
     right: 50%;
@@ -128,17 +130,27 @@ export default {
 }
 
 
-.root .second .item{
+.root .second .set .item{
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
 }
 
-.root .second .item .content2{
+.root .second .set .item .gift1{
+    width: 141px;
+    height: 202px;
+}
+
+.root .second .set .item .content2{
     position: absolute;
+    width: 58px;
+    height: 58px;
+    line-height: 58px;
     background-color: #D9D9D9;
     border-radius: 50px;
-    margin-top: 100px;
+    margin-top: 180px;
     
 }
 
@@ -148,10 +160,29 @@ export default {
     margin-top: 97px;
 }
 
+.root .third .itemfont1{
+    font-size: 70px;
+    color: #575757;
+}
+
+.root .third .itemfont2{
+    font-size: 24px;
+    color: #343434;
+}
+
 .root .fourth{
     display: flex;
     flex-direction: column;
     margin-top: 97px;
+    margin-bottom: 203px;
+}
+
+.root .fourth .txt{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    vertical-align: middle;
+    transform: translate(-50%, -50%);
 }
 
 .part{
