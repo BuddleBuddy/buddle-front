@@ -9,6 +9,7 @@
             <router-link to="/history" :class="selectTab == 2 ? 'active' : 'tag'" @click="setColor(2)"> 히스토리 </router-link>
         </div>
     </div>
+    <router-view></router-view>
 </template>
 
 <script>
