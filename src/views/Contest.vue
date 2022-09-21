@@ -8,11 +8,20 @@
         </div>
         <div class="second"> 
             <div class="title"> 이벤트 경품 </div>
-            <div class="content1"> 1. 버들부부의 MBTI를 맞춰주세요 </div>
-            <div class="content2"> 1. 버들부부의 MBTI를 맞춰주세요 </div>
+            <div class="set">
+                <div class="item">
+                    <img class="gift1" alt="gift1" src="../assets/logo.png">
+                    <div class="content2"> 2명 </div>
+                </div>
+                <div class="item">
+                    <img class="gift1" alt="gift2" src="../assets/logo.png">
+                    <div class="content2"> 5명 </div>
+                </div>
+            </div>
         </div>
-        <a href="/event1"> 참여하기 </a>
-        <h1> test </h1>
+        <router-link to="/event1" class = "part"> 참여하기 </router-link>
+        <div class="third"> </div>
+        <div class="fourth"> </div>
     </div>
 </template>
 
@@ -67,4 +76,55 @@ export default {
     line-height: 18px;
     padding : 50px 0;
 }
+
+.root .second{
+    display: flex;
+    flex-direction: column;
+    margin-top: 59px;
+}
+
+.root .second .set{
+    display: flex;
+    width: 330px;
+    height: 289px;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+}
+
+.root .second .title{
+    background-color: #D9D9D9;
+    border-radius: 25px;
+}
+
+.root .second .item{
+    display: flex;
+    flex-direction: column;
+}
+
+.root .second .item .content2{
+    position: absolute;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    margin-top: 100px;
+    
+}
+
+.part{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 50px;
+    border-radius: 25px;
+    background-color: #555555;
+    color: #FFFFFF;
+    width: 330px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
 </style>
