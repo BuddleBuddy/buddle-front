@@ -20,19 +20,36 @@
             </div>
         </div>
         <router-link to="/event1" class = "part"> 참여하기 </router-link>
-        <div class="third"> 00명 <p /> 참여중! </div>
-        <div class="fourth"> </div>
+        <div class="third"> 
+            <div class="itemfont1"> {{ count }} 명 </div>
+            <div class="itemfont2"> 참여중 </div>
+        </div>
+        <div class="fourth"> 
+            <img class="vector" alt="vector" src="../assets/vector.png">
+            <div class="txt"> 공유하기 </div>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
   name: "Contest",
+  data(){
+    return {
+        count: 0,
+    };
+  },
   methods: {
-    getData() {
-
-    }
-  }
+    get() {
+      this.axios.get("/count").then((response) => {
+        console.log(response);
+        this.count = response.data;
+      });
+    },
+  },
+    mounted() {
+        this.get();
+    },
 };
 </script>
 
@@ -85,7 +102,18 @@ export default {
 .root .second{
     display: flex;
     flex-direction: column;
-    margin-top: 59px;
+    margin-top: 67px;
+}
+
+.root .second .title{
+    position: absolute;
+    width: 132px;
+    height: 38px;
+    background-color: #D9D9D9;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
 }
 
 .root .second .set{
@@ -99,14 +127,11 @@ export default {
     background-color: #FFFFFF;
 }
 
-.root .second .title{
-    background-color: #D9D9D9;
-    border-radius: 25px;
-}
 
 .root .second .item{
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 .root .second .item .content2{
@@ -118,6 +143,12 @@ export default {
 }
 
 .root .third{
+    display: flex;
+    flex-direction: column;
+    margin-top: 97px;
+}
+
+.root .fourth{
     display: flex;
     flex-direction: column;
     margin-top: 97px;
