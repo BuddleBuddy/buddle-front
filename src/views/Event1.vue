@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "Contest"
+  name: "Event1"
 };
 </script>
 
