@@ -1,6 +1,5 @@
 <template>
-    <div class="root">
-        <img class="hbti" alt="hbti" src="../assets/hbti.png">
+    <div class="event1">
         <router-link to= "/event2" class="start"> 시작하기 </router-link>
     </div>
 </template>
@@ -12,16 +11,15 @@ export default {
 </script>
 
 <style scoped>
-.root {
-  position: relative;
+.event1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/hbti.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.root .hbti{
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.root .start{
+.event1 .start{
   position: absolute;
   bottom: 50px;
   width: 330px;
