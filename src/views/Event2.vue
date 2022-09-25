@@ -1,8 +1,7 @@
 <template>
-    event2
-
-        <router-link tag="a" to= "/event3" class="root"> </router-link>
-
+<div class="container">
+    <router-link to= "/event3" class="root"> dd</router-link>
+</div>
 </template>
 
 <script>
@@ -12,9 +11,15 @@ export default {
 </script>
 
 <style scoped>
-.root{
+.container{
     height: 100%;
     width: 100%;
+
+}
+a{
+    height: 100%;
+    width: 100%;
+    background-color: red;
 }
 
 </style>
