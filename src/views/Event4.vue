@@ -31,6 +31,7 @@
         </swiper-slide>
         </swiper>
     </div>
+    <div class="buttom-text"> 오류 2동에 위치한 버들시장이야! <p /> 천왕역이랑 가깝다는데?</div>
 </div>
 </template>
 
@@ -90,5 +91,11 @@
     height: 398px;
     margin-left: auto;
     margin-right: auto;
+}
+.container .buttom-text{
+    margin-top: 34px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 156.02%;
 }
 </style>
