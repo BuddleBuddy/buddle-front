@@ -36,7 +36,7 @@ export default {
   max-width: 500px;
   min-height: 100px;
   overflow: auto;
-  background-color: #E5E5E5;
+  background-color: #ffffff;
 }
 
 .intro{
@@ -45,7 +45,8 @@ export default {
 }
 
 .location{
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: left ;
 }
 </style>

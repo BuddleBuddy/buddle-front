@@ -1,76 +1,199 @@
 <template>
-  <div class="header">
-    <div class="nav">
+  <div class="intoTab">
+    <div class="tabs">
+      <div
+          :class="{ tab: true, active: selectTab === 0 }"
+          @click="setSelectTab(0)"
+      >
+        # 맛집
+        <div :class="{line: true, active: selectTab === 0 }"
+             @click="setSelectTab(0)"
+        ></div>
+      </div>
 
-      <router-link to='intro/store' :class="selectTab == 0 ? 'active' : 'tag'" @click="setColor(0)"> # 맛집 </router-link>
-      <router-link to='intro/place' :class="selectTab == 1 ? 'active' : 'tag'" @click="setColor(1)"> # 가볼만한 곳 </router-link>
-
+      <div
+          :class="{ tab: true, active: selectTab === 1 }"
+          @click="setSelectTab(1)"
+      >
+        # 가볼만한 곳
+        <div :class="{line: true, active: selectTab === 1 }"
+             @click="setSelectTab(1)"
+        ></div>
+      </div>
     </div>
-
-    <div>
-      <router-view></router-view>
+    <div class="tab-containers">
+      <div :class="{ 'tab-container': true, active: selectTab === 0 }">
+        <div>
+          <img class="photo" src="../assets/place.png">
+        </div>
+        <div class="text" id="title">
+          87 닭강정
+        </div>
+        <div class="text" id="description">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Vivamus adipiscing ac non
+          magna hac etiam.</div>
+        <div class="text" id="hash">#매운맛 #간장맛 #간식</div>
+      </div>
+      <div :class="{ 'tab-container': true, active: selectTab === 0 }">
+        <div>
+          <img class="photo" src="../assets/place.png">
+        </div>
+        <div class="text" id="title">
+          87 닭강정
+        </div>
+        <div class="text" id="description">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Vivamus adipiscing ac non
+          magna hac etiam.</div>
+        <div class="text" id="hash">#매운맛 #간장맛 #간식</div>
+      </div>
+      <div :class="{ 'tab-container': true, active: selectTab === 0 }">
+        <div>
+          <img class="photo" src="../assets/place.png">
+        </div>
+        <div class="text" id="title">
+          87 닭강정
+        </div>
+        <div class="text" id="description">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Vivamus adipiscing ac non
+          magna hac etiam.</div>
+        <div class="text" id="hash">#매운맛 #간장맛 #간식</div>
+      </div>
+      <div :class="{ 'tab-container': true, active: selectTab === 1 }">
+        <div>
+          <img class="photo" src="../assets/place.png">
+        </div>
+        <div class="text" id="title">
+          87 닭강정
+        </div>
+        <div class="text" id="description">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Vivamus adipiscing ac non
+          magna hac etiam.</div>
+        <div class="text" id="hash">#매운맛 #간장맛 #간식</div>
+      </div>
+      <div :class="{ 'tab-container': true, active: selectTab === 1 }">
+        <div>
+          <img class="photo" src="../assets/place.png">
+        </div>
+        <div class="text" id="title">
+          87 닭강정
+        </div>
+        <div class="text" id="description">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Vivamus adipiscing ac non
+          magna hac etiam.</div>
+        <div class="text" id="hash">#매운맛 #간장맛 #간식</div>
+      </div>
+      <div :class="{ 'tab-container': true, active: selectTab === 1 }">
+        <div>
+          <img class="photo" src="../assets/place.png">
+        </div>
+        <div class="text" id="title">
+          87 닭강정
+        </div>
+        <div class="text" id="description">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Vivamus adipiscing ac non
+          magna hac etiam.</div>
+        <div class="text" id="hash">#매운맛 #간장맛 #간식</div>
+      </div>
     </div>
-
   </div>
 </template>
 
 <script>
-import place from "@/components/intro/place";
-import store from "@/components/intro/store";
-
 export default {
   name: "IntroTab",
   data() {
     return {
       selectTab: 0,
-    }
+    };
   },
   methods: {
-    setColor(num) {
+    setSelectTab(num) {
       this.selectTab = num;
-    }
-  }
-}
-
-  /*var StoreComponent = {
-    template: '<div>store</div>'
-  }
-
-var PlaceComponent = {
-  template: '<div>place</div>'
-}*/
-
+    },
+  },
+};
 </script>
 
 
 <style scoped>
-.header{
-  background-color: #ffffff;
+.tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tab.active {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: px;
+  color: #000000;
+}
+
+.tab {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #808080;
+}
+
+.tab-container {
+  background-color: aqua;
+  display: none;
+}
+
+.tab-container.active {
+  background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-.header .nav{
+.photo {
+  width: 90%;
+  height: 90%;
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+.text{
   display: flex;
-  /* position: sticky; */
-  /* top: 0px;   */
-  width: 100%;
-  height: 55px;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-  color: #898645;
+  justify-content: flex-start;
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.tag{
-  color: #686868;
-  text-decoration: none;
+#title{
+  font-size: larger;
+  font-weight: bold;
 }
 
-.active {
-  color: black;
-  text-decoration: none;
-  /* border-bottom: 1px solid #50A65D; */
+#description{
+  font-size: large;
 }
 
+#hash{
+  font-size: larger;
+  font-weight: bold;
+  color: #50A65D;
+}
+
+.line.active {
+  width: 225px;
+  height: 5px;
+  margin-top: 10px;
+  background: black;
+}
+.line{
+  width: 225px;
+  height: 2px;
+  margin-top: 11px;
+  background: grey;
+}
 </style>
