@@ -1,6 +1,6 @@
 <template>
-    <div class="header">
-        <div>
+    <div>
+        <div class="logo-container">
             <img class="logo" alt="logo" src="../assets/logo.png">
         </div>
         <div class="nav">
@@ -8,8 +8,9 @@
             <router-link to='/contest' :class="selectTab == 1 ? 'active' : 'tag'" @click="setColor(1)"> 콘테스트 </router-link>
             <router-link to="/history" :class="selectTab == 2 ? 'active' : 'tag'" @click="setColor(2)"> 히스토리 </router-link>
         </div>
+        <router-view></router-view>
     </div>
-    <router-view></router-view>
+
 </template>
 
 <script>
@@ -30,36 +31,35 @@ export default {
 
 
 <style scoped>
-.header{
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-}
 
-.header .logo{
+.logo-container{
+    background-color: #ffffff;
     margin: 0 auto;
 }
 
-.header .nav{
+.nav{
     display: flex;
-    /* position: sticky; */
-    /* top: 0px;   */
+    position: sticky;
+    top: 0px;
+    z-index: 1;  
     width: 100%;
     height: 55px;
     text-align: center;
     justify-content: space-around;
     align-items: center;
     color: #898645;
+    background-color: #ffffff;
 }
 
 .tag{
     color: #686868;
     text-decoration: none;
+    flex: 1;
 }
 
 .active {
     color: #50A65D;
     text-decoration: none;
-    /* border-bottom: 1px solid #50A65D; */
+    flex: 1;
 }
 </style>

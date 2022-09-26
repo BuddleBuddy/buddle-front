@@ -1,7 +1,5 @@
 <template>
-  <div>
-      <router-view />
-  </div>
+  <router-view />
 </template>
 
 <script>
@@ -12,7 +10,14 @@ export default {
 </script>
 
 <style>
+html{
+  width: 100%;
+  height: 100%;
+}
+
 body{
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -24,7 +29,6 @@ body{
   max-width: 500px;
   min-height: 100vh;
   height: 100%;
-  overflow: auto;
   margin-left: auto; 
   margin-right: auto;
   color: #2c3e50;
