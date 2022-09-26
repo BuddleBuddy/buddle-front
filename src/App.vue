@@ -32,6 +32,6 @@ body{
   margin-left: auto; 
   margin-right: auto;
   color: #2c3e50;
-  background-color: #E5E5E5;
+  background-color: #ffffff;
 }
 </style>
