@@ -129,7 +129,6 @@ export default {
 .tab.active {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: px;
   color: #000000;
 }
 
