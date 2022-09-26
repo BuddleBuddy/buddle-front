@@ -7,7 +7,7 @@ import Event2 from "../views/Event2.vue";
 import Event3 from "../views/Event3.vue";
 import Event4 from "../views/Event4.vue";
 import Event5 from "../views/Event5.vue";
-import Event6 from "../views/Event6.vue";
+import Event5_1 from "../views/Event5_1.vue";
 import Event7 from "../views/Event7.vue";
 import Event8 from "../views/Event8.vue";
 import Event9 from "../views/Event9.vue";
@@ -71,8 +71,8 @@ const routes = [
               component: Event5,
             },
             {
-              path: "/event6",
-              component: Event6,
+              path: "/event5_1",
+              component: Event5_1,
             },
             {
               path: "/event7",

@@ -8,16 +8,13 @@
             '--swiper-pagination-color': '#fff',
         }"
         :autoplay="{
-            delay: 5000,
+            delay: 1000,
             disableOnInteraction: false,
         }"
         :modules="modules"
         effect="fade"
         :slides-per-view="1"
         :speed="1200"
-        navigation
-        :parallax="true"
-        :pagination="{ clickable: true }"
         @swiper="onSwiper"
         @slideChange="onSlideChange">
         <swiper-slide class="wrap-swiper">  
@@ -36,12 +33,11 @@
 </template>
 
 <script>
-  import { Navigation, Pagination, EffectFade, Autoplay, Parallax } from 'swiper';
+  import {Pagination, EffectFade, Autoplay, Parallax } from 'swiper';
 
   import { Swiper, SwiperSlide } from 'swiper/vue';
 
   import 'swiper/css';
-  import 'swiper/css/navigation';
   import 'swiper/css/pagination';
   import 'swiper/css/effect-fade';
 
@@ -61,7 +57,7 @@
       return {
         onSwiper,
         onSlideChange,
-        modules: [Navigation, Pagination, EffectFade, Autoplay, Parallax],
+        modules: [Pagination, EffectFade, Autoplay, Parallax],
       };
     },
     methods: {
@@ -72,6 +68,7 @@
 
 <style scoped>
 .container{
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     height: 100%;
