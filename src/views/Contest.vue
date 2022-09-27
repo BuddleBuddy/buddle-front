@@ -1,45 +1,57 @@
 <template>
-    <div class="root">
-        <img class="hbti" alt="hbti" src="../assets/hbti.png">
-        <div class="gradient">
-        <div class="first"> 
-            <div class="title"> 참여 방법 </div>
-            <div class="content"> 1. 버들부부의 MBTI를 맞춰주세요 <p />
-                2. 마지막 응모하기 버튼 클릭 후 이메일 남기기 </div>
+  <div class="root">
+    <img class="hbti" alt="hbti" src="../assets/hbti.png">
+    <div class="gradient">
+      <div class="first">
+        <div class="title"> 참여 방법</div>
+        <div class="content"> 1. 버들부부의 MBTI를 맞춰주세요 <p/>
+          2. 마지막 응모하기 버튼 클릭 후 이메일 남기기
         </div>
-        <div class="second"> 
-            <div class="title"> 이벤트 경품 </div>
-            <div class="set">
-                <div class="item">
-                    <img class="gift1" alt="gift1" src="../assets/gift1.png">
-                    <div class="content2"> 2명 </div>
-                </div>
-                <div class="item">
-                    <img class="gift1" alt="gift2" src="../assets/gift2.png">
-                    <div class="content2"> 5명 </div>
-                </div>
-            </div>
+      </div>
+      <div class="second">
+        <div class="title"> 이벤트 경품</div>
+        <div class="set">
+          <div class="item">
+            <img class="gift1" alt="gift1" src="../assets/gift1.png">
+            <div class="content2"> 2명</div>
+          </div>
+          <div class="item">
+            <img class="gift1" alt="gift2" src="../assets/gift2.png">
+            <div class="content2"> 5명</div>
+          </div>
         </div>
-        <router-link to="/event1" class = "part"> 참여하기 </router-link>
-        </div>
-        <div class="third">
-            <div class="rectangle"></div>
-            <div class="box">
-              <div class="itemfont1"> {{ count }}명 </div>
-              <div class="itemfont2"> 참여중! </div>
-            </div>
-            <div class="rectangle"></div>
-        </div>
-        <div class="fourth"> 
-            <img class="vector" alt="vector" src="../assets/vector.png">
-            <div class="txt"> 공유하기 </div>
-        </div>
+      </div>
+      <router-link to="/event1" class="part"> 참여하기</router-link>
     </div>
+    <div class="third">
+      <div class="rectangle"></div>
+      <div class="box">
+        <div class="itemfont1"> {{ count }}명</div>
+        <div class="itemfont2"> 참여중!</div>
+      </div>
+      <div class="rectangle"></div>
+    </div>
+    <div class="fourth">
+      <img class="vector" alt="vector" src="../assets/vector.png">
+      <div class="txt"> 공유하기</div>
+      <div class="fifth">
+        <div class="logo">
+          <KakaoShare/>
+        </div>
+        <div class="logo">
+          <Facebook/>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
+import KakaoShare from "@/components/Share";
+import Facebook from "@/components/Facebook";
 export default {
   name: "Contest",
+  components: {Facebook, KakaoShare},
   data(){
     return {
         count: 0,
@@ -236,6 +248,15 @@ export default {
     text-decoration: none;
     font-weight: 900;
     font-size: larger;
+}
+
+.root .fifth {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.root .fifth .logo{
+  margin-top: 30px;
 }
 
 </style>

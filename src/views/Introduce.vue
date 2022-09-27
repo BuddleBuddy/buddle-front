@@ -18,13 +18,10 @@
 <script>
 import KakaoMap from "../components/Map";
 import IntroTab from "@/components/IntroTab";
-import Place from "@/components/intro/place";
-import Store from "@/components/intro/store";
 
 export default {
   name: "Intro",
   components: {
-    Place,
     IntroTab,
     KakaoMap,
   },
