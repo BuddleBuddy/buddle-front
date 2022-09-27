@@ -61,7 +61,8 @@ export default {
             this.dir4 = dir;
             this.selectBox4 = num;
         }
-    }
+    },
+    props: true
 };
 </script>
 

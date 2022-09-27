@@ -1,35 +1,35 @@
 <template>
-<div class="container">
-    <div class = "text"> 채점중 </div>
-    <div class="container-image">
-        <swiper
-        :style="{
-            '--swiper-navigation-color': '#fff',
-            '--swiper-pagination-color': '#fff',
-        }"
-        :autoplay="{
-            delay: 1000,
-            disableOnInteraction: false,
-        }"
-        :modules="modules"
-        effect="fade"
-        :slides-per-view="1"
-        :speed="1200"
-        @swiper="onSwiper"
-        @slideChange="onSlideChange">
-        <swiper-slide class="wrap-swiper">  
-            <img src="../assets/Rectangle.png"  alt="" class="swiper-img" />
-        </swiper-slide>
-        <swiper-slide class="wrap-swiper">
-            <img src="../assets/Rectangle.png"  alt="" class="swiper-img" />
-        </swiper-slide>
-        <swiper-slide class="wrap-swiper">
-            <img src="../assets/Rectangle.png"  alt="" class="swiper-img" />
-        </swiper-slide>
-        </swiper>
-    </div>
-    <div class="buttom-text"> 오류 2동에 위치한 버들시장이야! <p /> 천왕역이랑 가깝다는데?</div>
-</div>
+  <div class="container" >
+      <div class = "text"> 채점중 </div>
+      <div class="container-image">
+          <swiper
+          :style="{
+              '--swiper-navigation-color': '#fff',
+              '--swiper-pagination-color': '#fff',
+          }"
+          :autoplay="{
+              delay: 1000,
+              disableOnInteraction: false,
+          }"
+          :modules="modules"
+          effect="fade"
+          :slides-per-view="1"
+          :speed="1200"
+          @swiper="onSwiper"
+          @slideChange="onSlideChange">
+          <swiper-slide class="wrap-swiper">  
+              <img src="../assets/Rectangle.png"  alt="" class="swiper-img" />
+          </swiper-slide>
+          <swiper-slide class="wrap-swiper">
+              <img src="../assets/Rectangle.png"  alt="" class="swiper-img" />
+          </swiper-slide>
+          <swiper-slide class="wrap-swiper">
+              <img src="../assets/Rectangle.png"  alt="" class="swiper-img" />
+          </swiper-slide>
+          </swiper>
+      </div>
+      <div class="buttom-text"> 오류 2동에 위치한 버들시장이야! <p /> 천왕역이랑 가깝다는데?</div>
+  </div>
 </template>
 
 <script>
