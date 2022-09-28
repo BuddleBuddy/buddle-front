@@ -189,19 +189,16 @@ export default {
     font-family: 'Inter', sans-serif;
 }
 .container .button{
-    width: 330px;
-    height: 75px;
-    background-color: #DDD6B3;
-    border-radius: 25px;
-    line-height: 75px;
-    font-size: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 91px;
-    text-decoration: none;
-    color: #474747;
-    font-family: 'Pretendard-Regular';
-    font-weight: 600;
-    font-style: normal;
+  width: 330px;
+  height: 75px;
+  margin-bottom: 50px;
+  background-color: #DDD6B3;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  line-height: 75px;
+  color: #474747;
+  font-size: 25px;
 }
 </style>
