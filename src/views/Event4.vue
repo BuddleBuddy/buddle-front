@@ -69,14 +69,22 @@
         modules: [Pagination, EffectFade, Autoplay, Parallax],
       };
     },
+    data(){
+      dir1: JSON.parse(localStorage.getItem("dir1"));
+      dir2: JSON.parse(localStorage.getItem("dir2"));
+      dir3: JSON.parse(localStorage.getItem("dir3"));
+      dir4: JSON.parse(localStorage.getItem("dir4"));
+      
+    },
     mounted() {
       setTimeout(() => {
+        if(this.dir1 == 'E' && this.dir2 == 'S' && this.dir3 == 'T' && this.dir4 == 'J'){
+          this.$router.push('Event5_1');
+        }
+        else this.$router.push('Event5');
         this.$router.push('Event5')
       }, 3000);
     },
-    methods: {
-
-    }
   };
 </script>
 
