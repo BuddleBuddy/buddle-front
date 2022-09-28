@@ -35,14 +35,14 @@ export default {
   name: "Event5",
     data(){
         return{
-            selectBox1: 0,
-            dir1: 0,
-            selectBox2: 0,
-            dir2: 0,
-            selectBox3: 0,
-            dir3: 0,
-            selectBox4: 0,
-            dir4: 0,
+            dir1: window.localStorage.getItem("dir1"),
+            dir2: window.localStorage.getItem("dir2"),
+            dir3: window.localStorage.getItem("dir3"),
+            dir4: window.localStorage.getItem("dir4"),
+            selectBox1: 1,
+            selectBox2: 1,
+            selectBox3: 1,
+            selectBox4: 1,
         }
     },
     methods: {

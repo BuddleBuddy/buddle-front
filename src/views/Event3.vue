@@ -62,14 +62,12 @@ export default {
             this.selectBox4 = num;
         },
         click(){
-            localStorage.setItem(this.dir1, this.dir1 == 1? 'E' : 'I');
-            localStorage.setItem(this.dir2, this.dir2 == 1? 'S' : 'N');
-            localStorage.setItem(this.dir3, this.dir3 == 1? 'F' : 'T');
-            localStorage.setItem(this.dir4, this.dir4 == 1? 'J' : 'P');
-            if(this.dir1 == 1 && this.dir2 == 1 && this.dir3 == 2 && this.dir4 == 1){
-                this.$router.push('Event4');
-            }
-            else this.$router.push('Event4');
+            window.localStorage.setItem('dir1', this.dir1);
+            window.localStorage.setItem('dir2', this.dir2);
+            window.localStorage.setItem('dir3', this.dir3);
+            window.localStorage.setItem('dir4', this.dir4);
+            console.log(this.dir1 + " " + this.dir2 + " " + this.dir3 + " " + this.dir4);
+            this.$router.push('Event4');
         }
     },
     props: true
