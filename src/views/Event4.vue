@@ -71,7 +71,7 @@
     },
     mounted() {
       setTimeout(() => {
-        this.$router.replace('Event5')
+        this.$router.push('Event5')
       }, 3000);
     },
     methods: {

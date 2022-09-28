@@ -1,6 +1,6 @@
 <template>
     <div class="event1">
-        <router-link to= "/event2" class="start"> 도전하기 </router-link>
+        <router-link to= "/event2_1" class="start"> 도전하기 </router-link>
     </div>
 </template>
 
