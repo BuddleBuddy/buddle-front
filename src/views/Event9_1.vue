@@ -2,19 +2,19 @@
 <div class="container">
     <div class = "icon"> </div>
     <div class="text"> 정답~! <p />
-        오순할멈은 어려울껴~ </div>
+        정말 천재구나?? </div>
     <div class = "mid-icon"> </div>
     <div class = "mid-content">
-        <div class ="content-item"> E </div>
-        <div class ="content-item"> S </div>
-        <div class ="content-item"> T </div>
-        <div class ="content-item"> J </div>
+        <div class ="content-item"> I </div>
+        <div class ="content-item"> N </div>
+        <div class ="content-item"> F </div>
+        <div class ="content-item"> P </div>
     </div>
     <div class = "buttom-content"> 
         <div class="buttom-img"> </div>
         <div class="buttom-text"> 너 천재구나? </div>
     </div>
-    <router-link to= "/event6" class="button"> 다음으로 </router-link>
+    <router-link to= "/event10" class="button"> 다음으로 </router-link>
 </div>
 </template>
 
