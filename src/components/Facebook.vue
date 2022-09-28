@@ -1,5 +1,5 @@
 <template>
-  <a id="kakao-link-btn" @click="shareFacebook" >
+  <a @click="shareFacebook" >
     <img src="../assets/icon-facebook.png" />
   </a>
 </template>

@@ -41,6 +41,9 @@
         <div class="logo">
           <Facebook/>
         </div>
+        <div class="logo">
+          <Clipboard/>
+        </div>
       </div>
     </div>
   </div>
@@ -49,9 +52,10 @@
 <script>
 import KakaoShare from "@/components/Share";
 import Facebook from "@/components/Facebook";
+import Clipboard from "@/components/Clipboard";
 export default {
   name: "Contest",
-  components: {Facebook, KakaoShare},
+  components: {Clipboard, Facebook, KakaoShare},
   data(){
     return {
         count: 0,

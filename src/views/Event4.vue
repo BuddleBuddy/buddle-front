@@ -2,8 +2,8 @@
   <div class="container" >
       <div class = "text"> 채점중 </div>
       <div class = "spinner">
-        <pulse-loader :loading="loading" :color="'#464646'" :size="'12px'"></pulse-loader>
-        <pulse-loader :loading="loading" :color="'#464646'" :size="'12px'">{{setTimeout}}</pulse-loader>
+        <pulse-loader1 :loading="loading" :color="'#464646'" :size="'12px'"></pulse-loader1>
+        <pulse-loader2 :loading="loading" :color="'#464646'" :size="'12px'"></pulse-loader2>
       </div>
       <div class="container-image">
           <swiper
@@ -45,14 +45,16 @@
   import 'swiper/css/pagination';
   import 'swiper/css/effect-fade';
   import {createRouter as $router} from "vue-router/dist/vue-router.mjs";
-  import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
+  import PulseLoader1 from '../components/Spinner1';
+  import PulseLoader2 from '../components/Spinner2';
 
   export default {
     name: "Event4",
     components: {
       Swiper,
       SwiperSlide,
-      'PulseLoader':PulseLoader
+      'PulseLoader1': PulseLoader1,
+      'PulseLoader2': PulseLoader2
     },
     setup() {
       const onSwiper = (swiper) => {
@@ -70,15 +72,11 @@
     mounted() {
       setTimeout(() => {
         this.$router.replace('Event5')
-      }, 50000);
-    }
-    }
+      }, 3000);
+    },
     methods: {
-      timeout: function () {
-        setTimeout(() => {
 
-        }, 1000);
-      }
+    }
   };
 </script>
 
