@@ -60,9 +60,9 @@ export default {
 
 .root .title{
     margin-top: 60px;
-    width: 167px;
+    width: 180px;
     height: 108px;
-    font-family: 'Pretendard-Regular';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     line-height: 1px;
     font-size: 30px;
@@ -142,18 +142,18 @@ export default {
 }
 
 .root .third{
-    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 97px;
     margin-bottom: 203px;
-    margin-left: 25px;
-    margin-right: 25px;
+    /* margin-left: 25px;
+    margin-right: 25px; */
 }
 
 .root .third .txt{
-    position: absolute;
-    left: 42%; top: 0;
+    position: relative;
+    left: 50%; 
+    transform: translate(-50%, -100%);
 }
 .root .fourth{
     display: flex;
