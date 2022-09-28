@@ -4,14 +4,19 @@
         <div class = "top-container">
             <div class = "first">
                 <div class = "item1"> 이름 </div>
-                <div class = "item2"> </div>
+                <input type= "text" placeholder = "이름을 입력해주세요" class = "item2" style="border: none;">
             </div>
             <div class="second">
                 <div class = "item1"> 이메일 </div>
                 <div class = "item-container"> 
-                    <div class = "left-item"> </div> 
-                    <div id = "item-text"> @ </div> 
-                    <div class="right-item"> </div>
+                    <input type="text" class = "left-item" placeholder = "이메일 아이디" style="border: none;">
+                    <div id = "item-text" > @ </div> 
+                    <select class="right-item" style="border: none;"> 
+                        <option value="naver">naver.com</option>
+			            <option value="google">google.com</option>
+                        <option value="hanmain">hanmail.net</option>
+                        <option value="nate">nate.com</option>
+                    </select>
                 </div>
             </div>
   
@@ -21,13 +26,13 @@
                 활용하며, 추첨 종료 후 즉시 파기됩니다</div>
             </div>
         </div>
-        <div class = "button"> 응모 완료! </div>
+        <router-link to= "/event12" class = "button"> 응모 완료! </router-link>
     </div>
 </template>
 
 <script>
 export default {
-  name: "Event1"
+  name: "Event11"
 };
 </script>
 
@@ -37,6 +42,12 @@ export default {
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 600;
     font-style: normal;
+}
+input{
+   text-align:center;
+}
+select{
+   text-align:center;
 }
 .container {
     width: 100%;
@@ -75,6 +86,7 @@ export default {
     height: 55px;
     background-color: #FFF9DA;
     border-radius: 20px;
+    outline: none;
 }
 
 .container .top-container .item-container{
@@ -142,11 +154,12 @@ export default {
     height: 75px;
     line-height: 75px;
     margin-top: 217px;
-    background-color: #DDD6B3;
+    background-color: #D2FBC4;
     border-radius: 25px;
-    color: #474747;
+    color: #0A7800;
     font-family: 'Pretendard-Regular';
     font-size: 25px;
+    text-decoration: none;
     margin-left: auto;
     margin-right: auto;
 }

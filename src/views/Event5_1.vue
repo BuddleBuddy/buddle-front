@@ -2,7 +2,7 @@
 <div class="container">
     <div class = "icon"> </div>
     <div class="text"> 정답~! <p />
-        할머니는 어려울껄?</div>
+        오순할멈은 어려울껴~ </div>
     <div class = "mid-icon"> </div>
     <div class = "mid-content">
         <div class ="content-item"> E </div>

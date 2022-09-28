@@ -36,11 +36,10 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal;
 }
 .root {
@@ -60,7 +59,7 @@ export default {
 
 .root .title{
     margin-top: 60px;
-    width: 167px;
+    width: 180px;
     height: 108px;
     font-family: 'Pretendard-Regular';
     font-style: normal;
@@ -142,18 +141,18 @@ export default {
 }
 
 .root .third{
-    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 97px;
     margin-bottom: 203px;
-    margin-left: 25px;
-    margin-right: 25px;
+    /* margin-left: 25px;
+    margin-right: 25px; */
 }
 
 .root .third .txt{
-    position: absolute;
-    left: 42%; top: 0;
+    position: relative;
+    left: 50%; 
+    transform: translate(-50%, -100%);
 }
 .root .fourth{
     display: flex;
