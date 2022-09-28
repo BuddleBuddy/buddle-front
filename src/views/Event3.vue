@@ -189,7 +189,7 @@ export default {
     font-size: 16px;    
     line-height: 1px;
     text-align: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Pretendard-Regular';
 }
 
 .container .button{

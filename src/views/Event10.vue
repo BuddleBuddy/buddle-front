@@ -36,11 +36,10 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal;
 }
 .root {
@@ -62,7 +61,7 @@ export default {
     margin-top: 60px;
     width: 180px;
     height: 108px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Pretendard-Regular';
     font-style: normal;
     line-height: 1px;
     font-size: 30px;
