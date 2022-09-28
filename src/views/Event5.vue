@@ -1,28 +1,29 @@
 <template>
 <div class="container">
     <div class = "icon"> </div>
-    <div class="text"> 어......어? <p />
-        다시 한번 생각해봐...</div>
+    <div class="text"> 땡! <p />
+        다시 한번 생각해봐~ </div>
     <div class="block">
         <div class="block-container">
             <div :class="{'left-item' : selectBox1 == 0, 'left-item-click' : selectBox1 == 1 && dir1 == 1, 'left-item-unclick' : selectBox1 == 1 && dir1 == 2}" @click="clickEvent1(1, 1)"> E </div> 
             <div :class="{'right-item' : selectBox1 == 0, 'right-item-click': selectBox1 == 1 && dir1 == 2, 'right-item-unclick' : selectBox1 == 1 && dir1 == 1}" @click="clickEvent1(2, 1)"> I </div>
-            <div class= "text-item"> 할아버지는 친구들과의 <p /> 등산을 좋아하신다! </div>
+            <div class= "text-item"> 영감은 버들시장에서 유명 <p /> 한 초특급 인싸여~ </div>
         </div>
         <div class="block-container"> 
             <div :class="{'left-item' : selectBox2 == 0, 'left-item-click' : selectBox2 == 1 && dir2 == 1, 'left-item-unclick' : selectBox2 == 1 && dir2 == 2}" @click="clickEvent2(1, 1)"> S </div> 
             <div :class="{'right-item' : selectBox2 == 0, 'right-item-click': selectBox2 == 1 && dir2 == 2, 'right-item-unclick' : selectBox2 == 1 && dir2 == 1}" @click="clickEvent2(2, 1)"> N </div>
-            <div class= "text-item"> 할아버지는 "만약에" <p /> 얘기를 지루해 하시는 편~ </div>
+            <div class= "text-item"> 현실적인 얘기만 좋아혀! <p /> ㅡㅡ </div>
         </div>
         <div class="block-container"> 
             <div :class="{'left-item' : selectBox3 == 0, 'left-item-click' : selectBox3 == 1 && dir3 == 1, 'left-item-unclick' : selectBox3 == 1 && dir3 == 2}" @click="clickEvent3(1, 1)"> F </div> 
             <div :class="{'right-item' : selectBox3 == 0, 'right-item-click': selectBox3 == 1 && dir3 == 2, 'right-item-unclick' : selectBox3 == 1 && dir3 == 1}" @click="clickEvent3(2, 1)"> T </div> 
-            <div class= "text-item">할아버지는 감동적인 <p /> 공연을 봐도 눈물 한 방울 <p /> 안흘리는 냉혈한! </div>
+            <div class= "text-item">피도 눈물도 없는 영감.. <p /> 공감능력 0% 예상헌다잉 </div>
         </div>
         <div class="block-container"> 
             <div :class="{'left-item' : selectBox4 == 0, 'left-item-click' : selectBox4 == 1 && dir4 == 1, 'left-item-unclick' : selectBox4 == 1 && dir4 == 2}" @click="clickEvent4(1, 1)"> J </div> 
             <div :class="{'right-item' : selectBox4 == 0, 'right-item-click': selectBox4 == 1 && dir4 == 2, 'right-item-unclick' : selectBox4 == 1 && dir4 == 1}" @click="clickEvent4(2, 1)"> P </div> 
-            <div class= "text-item"> 할아버지는 데이트 일주일<p /> 전부터 1부터 10까지 계획 <p />을 다 세워놓은 <p /> 계획적인 남자! </div>
+            <div class= "text-item"> 영감은 아주 계획적이고 <p /> 철저해. 가끔은 융통성 없 <p />지만.. 나와 달라서 반했지 <p />
+             뭐~ </div>
         </div>
     </div>
     <router-link to= "/event5_1" class="button"> 정답 제출하기 </router-link>
@@ -71,7 +72,7 @@ export default {
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -98,7 +99,7 @@ export default {
     text-align: center;
     color: #000000;
     font-family: 'Inter', sans-serif;
-    line-height: 100%;
+    line-height: 1;
 }
 
 .container .block{
@@ -191,7 +192,7 @@ export default {
 .container .button{
     width: 330px;
     height: 75px;
-    background-color: #DDD6B3;
+    background-color: #D2FBC4;
     border-radius: 25px;
     line-height: 75px;
     font-size: 25px;
@@ -199,7 +200,7 @@ export default {
     margin-right: auto;
     margin-top: 91px;
     text-decoration: none;
-    color: #474747;
+    color: #0A7800;
     font-family: 'Pretendard-Regular';
     font-weight: 600;
     font-style: normal;

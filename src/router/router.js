@@ -4,6 +4,7 @@ import Contest from "../views/Contest.vue";
 import History from "../views/History.vue";
 import Event1 from "../views/Event1.vue";
 import Event2 from "../views/Event2.vue";
+import Event2_1 from "../views/Event2_1.vue";
 import Event3 from "../views/Event3.vue";
 import Event4 from "../views/Event4.vue";
 import Event5 from "../views/Event5.vue";
@@ -57,6 +58,10 @@ const routes = [
             {
               path: "/event2",
               component: Event2,
+            },
+            {
+              path: "/event2_1",
+              component: Event2_1,
             },
             {
               path: "/event3",
