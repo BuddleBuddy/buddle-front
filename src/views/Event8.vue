@@ -90,6 +90,13 @@
 </script>
 
 <style scoped>
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
 .container{
     background-color: #FFFFFF;
     display: flex;
@@ -120,7 +127,11 @@
     margin-right: auto;
 }
 .container .buttom-text{
-    margin-top: 34px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%, 0%);
+    font-family: 'Pretendard-Regular';
     font-weight: 500;
     font-size: 14px;
     line-height: 156.02%;

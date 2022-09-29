@@ -210,19 +210,19 @@ export default {
     font-family: 'Pretendard-Regular';
 }
 .container .button{
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%, 0%);
     width: 330px;
     height: 75px;
     background-color: #D2FBC4;
     border-radius: 25px;
     line-height: 75px;
     font-size: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 91px;
+
     text-decoration: none;
     color: #0A7800;
     font-family: 'Pretendard-Regular';
-    font-weight: 600;
-    font-style: normal;
 }
 </style>

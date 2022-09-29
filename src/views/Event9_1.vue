@@ -1,18 +1,21 @@
 <template>
 <div class="container">
-    <div class = "icon"> </div>
-    <div class="text"> 정답~! <p />
-        정말 천재구나?? </div>
-    <div class = "mid-icon"> </div>
-    <div class = "mid-content">
-        <div class ="content-item"> I </div>
-        <div class ="content-item"> N </div>
-        <div class ="content-item"> F </div>
-        <div class ="content-item"> P </div>
-    </div>
-    <div class = "buttom-content"> 
-        <div class="buttom-img"> </div>
-        <div class="buttom-text"> 너 천재구나? </div>
+
+    <div class = "wrap-content">
+        <div class = "icon"> </div>
+        <div class="text"> 정답~! <p />
+            정말 천재구나?? </div>
+        <div class = "mid-icon"> </div>
+        <div class = "mid-content">
+            <div class ="content-item"> I </div>
+            <div class ="content-item"> N </div>
+            <div class ="content-item"> F </div>
+            <div class ="content-item"> P </div>
+        </div>
+        <div class = "buttom-content"> 
+            <div class="buttom-img"> </div>
+            <div class="buttom-text"> 내가 바로 <p /> 열정적인 중재자? </div>
+        </div>
     </div>
     <router-link to= "/event10" class="button"> 다음으로 </router-link>
 </div>
@@ -47,23 +50,30 @@ export default {
     height: 100%;
     width: 100%;
 }
-.container .icon{
+
+.container .wrap-content{
+    flex-basis: auto;
+    margin-bottom: 20px;
+}
+
+.container .wrap-content .icon{
     height: 35px;
     width: 35px;
     margin-left: 19px;
     margin-top: 53px;
     background-image: url("../assets/backIcon.png");
 }
-.container .text{
+
+.container .wrap-content .text{
     font-weight: 900;
     font-size: 30px;
     text-align: center;
     color: #000000;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Pretendard-Regular';
     line-height: 100%;
     margin-top: 33px;
 }
-.container .mid-icon{
+.container  .wrap-content .mid-icon{
     width: 72px;
     height: 72px;
     margin-top: 19px;
@@ -72,13 +82,13 @@ export default {
     background-image: url("../assets/midIcon.png");
 }
 
-.container .mid-content{
+.container .wrap-content .mid-content{
     display: flex;
     margin-left: 37px;
     margin-right: 37px;
 }
 
-.container .mid-content .content-item{
+.container  .wrap-content .mid-content .content-item{
     margin-top: 27px;
     width: 69px;
     height: 87px;
@@ -97,16 +107,21 @@ export default {
     margin-right: auto;
 }
 
-.container .buttom-content{
+.container  .wrap-content .buttom-content{
     margin-top: 56px;
     display: flex;
 }
+.container .wrap-content .buttom-content .buttom-text{
+    font-family: 'Pretendard-Regular';
+    line-height: 1px;
+    text-align: left;
+}
 
-.container .buttom-content .buttom-img{
-    width: 170px;
-    height: 201px;
+.container .wrap-content .buttom-content .buttom-img{
+    width: 208px;
+    height: 282px;
     margin-left: 51px;
-    background-image: url("../assets/papa.png");
+    background-image: url("../assets/grandma.png");
 }
 
 .container .button{
