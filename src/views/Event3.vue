@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     <div class = "icon"> </div>
-    <div class="text"> 도손 할아범의 <p />
+    <div class="text"> 도손 할아범의 <br>
         mbti는 뭘까?</div>
     <div class="block">
         <div class="block-container">
@@ -85,12 +85,10 @@ export default {
 </script>
 
 <style scoped>
-
-
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -104,27 +102,23 @@ export default {
 .container .icon{
     height: 35px;
     width: 35px;
-    margin-left: 19px;
-    margin-top: 53px;
+    margin-left: 15px;
+    margin-top: 15px;
     background-image: url("../assets/backIcon.png");
 }
 .container .text{
-    margin-top: auto;
-    margin-bottom: auto;
-    /* margin-top: 33px; */
-    font-weight: 900;
+    font-family: 'Pretendard-Regular';
     font-size: 30px;
     line-height: 36px;
     color: #000000;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .container .block{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
 }
 
 .container .block .block-container{

@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     <div class = "icon"> </div>
-    <div class="text"> 땡! <p />
+    <div class="text"> 땡! <br />
         다시 한번 생각해봐~ </div>
     <div class="block">
         <div class="block-container">
@@ -87,8 +87,8 @@ export default {
 .container .icon{
     height: 35px;
     width: 35px;
-    margin-left: 19px;
-    margin-top: 53px;
+    margin-left: 15px;
+    margin-top: 15px;
     background-image: url("../assets/backIcon.png");
 }
 .container .text{
@@ -102,10 +102,11 @@ export default {
 }
 
 .container .block{
-    margin-top: 69px;
-    /* margin-bottom: auto; */
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    flex: 1;
 }
 
 .container .block .block-container{
@@ -215,7 +216,7 @@ export default {
     font-size: 25px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 91px;
+    margin-bottom: 50px;
     text-decoration: none;
     color: #0A7800;
     font-family: 'Pretendard-Regular';
