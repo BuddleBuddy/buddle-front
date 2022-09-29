@@ -108,22 +108,15 @@ export default {
     background-image: url("../assets/backIcon.png");
 }
 .container .text{
-    margin-top: auto;
-    margin-bottom: auto;
-    /* margin-top: 33px; */
+    margin: auto;
     font-weight: 900;
     font-size: 30px;
     line-height: 36px;
     color: #000000;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .container .block{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .container .block .block-container{
