@@ -62,6 +62,7 @@
         dir2: window.localStorage.getItem("dir2"),
         dir3: window.localStorage.getItem("dir3"),
         dir4: window.localStorage.getItem("dir4"),
+
       }
     },
     setup() {

@@ -5,23 +5,23 @@
         다시 한번 생각해봐~ </div>
     <div class="block">
         <div class="block-container">
-            <div :class="{'left-item' : selectBox1 == 0, 'left-item-click' : selectBox1 == 1 && dir1 == 1, 'left-item-unclick' : selectBox1 == 1 && dir1 == 2}" @click="clickEvent1(1, 1)"> E </div> 
-            <div :class="{'right-item' : selectBox1 == 0, 'right-item-click': selectBox1 == 1 && dir1 == 2, 'right-item-unclick' : selectBox1 == 1 && dir1 == 1}" @click="clickEvent1(2, 1)"> I </div>
+            <div :class="{'left-item' : selectBox1 == -1, 'left-item-click' : selectBox1 == 1 && dir1 == 1, 'left-item-unclick' : selectBox1 == 1 && dir1 == 2}" @click="clickEvent1(1, 1)"> E </div> 
+            <div :class="{'right-item' : selectBox1 == 1, 'right-item-red': selectBox1 == -1, 'right-item-click': selectBox1 == 1 && dir1 == 2, 'right-item-unclick' : selectBox1 == 1 && dir1 == 1}" @click="clickEvent1(2, 1)"> I </div>
             <div class= "text-item"> 영감은 버들시장에서 유명 <p /> 한 초특급 인싸여~ </div>
         </div>
         <div class="block-container"> 
-            <div :class="{'left-item' : selectBox2 == 0, 'left-item-click' : selectBox2 == 1 && dir2 == 1, 'left-item-unclick' : selectBox2 == 1 && dir2 == 2}" @click="clickEvent2(1, 1)"> S </div> 
-            <div :class="{'right-item' : selectBox2 == 0, 'right-item-click': selectBox2 == 1 && dir2 == 2, 'right-item-unclick' : selectBox2 == 1 && dir2 == 1}" @click="clickEvent2(2, 1)"> N </div>
+            <div :class="{'left-item' : selectBox2 == -1, 'left-item-click' : selectBox2 == 1 && dir2 == 1, 'left-item-unclick' : selectBox2 == 1 && dir2 == 2}" @click="clickEvent2(1, 1)"> S </div> 
+            <div :class="{'right-item' : selectBox2 == 1, 'right-item-red': selectBox2 == -1, 'right-item-click': selectBox2 == 1 && dir2 == 2, 'right-item-unclick' : selectBox2 == 1 && dir2 == 1}" @click="clickEvent2(2, 1)"> N </div>
             <div class= "text-item"> 현실적인 얘기만 좋아혀! <p /> ㅡㅡ </div>
         </div>
         <div class="block-container"> 
-            <div :class="{'left-item' : selectBox3 == 0, 'left-item-click' : selectBox3 == 1 && dir3 == 1, 'left-item-unclick' : selectBox3 == 1 && dir3 == 2}" @click="clickEvent3(1, 1)"> F </div> 
-            <div :class="{'right-item' : selectBox3 == 0, 'right-item-click': selectBox3 == 1 && dir3 == 2, 'right-item-unclick' : selectBox3 == 1 && dir3 == 1}" @click="clickEvent3(2, 1)"> T </div> 
+            <div :class="{'left-item' : selectBox3 == 1, 'left-item-red': selectBox3 == -1, 'left-item-click' : selectBox3 == 1 && dir3 == 1, 'left-item-unclick' : selectBox3 == 1 && dir3 == 2}" @click="clickEvent3(1, 1)"> F </div> 
+            <div :class="{'right-item' : selectBox3 == -1, 'right-item-click': selectBox3 == 1 && dir3 == 2, 'right-item-unclick' : selectBox3 == 1 && dir3 == 1}" @click="clickEvent3(2, 1)"> T </div> 
             <div class= "text-item">피도 눈물도 없는 영감.. <p /> 공감능력 0% 예상헌다잉 </div>
         </div>
         <div class="block-container"> 
-            <div :class="{'left-item' : selectBox4 == 0, 'left-item-click' : selectBox4 == 1 && dir4 == 1, 'left-item-unclick' : selectBox4 == 1 && dir4 == 2}" @click="clickEvent4(1, 1)"> J </div> 
-            <div :class="{'right-item' : selectBox4 == 0, 'right-item-click': selectBox4 == 1 && dir4 == 2, 'right-item-unclick' : selectBox4 == 1 && dir4 == 1}" @click="clickEvent4(2, 1)"> P </div> 
+            <div :class="{'left-item' : selectBox4 == -1, 'left-item-click' : selectBox4 == 1 && dir4 == 1, 'left-item-unclick' : selectBox4 == 1 && dir4 == 2}" @click="clickEvent4(1, 1)"> J </div> 
+            <div :class="{'right-item' : selectBox4 == 1, 'right-item-red': selectBox4 == -1, 'right-item-click': selectBox4 == 1 && dir4 == 2, 'right-item-unclick' : selectBox4 == 1 && dir4 == 1}" @click="clickEvent4(2, 1)"> P </div> 
             <div class= "text-item"> 영감은 아주 계획적이고 <p /> 철저해. 가끔은 융통성 없 <p />지만.. 나와 달라서 반했지 <p />
              뭐~ </div>
         </div>
@@ -39,10 +39,10 @@ export default {
             dir2: window.localStorage.getItem("dir2"),
             dir3: window.localStorage.getItem("dir3"),
             dir4: window.localStorage.getItem("dir4"),
-            selectBox1: 1,
-            selectBox2: 1,
-            selectBox3: 1,
-            selectBox4: 1,
+            selectBox1: window.localStorage.getItem("one"),
+            selectBox2: window.localStorage.getItem("two"),
+            selectBox3: window.localStorage.getItem("three"),
+            selectBox4: window.localStorage.getItem("four"),
         }
     },
     methods: {
@@ -122,6 +122,15 @@ export default {
     font-size: 35px;
     line-height: 70px;
 }
+.left-item-red{
+    width: 55px;
+    height: 70px;
+    box-shadow: 0px 2.83321px 6.37471px rgba(0, 0, 0, 0.05);
+    border-radius: 6.55607px;
+    font-size: 35px;
+    line-height: 70px;
+    color: #F66D6D;
+}
 
 .left-item-click{
     width: 55px;
@@ -154,7 +163,16 @@ export default {
     margin-left: 23px;
     line-height: 70px;
 }
-
+.right-item-red{
+    width: 55px;
+    height: 70px;
+    box-shadow: 0px 2.83321px 6.37471px rgba(0, 0, 0, 0.05);
+    border-radius: 6.55607px;
+    font-size: 35px;
+    margin-left: 23px;
+    line-height: 70px;
+    color: #F66D6D;
+}
 .right-item-click{
     width: 55px;
     height: 70px;

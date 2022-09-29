@@ -49,7 +49,7 @@
   import PulseLoader2 from '../components/Spinner2';
 
   export default {
-    name: "Event4",
+    name: "Event8",
     components: {
       Swiper,
       SwiperSlide,
@@ -81,9 +81,9 @@
     mounted() {
       setTimeout(() => {
         if(this.dir1 == 2 && this.dir2 == 2 && this.dir3 == 1 && this.dir4 == 2){
-          this.$router.push('Event8');
+          this.$router.push('Event9_1');
         }
-        else this.$router.push('Event8');
+        else this.$router.push('Event9');
       }, 3000);
     },
   };
