@@ -66,7 +66,17 @@ export default {
             window.localStorage.setItem('dir2', this.dir2);
             window.localStorage.setItem('dir3', this.dir3);
             window.localStorage.setItem('dir4', this.dir4);
-            console.log(this.dir1 + " " + this.dir2 + " " + this.dir3 + " " + this.dir4);
+
+            const one = this.dir1 == 2 ? -1 : 1;
+            const two = this.dir2 == 2 ? -1 : 1;
+            const three = this.dir3 == 1 ? -1 : 1;
+            const four = this.dir4 == 2 ? -1 : 1;
+            console.log(one + " " + two + " " + three + " " + four);
+            
+            window.localStorage.setItem('one', one);
+            window.localStorage.setItem('two', two);
+            window.localStorage.setItem('three', three);
+            window.localStorage.setItem('four', four);
             this.$router.push('Event4');
         }
     },
