@@ -16,6 +16,8 @@ export default {
 
 <style scoped>
 .container{
+    max-width: 500vw;
+    min-height: 100vh;
     height: 100%;
     width: 100%;
     background-image: url("../assets/storyPapa.png");

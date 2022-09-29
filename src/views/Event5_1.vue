@@ -1,18 +1,20 @@
 <template>
 <div class="container">
     <div class = "icon"> </div>
-    <div class="text"> 정답~! <p />
+    <div class="text"> 정답~! <br />
         오순할멈은 어려울껴~ </div>
-    <div class = "mid-icon"> </div>
-    <div class = "mid-content">
-        <div class ="content-item"> E </div>
-        <div class ="content-item"> S </div>
-        <div class ="content-item"> T </div>
-        <div class ="content-item"> J </div>
-    </div>
-    <div class = "buttom-content"> 
-        <div class="buttom-img"> </div>
-        <div class="buttom-text"> 너 천재구나? </div>
+    <div class = "content">
+        <div class = "mid-icon"> </div>
+        <div class = "mid-content">
+            <div class ="content-item"> E </div>
+            <div class ="content-item"> S </div>
+            <div class ="content-item"> T </div>
+            <div class ="content-item"> J </div>
+        </div>
+        <div class = "buttom-content"> 
+            <div class="buttom-img"> </div>
+            <div class="buttom-text"> 너 천재구나? </div>
+        </div>
     </div>
     <router-link to= "/event6" class="button"> 다음으로 </router-link>
 </div>
@@ -50,8 +52,8 @@ export default {
 .container .icon{
     height: 35px;
     width: 35px;
-    margin-left: 19px;
-    margin-top: 53px;
+    margin-left: 15px;
+    margin-top: 15px;
     background-image: url("../assets/backIcon.png");
 }
 .container .text{
@@ -59,26 +61,33 @@ export default {
     font-size: 30px;
     text-align: center;
     color: #000000;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Pretendard-Regular';
     line-height: 100%;
     margin-top: 33px;
 }
-.container .mid-icon{
+
+.container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    flex: 1;
+}
+.container .content .mid-icon{
     width: 72px;
     height: 72px;
-    margin-top: 19px;
     margin-left: auto;
     margin-right: auto;
     background-image: url("../assets/midIcon.png");
 }
 
-.container .mid-content{
+.container .content .mid-content{
     display: flex;
-    margin-left: 37px;
-    margin-right: 37px;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
-.container .mid-content .content-item{
+.container .content .mid-content .content-item{
     margin-top: 27px;
     width: 69px;
     height: 87px;
@@ -97,15 +106,17 @@ export default {
     margin-right: auto;
 }
 
-.container .buttom-content{
-    margin-top: 56px;
+.container .content .buttom-content{
+    margin-bottom: 57px;
     display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-top: 50px;
 }
 
-.container .buttom-content .buttom-img{
+.container .content .buttom-content .buttom-img{
     width: 170px;
     height: 201px;
-    margin-left: 51px;
     background-image: url("../assets/papa.png");
 }
 
