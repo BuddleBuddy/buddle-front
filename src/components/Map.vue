@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="root">
     <div id="map"></div>
   </div>
 </template>
@@ -34,7 +34,8 @@ export default {
       const container = document.getElementById("map");
       const options = {
         center: new kakao.maps.LatLng(37.49200194793989, 126.84315016560106),
-        level: 4,
+        level: 3,
+        draggable: false,
       };
 
       //지도 객체를 등록합니다.
@@ -42,7 +43,6 @@ export default {
       this.map = new kakao.maps.Map(container, options);
       this.displayMarker(this.defaultMarker);
       this.displayInfoWindowMarket();
-      this.displayInfoWindowStation();
     },
 
     displayMarker(markerPositions) {
@@ -89,25 +89,6 @@ export default {
         removable: iwRemoveable,
       });
     },
-
-    displayInfoWindowStation() {
-      if (this.infowindow && this.infowindow.getMap()) {
-        //이미 생성한 인포윈도우가 있기 때문에 지도 중심좌표를 인포윈도우 좌표로 이동시킨다.
-        this.map.setCenter(this.infowindow.getPosition());
-        return;
-      }
-
-      var iwContent = '<div style="padding:5px;">1호선 오류동역</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-          iwPosition = new kakao.maps.LatLng(37.49399518335232, 126.84467258346973), //인포윈도우 표시 위치입니다
-          iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
-
-      this.infowindow = new kakao.maps.InfoWindow({
-        map: this.map, // 인포윈도우가 표시될 지도
-        position: iwPosition,
-        content: iwContent,
-        removable: iwRemoveable,
-      });
-    },
   },
 };
 
@@ -119,8 +100,8 @@ export default {
 <style scoped>
 
 #map {
-  width: 500px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   margin: auto;
   overflow: auto;
   background-color: white;

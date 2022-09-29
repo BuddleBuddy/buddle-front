@@ -2,7 +2,7 @@
   <div class="root">
     <img class="intro" alt="intro" src="../assets/intro.png">
   </div>
-  <div>
+  <div class="map">
     <KakaoMap/>
   </div>
   <div class="location">
@@ -31,7 +31,7 @@ export default {
 <style scoped>
 .root {
   max-width: 500px;
-  min-height: 100px;
+  height: 100%;
   overflow: auto;
   background-color: #ffffff;
 }
@@ -42,8 +42,18 @@ export default {
 }
 
 .location{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 10px;
   text-align: left ;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /*margin-left: 10px;
+  margin-right: 10px;*/
 }
 </style>

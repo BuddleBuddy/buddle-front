@@ -28,7 +28,8 @@ body{
   text-align: center;
   max-width: 500px;
   min-height: 100vh;
-  height: 100%;
+  /*height: 100%;*/
+  width: 100%;
   margin-left: auto; 
   margin-right: auto;
   color: #2c3e50;

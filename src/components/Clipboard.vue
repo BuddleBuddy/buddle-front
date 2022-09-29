@@ -1,7 +1,7 @@
 <template>
   <a @click="copyToClipBoard()">
     <img src="../assets/icon-clipboard.png" />
-    <div id="textArea" hidden>front.buddlebuddy.shop</div>
+    <div id="textArea" hidden>https://front.buddlebuddy.shop</div>
   </a>
 </template>
 
