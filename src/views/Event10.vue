@@ -20,6 +20,7 @@
         <div class="third"> 
             <img class="vector" alt="vector" src="../assets/vector.png">
             <div class="txt"> 공유하기 </div>
+            <div class="clip"> <Clipboard/> </div>
         </div>
         <div class="fourth">
             <router-link to= "/event11" class="first-item"> 선물 받으러 가기! </router-link>
@@ -29,9 +30,10 @@
 </template>
 
 <script>
+import Clipboard from "@/components/Clipboard";
 export default {
   name: "Event10",
-
+  components: {Clipboard},
 };
 </script>
 

@@ -1,16 +1,16 @@
 <template>
-<div class="container" @click="click()">
-</div>
+    <div class="container" @click="click()">
+    </div>
 </template>
 
 <script>
 export default {
-  name: "Event2_1",
+  name: "Event6",
   methods: {
     click(){
-      this.$router.push('Event2');
+      this.$router.push('Event7');
     }
-  }
+}
 };
 </script>
 
@@ -18,7 +18,7 @@ export default {
 .container{
     height: 100%;
     width: 100%;
-    background-image: url("../assets/familyStory.png");
+    background-image: url("../assets/storyPapa.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

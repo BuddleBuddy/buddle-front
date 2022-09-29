@@ -25,13 +25,13 @@
             <div class= "text-item"> 할아버지는 데이트 일주일<p /> 전부터 1부터 10까지 계획 <p />을 다 세워놓은 <p /> 계획적인 남자! </div>
         </div>
     </div>
-    <router-link to= "/event4" class="button"> 정답 제출하기 </router-link>
+    <div class="button" @click="click()"> 정답 제출하기 </div>
 </div>
 </template>
 
 <script>
 export default {
-    name: "Event2",
+    name: "Event3",
     data(){
         return{
             selectBox1: 0,
@@ -60,6 +60,14 @@ export default {
         clickEvent4(dir, num){
             this.dir4 = dir;
             this.selectBox4 = num;
+        },
+        click(){
+            window.localStorage.setItem('dir1', this.dir1);
+            window.localStorage.setItem('dir2', this.dir2);
+            window.localStorage.setItem('dir3', this.dir3);
+            window.localStorage.setItem('dir4', this.dir4);
+            console.log(this.dir1 + " " + this.dir2 + " " + this.dir3 + " " + this.dir4);
+            this.$router.push('Event4');
         }
     },
     props: true
@@ -67,7 +75,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
 
 @font-face {
     font-family: 'Pretendard-Regular';

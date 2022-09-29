@@ -35,14 +35,14 @@ export default {
   name: "Event5",
     data(){
         return{
-            selectBox1: 0,
-            dir1: 0,
-            selectBox2: 0,
-            dir2: 0,
-            selectBox3: 0,
-            dir3: 0,
-            selectBox4: 0,
-            dir4: 0,
+            dir1: window.localStorage.getItem("dir1"),
+            dir2: window.localStorage.getItem("dir2"),
+            dir3: window.localStorage.getItem("dir3"),
+            dir4: window.localStorage.getItem("dir4"),
+            selectBox1: 1,
+            selectBox2: 1,
+            selectBox3: 1,
+            selectBox4: 1,
         }
     },
     methods: {
@@ -76,7 +76,6 @@ export default {
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
 .container{
     background-color: #FFFFFF;
@@ -98,7 +97,7 @@ export default {
     line-height: 36px;
     text-align: center;
     color: #000000;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Pretendard-Regular';
     line-height: 1;
 }
 
@@ -187,7 +186,7 @@ export default {
     font-size: 16px;    
     line-height: 1px;
     text-align: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Pretendard-Regular';
 }
 .container .button{
     width: 330px;

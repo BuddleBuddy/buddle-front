@@ -56,6 +56,14 @@
       'PulseLoader1': PulseLoader1,
       'PulseLoader2': PulseLoader2
     },
+    data(){
+      return{
+        dir1: window.localStorage.getItem("dir1"),
+        dir2: window.localStorage.getItem("dir2"),
+        dir3: window.localStorage.getItem("dir3"),
+        dir4: window.localStorage.getItem("dir4"),
+      }
+    },
     setup() {
       const onSwiper = (swiper) => {
         console.log(swiper);
@@ -69,14 +77,15 @@
         modules: [Pagination, EffectFade, Autoplay, Parallax],
       };
     },
+
     mounted() {
       setTimeout(() => {
-        this.$router.replace('Event5')
+        if(this.dir1 == 1 && this.dir2 == 1 && this.dir3 == 2 && this.dir4 == 1){
+          this.$router.push('Event5_1');
+        }
+        else this.$router.push('Event5');
       }, 3000);
     },
-    methods: {
-
-    }
   };
 </script>
 

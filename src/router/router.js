@@ -9,9 +9,11 @@ import Event3 from "../views/Event3.vue";
 import Event4 from "../views/Event4.vue";
 import Event5 from "../views/Event5.vue";
 import Event5_1 from "../views/Event5_1.vue";
+import Event6 from "../views/Event6.vue";
 import Event7 from "../views/Event7.vue";
 import Event8 from "../views/Event8.vue";
 import Event9 from "../views/Event9.vue";
+import Event9_1 from "../views/Event9_1.vue";
 import Event10 from "../views/Event10.vue";
 import Event11 from "../views/Event11.vue";
 import Event12 from "../views/Event12.vue";
@@ -80,6 +82,10 @@ const routes = [
               component: Event5_1,
             },
             {
+              path: "/event6",
+              component: Event6,
+            },
+            {
               path: "/event7",
               component: Event7,
             },
@@ -90,6 +96,10 @@ const routes = [
             {
               path: "/event9",
               component: Event9,
+            },
+            {
+              path: "/event9_1",
+              component: Event9_1,
             },
             {
               path: "/event10",

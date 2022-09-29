@@ -1,12 +1,16 @@
 <template>
-<div class="container">
-    <router-link to= "/event3" class="root"> </router-link>
+<div class="container" @click="click()">
 </div>
 </template>
 
 <script>
 export default {
-  name: "Event2"
+  name: "Event2",
+  methods: {
+    click(){
+      this.$router.push('Event3');
+    }
+}
 };
 </script>
 
