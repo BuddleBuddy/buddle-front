@@ -1,14 +1,14 @@
 <template>
-<div class="container" @click="click()">
-</div>
+    <div class="container" @click="click()">
+    </div>
 </template>
 
 <script>
 export default {
-  name: "Event2",
+  name: "Event6",
   methods: {
     click(){
-      this.$router.push('Event3');
+      this.$router.push('Event7');
     }
 }
 };
@@ -16,8 +16,6 @@ export default {
 
 <style scoped>
 .container{
-    max-width: 500vw;
-    min-height: 100vh;
     height: 100%;
     width: 100%;
     background-image: url("../assets/storyPapa.png");

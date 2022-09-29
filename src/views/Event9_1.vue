@@ -1,28 +1,29 @@
 <template>
 <div class="container">
-    <div class = "icon"> </div>
-    <div class="text"> 정답~! <br />
-        오순할멈은 어려울껴~ </div>
-    <div class = "content">
+
+    <div class = "wrap-content">
+        <div class = "icon"> </div>
+        <div class="text"> 정답~! <p />
+            정말 천재구나?? </div>
         <div class = "mid-icon"> </div>
         <div class = "mid-content">
-            <div class ="content-item"> E </div>
-            <div class ="content-item"> S </div>
-            <div class ="content-item"> T </div>
-            <div class ="content-item"> J </div>
+            <div class ="content-item"> I </div>
+            <div class ="content-item"> N </div>
+            <div class ="content-item"> F </div>
+            <div class ="content-item"> P </div>
         </div>
         <div class = "buttom-content"> 
             <div class="buttom-img"> </div>
-            <div class="buttom-text"> 너 천재구나? </div>
+            <div class="buttom-text"> 내가 바로 <p /> 열정적인 중재자? </div>
         </div>
     </div>
-    <router-link to= "/event6" class="button"> 다음으로 </router-link>
+    <router-link to= "/event10" class="button"> 다음으로 </router-link>
 </div>
 </template>
 
 <script>
 export default {
-  name: "Event5_1"
+  name: "Event9_1"
 };
 </script>
 
@@ -49,14 +50,21 @@ export default {
     height: 100%;
     width: 100%;
 }
-.container .icon{
+
+.container .wrap-content{
+    flex-basis: auto;
+    margin-bottom: 20px;
+}
+
+.container .wrap-content .icon{
     height: 35px;
     width: 35px;
-    margin-left: 15px;
-    margin-top: 15px;
+    margin-left: 19px;
+    margin-top: 53px;
     background-image: url("../assets/backIcon.png");
 }
-.container .text{
+
+.container .wrap-content .text{
     font-weight: 900;
     font-size: 30px;
     text-align: center;
@@ -65,29 +73,22 @@ export default {
     line-height: 100%;
     margin-top: 33px;
 }
-
-.container .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    flex: 1;
-}
-.container .content .mid-icon{
+.container  .wrap-content .mid-icon{
     width: 72px;
     height: 72px;
+    margin-top: 19px;
     margin-left: auto;
     margin-right: auto;
     background-image: url("../assets/midIcon.png");
 }
 
-.container .content .mid-content{
+.container .wrap-content .mid-content{
     display: flex;
-    /* margin-left: auto;
-    margin-right: auto; */
+    margin-left: 37px;
+    margin-right: 37px;
 }
 
-.container .content .mid-content .content-item{
+.container  .wrap-content .mid-content .content-item{
     margin-top: 27px;
     width: 69px;
     height: 87px;
@@ -106,18 +107,21 @@ export default {
     margin-right: auto;
 }
 
-.container .content .buttom-content{
-    margin-bottom: 57px;
+.container  .wrap-content .buttom-content{
+    margin-top: 56px;
     display: flex;
-    flex: 1;
-    justify-content: center;
-    margin-top: 50px;
+}
+.container .wrap-content .buttom-content .buttom-text{
+    font-family: 'Pretendard-Regular';
+    line-height: 1px;
+    text-align: left;
 }
 
-.container .content .buttom-content .buttom-img{
-    width: 170px;
-    height: 201px;
-    background-image: url("../assets/papa.png");
+.container .wrap-content .buttom-content .buttom-img{
+    width: 208px;
+    height: 282px;
+    margin-left: 51px;
+    background-image: url("../assets/grandma.png");
 }
 
 .container .button{

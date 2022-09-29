@@ -1,43 +1,33 @@
 <template>
     <div class="container">
-            <div class="items">
             <div id = "title"> 응모완료! </div>
             <div id = "content"> 당첨시 이메일을 통해 안내드릴게요! </div>
             <router-link to= "/Contest" class="start"> 홈으로 가기 </router-link>
-        </div>
     </div>
 </template>
 
 <script>
 export default {
-  name: "Event1"
+  name: "Event12"
 };
 </script>
 
 <style scoped>
 .container {
-    max-width: 500px;
-    min-height: 100vh;
-    height: 100%;
-    /* display: flex;
-    flex-direction: column; */
-    background-color: #FFFFFF;
-    justify-content: center;
-    
-    /* margin-top: 50%; */
-    /* margin-bottom: 50%; */
-}
-
-.container .items{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
 }
+
+
 .container #title{
     color: #191F28;
     font-weight: 700;
     font-size: 23px;   
+    margin-top: 50%;
 }
 
 .container #content{
@@ -55,10 +45,9 @@ export default {
     background-color: #D2FBC4;
     border-radius: 20px;
     text-decoration: none;
-    /* margin-top: 29px; */
+    margin-top: 28px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
 }
 
 </style>

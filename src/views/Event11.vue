@@ -150,10 +150,13 @@ select{
 }
 
 .container .button{
+    position: absolute;
     width: 330px;
     height: 75px;
+    bottom: 50px;
+    left: 50%;
+      transform: translate(-50%, 0%);
     line-height: 75px;
-    margin-top: 217px;
     background-color: #D2FBC4;
     border-radius: 25px;
     color: #0A7800;

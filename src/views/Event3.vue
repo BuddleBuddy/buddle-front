@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     <div class = "icon"> </div>
-    <div class="text"> 도손 할아범의 <p />
+    <div class="text"> 도손 할아범의 <br>
         mbti는 뭘까?</div>
     <div class="block">
         <div class="block-container">
@@ -25,13 +25,13 @@
             <div class= "text-item"> 할아버지는 데이트 일주일<p /> 전부터 1부터 10까지 계획 <p />을 다 세워놓은 <p /> 계획적인 남자! </div>
         </div>
     </div>
-    <router-link to= "/event4" class="button"> 정답 제출하기 </router-link>
+    <div class="button" @click="click()"> 정답 제출하기 </div>
 </div>
 </template>
 
 <script>
 export default {
-    name: "Event2",
+    name: "Event3",
     data(){
         return{
             selectBox1: 0,
@@ -60,6 +60,24 @@ export default {
         clickEvent4(dir, num){
             this.dir4 = dir;
             this.selectBox4 = num;
+        },
+        click(){
+            window.localStorage.setItem('dir1', this.dir1);
+            window.localStorage.setItem('dir2', this.dir2);
+            window.localStorage.setItem('dir3', this.dir3);
+            window.localStorage.setItem('dir4', this.dir4);
+
+            const one = this.dir1 == 2 ? -1 : 1;
+            const two = this.dir2 == 2 ? -1 : 1;
+            const three = this.dir3 == 1 ? -1 : 1;
+            const four = this.dir4 == 2 ? -1 : 1;
+            console.log(one + " " + two + " " + three + " " + four);
+            
+            window.localStorage.setItem('one', one);
+            window.localStorage.setItem('two', two);
+            window.localStorage.setItem('three', three);
+            window.localStorage.setItem('four', four);
+            this.$router.push('Event4');
         }
     },
     props: true
@@ -67,12 +85,10 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
-
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -86,27 +102,23 @@ export default {
 .container .icon{
     height: 35px;
     width: 35px;
-    margin-left: 19px;
-    margin-top: 53px;
+    margin-left: 15px;
+    margin-top: 15px;
     background-image: url("../assets/backIcon.png");
 }
 .container .text{
-    margin-top: auto;
-    margin-bottom: auto;
-    /* margin-top: 33px; */
-    font-weight: 900;
+    font-family: 'Pretendard-Regular';
     font-size: 30px;
     line-height: 36px;
     color: #000000;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .container .block{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
 }
 
 .container .block .block-container{

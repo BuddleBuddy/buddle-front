@@ -1,6 +1,6 @@
 <template>
     <div class="event1">
-        <router-link to= "/event2" class="start"> 도전하기 </router-link>
+        <router-link to= "/event2_1" class="start"> 도전하기 </router-link>
     </div>
 </template>
 
@@ -22,7 +22,6 @@ export default {
   max-width: 500px;
   min-height: 100vh;
   height: 100%;
-  width: 100%;
   background-image: url("../assets/hbti.png");
   background-repeat: no-repeat;
   background-size: cover;
