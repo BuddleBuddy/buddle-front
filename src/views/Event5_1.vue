@@ -13,7 +13,12 @@
         </div>
         <div class = "buttom-content"> 
             <div class="buttom-img"> </div>
-            <div class="buttom-text"> 너 천재구나? </div>
+            <div class="buttom-text"> 그려!!
+                내가 바로 <br>
+                엄격한 관리자 <br>
+                형인 <br>
+                ESTJ여~~
+            </div>
         </div>
     </div>
     <router-link to= "/event6" class="button"> 다음으로 </router-link>
@@ -34,20 +39,15 @@ export default {
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
 .container{
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
 }
 .container .icon{
     height: 35px;
@@ -57,20 +57,19 @@ export default {
     background-image: url("../assets/backIcon.png");
 }
 .container .text{
-    font-weight: 900;
+    font-weight: 700;
     font-size: 30px;
+    line-height: 36px;
     text-align: center;
     color: #000000;
-    font-family: 'Pretendard-Regular';
-    line-height: 100%;
     margin-top: 33px;
 }
 
 .container .content{
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
     flex: 1;
 }
 .container .content .mid-icon{
@@ -107,10 +106,8 @@ export default {
 }
 
 .container .content .buttom-content{
-    margin-bottom: 57px;
     display: flex;
-    flex: 1;
-    justify-content: center;
+    margin-bottom: 57px;
     margin-top: 50px;
 }
 
@@ -118,6 +115,10 @@ export default {
     width: 170px;
     height: 201px;
     background-image: url("../assets/papa.png");
+}
+
+.container .content .buttom-content .buttom-text{
+    text-align: left;
 }
 
 .container .button{

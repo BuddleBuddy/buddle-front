@@ -1,10 +1,9 @@
 <template>
 <div class="container">
-
-    <div class = "wrap-content">
-        <div class = "icon"> </div>
-        <div class="text"> 정답~! <p />
-            정말 천재구나?? </div>
+    <div class = "icon"> </div>
+    <div class="text"> 정답~! <br />
+        정말 천재구나?? </div>
+    <div class = "content">
         <div class = "mid-icon"> </div>
         <div class = "mid-content">
             <div class ="content-item"> I </div>
@@ -14,7 +13,9 @@
         </div>
         <div class = "buttom-content"> 
             <div class="buttom-img"> </div>
-            <div class="buttom-text"> 내가 바로 <p /> 열정적인 중재자? </div>
+            <div class="buttom-text"> 내가 바로 <br>
+                열정적인 중재자?
+            </div>
         </div>
     </div>
     <router-link to= "/event10" class="button"> 다음으로 </router-link>
@@ -35,60 +36,52 @@ export default {
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
 .container{
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
 }
-
-.container .wrap-content{
-    flex-basis: auto;
-    margin-bottom: 20px;
-}
-
-.container .wrap-content .icon{
+.container .icon{
     height: 35px;
     width: 35px;
-    margin-left: 19px;
-    margin-top: 53px;
+    margin-left: 15px;
+    margin-top: 15px;
     background-image: url("../assets/backIcon.png");
 }
-
-.container .wrap-content .text{
-    font-weight: 900;
+.container .text{
+    font-weight: 700;
     font-size: 30px;
+    line-height: 36px;
     text-align: center;
     color: #000000;
-    font-family: 'Pretendard-Regular';
-    line-height: 100%;
     margin-top: 33px;
 }
-.container  .wrap-content .mid-icon{
+
+.container .content{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.container .content .mid-icon{
     width: 72px;
     height: 72px;
-    margin-top: 19px;
     margin-left: auto;
     margin-right: auto;
     background-image: url("../assets/midIcon.png");
 }
 
-.container .wrap-content .mid-content{
+.container .content .mid-content{
     display: flex;
-    margin-left: 37px;
-    margin-right: 37px;
 }
 
-.container  .wrap-content .mid-content .content-item{
+.container .content .mid-content .content-item{
     margin-top: 27px;
     width: 69px;
     height: 87px;
@@ -107,26 +100,26 @@ export default {
     margin-right: auto;
 }
 
-.container  .wrap-content .buttom-content{
-    margin-top: 56px;
+.container .content .buttom-content{
     display: flex;
-}
-.container .wrap-content .buttom-content .buttom-text{
-    font-family: 'Pretendard-Regular';
-    line-height: 1px;
-    text-align: left;
+    margin-bottom: 57px;
+    margin-top: 50px;
 }
 
-.container .wrap-content .buttom-content .buttom-img{
+.container .content .buttom-content .buttom-img{
     width: 208px;
     height: 282px;
-    margin-left: 51px;
     background-image: url("../assets/grandma.png");
 }
 
+.container .content .buttom-content .buttom-text{
+    text-align: left;
+}
+
 .container .button{
-    position: absolute;
-    bottom: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
     width: 330px;
     height: 75px;
     background-color: #D2FBC4;
@@ -134,10 +127,7 @@ export default {
     line-height: 75px;
     font-weight: 600;
     font-size: 25px;
-    left: 50%;
-    transform: translate(-50%, 0%);
     text-decoration: none;
     color: #0A7800;
-    font-family: 'Pretendard-Regular';
 }
 </style>

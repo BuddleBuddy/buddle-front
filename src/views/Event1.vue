@@ -11,13 +11,6 @@ export default {
 </script>
 
 <style scoped>
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-}
-
 .event1 {
   max-width: 500px;
   min-height: 100vh;
@@ -37,8 +30,8 @@ export default {
   box-shadow: 0px 1px 11px rgba(232, 232, 232, 0.1);
   border-radius: 25px;
   line-height: 75px;
-  font-family: 'Pretendard-Regular';
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: 600;
   left: 50%;
   transform: translate(-50%, 0%);
   text-decoration: none;

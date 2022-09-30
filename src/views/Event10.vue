@@ -1,9 +1,9 @@
 <template>
     <div class="root">
         <div class = "icon"> </div>
-        <div class="title"> 오~ 축하혀~ <p /> 우리 MBTI를 <p /> 모두 맞혔네? </div>
+        <div class="title"> 오~ 축하혀~ <br> 우리 MBTI를 <br> 모두 맞혔네? </div>
         <div class="img"> </div>
-        <div class="mid-text"> 우리 강아지~ <p /> 다 맞췄으니 선물을 줘야겠구나! </div>
+        <div class="mid-text"> 우리 강아지~ <br> 다 맞췄으니 선물을 줘야겠구나! </div>
         <div class="second"> 
             <div class="title"> 버들부부의 선물보따리 </div>
             <div class="set">
@@ -38,12 +38,6 @@ export default {
 </script>
 
 <style scoped>
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
 .root {
     max-width: 500px;
     min-height: 100vh;
@@ -54,8 +48,8 @@ export default {
 .root .icon{
     height: 35px;
     width: 35px;
-    margin-left: 19px;
-    margin-top: 53px;
+    margin-left: 15px;
+    margin-top: 15px;
     background-image: url("../assets/backIcon.png");
 }
 
@@ -63,9 +57,6 @@ export default {
     margin-top: 60px;
     width: 180px;
     height: 108px;
-    font-family: 'Pretendard-Regular';
-    font-style: normal;
-    line-height: 1px;
     font-size: 30px;
     font-weight: 900;
     margin-left: auto;
@@ -84,7 +75,6 @@ export default {
 
 .root .mid-text{
     margin-top: 53px;
-    font-family: 'Pretendard-Regular';
     font-style: normal;
     font-weight: 600;  
     font-size: 21px; 
@@ -99,8 +89,6 @@ export default {
 .root .second .title{
     width: 310px;
     height: 32px;
-    font-family: 'Pretendard-Regular';
-    font-style: normal;
     font-weight: 600;
     font-size: 21px;
     text-align: center;
@@ -125,7 +113,6 @@ export default {
 }
 
 .root .second .set .item .gift1{
-    /* position: relative; */
     width: 141px;
     height: 202px;
 }
@@ -147,8 +134,6 @@ export default {
     flex-direction: column;
     margin-top: 97px;
     margin-bottom: 203px;
-    /* margin-left: 25px;
-    margin-right: 25px; */
 }
 
 .root .third .txt{
@@ -159,6 +144,9 @@ export default {
 .root .fourth{
     display: flex;
     flex-direction: column;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
 }
 .root .fourth .first-item{
     width: 330px;
@@ -178,7 +166,6 @@ export default {
     width: 330px;
     height: 75px;
     margin-top: 20px;
-    font-family: 'Pretendard-Regular';
     color: #0A7800;
     font-size: 25px;
     line-height: 75px;
