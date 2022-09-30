@@ -1,29 +1,28 @@
 <template>
 <div class="container">
     <div class = "icon"> </div>
-    <div class="text"> 땡! <p />
-        오순 할멈 성격을 잘 봐봐! </div>
+    <div class="text"> 땡! <br> </div>
+    <div class="text2"> 다시 한번 생각해봐~ </div>
     <div class="block">
         <div class="block-container">
             <div :class="{'left-item' : selectBox1 == 0, 'left-item-red' : selectBox1 == -1, 'left-item-click' : selectBox1 == 1 && dir1 == 1, 'left-item-unclick' : selectBox1 == 1 && dir1 == 2}" @click="clickEvent1(1, 1)"> E </div> 
             <div :class="{'right-item' : selectBox1 == 0, 'right-item-click': selectBox1 == 1 && dir1 == 2, 'right-item-unclick' : selectBox1 == 1 && dir1 == 1}" @click="clickEvent1(2, 1)"> I </div>
-            <div class= "text-item"> 할머니의 취미는 카페에서 <p /> 혼자 독서하시는 것! </div>
+            <div class= "text-item"> 할머니의 취미는 카페에서 <br> 혼자 독서하시는 것! </div>
         </div>
         <div class="block-container"> 
             <div :class="{'left-item' : selectBox2 == 0, 'left-item-red' : selectBox2 == -1, 'left-item-click' : selectBox2 == 1 && dir2 == 1, 'left-item-unclick' : selectBox2 == 1 && dir2 == 2}" @click="clickEvent2(1, 1)"> S </div> 
             <div :class="{'right-item' : selectBox2 == -1, 'right-item-click': selectBox2 == 1 && dir2 == 2, 'right-item-unclick' : selectBox2 == 1 && dir2 == 1}" @click="clickEvent2(2, 1)"> N </div>
-            <div class= "text-item"> 할머니는 종종 생각에 잘 잠 <p /> 기는 편! </div>
+            <div class= "text-item"> 할머니는 종종 생각에 잘 잠 <br> 기는 편! </div>
         </div>
         <div class="block-container"> 
             <div :class="{'left-item' : selectBox3 == -1, 'left-item-click' : selectBox3 == 1 && dir3 == 1, 'left-item-unclick' : selectBox3 == 1 && dir3 == 2}" @click="clickEvent3(1, 1)"> F </div> 
             <div :class="{'right-item' : selectBox3 == 0, 'right-item-red' : selectBox3 == -1, 'right-item-click': selectBox3 == 1 && dir3 == 2, 'right-item-unclick' : selectBox3 == 1 && dir3 == 1}" @click="clickEvent3(2, 1)"> T </div> 
-            <div class= "text-item"> 할아버지를 반하게 한 할머 <p /> 니의 매력은 속 깊은 공감능 <p /> 력! </div>
+            <div class= "text-item"> 할아버지를 반하게 한 할머 <br> 니의 매력은 속 깊은 공감능 <br> 력! </div>
         </div>
         <div class="block-container"> 
             <div :class="{'left-item' : selectBox4 == 0, 'left-item-red' : selectBox4 == -1, 'left-item-click' : selectBox4 == 1 && dir4 == 1, 'left-item-unclick' : selectBox4 == 1 && dir4 == 2}" @click="clickEvent4(1, 1)"> J </div> 
             <div :class="{'right-item' : selectBox4 == 0, 'right-item-click': selectBox4 == 1 && dir4 == 2, 'right-item-unclick' : selectBox4 == 1 && dir4 == 1}" @click="clickEvent4(2, 1)"> P </div> 
-            <div class= "text-item"> 할머니는 촬영 소식에 바로 <p /> 즉흥적으로 나갈 수 있는 사  <p /> 람! <p />
-             뭐~ </div>
+            <div class= "text-item"> 할머니는 촬영 소식에 바로 <br> 즉흥적으로 나갈 수 있는 사  <br> 람! </div>
         </div>
     </div>
     <router-link to= "/event5_1" class="button"> 정답 제출하기 </router-link>
@@ -69,20 +68,13 @@ export default {
 
 
 <style scoped>
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
-
-
 .container{
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    text-align: center;
 }
 .container .icon{
     height: 35px;
@@ -92,20 +84,27 @@ export default {
     background-image: url("../assets/backIcon.png");
 }
 .container .text{
-    font-weight: 900;
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 52.81px;
+    text-align: center;
+    color: #000000;
+}
+
+.container .text2{
+    font-weight: 700;
+    font-size: 25px;
     line-height: 36px;
     text-align: center;
     color: #000000;
-    font-family: 'Pretendard-Regular';
-    line-height: 1;
 }
 
 .container .block{
-    margin-top: 69px;
-    /* margin-bottom: auto; */
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    flex: 1;
 }
 
 .container .block .block-container{
@@ -205,24 +204,19 @@ export default {
     margin-bottom: auto;
     /* font-weight: 400; */
     font-size: 16px;    
-    line-height: 1px;
     text-align: left;
-    font-family: 'Pretendard-Regular';
 }
 .container .button{
-    position: absolute;
-    left: 50%;
-    bottom: 50px;
-    transform: translate(-50%, 0%);
+    margin-bottom: 50px;
     width: 330px;
     height: 75px;
     background-color: #D2FBC4;
     border-radius: 25px;
     line-height: 75px;
     font-size: 25px;
-
+    margin-left: auto;
+    margin-right: auto;
     text-decoration: none;
     color: #0A7800;
-    font-family: 'Pretendard-Regular';
 }
 </style>

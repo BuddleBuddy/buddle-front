@@ -10,7 +10,7 @@
                 <div class = "item1"> 이메일 </div>
                 <div class = "item-container"> 
                     <input type="text" class = "left-item" placeholder = "이메일 아이디" style="border: none;">
-                    <div id = "item-text" > @ </div> 
+                    <div id = "item-text"> @ </div> 
                     <select class="right-item" style="border: none;"> 
                         <option value="naver">naver.com</option>
 			            <option value="google">google.com</option>
@@ -37,12 +37,6 @@ export default {
 </script>
 
 <style scoped>
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
 input{
    text-align:center;
 }
@@ -55,12 +49,13 @@ select{
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
+    font-weight: 600;
 }
 .container .icon{
     height: 35px;
     width: 35px;
-    margin-left: 19px;
-    margin-top: 53px;
+    margin-left: 15px;
+    margin-top: 15px;
     background-image: url("../assets/backIcon.png");
 }
 .container .top-container{
@@ -68,7 +63,6 @@ select{
     display: flex;
     flex-direction: column;
     text-align: left;
-    /* justify-content: space-around; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -77,7 +71,6 @@ select{
 }
 
 .container .top-container .item1{
-    font-family: 'Pretendard-Regular';
     font-size: 18px;
     color: #000000;
 }
@@ -96,15 +89,15 @@ select{
 }
 
 .container .top-container .item-container #item-text{
-    font-family: 'Pretendard-Regular';
     font-size: 25.5494px;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 .container .top-container .item-container .left-item{
     width: 154px;
     height: 55px;
-
     background-color: #FFF9DA;
     border-radius: 20px;
 }
@@ -112,7 +105,6 @@ select{
 .container .top-container .item-container .right-item{
     width: 134px;
     height: 55px;
-
     background-color: #FFF9DA;
     border-radius: 20px;
 }
@@ -128,7 +120,6 @@ select{
 
 
 .container .top-container .item4 .left-img{
-    /* position: absolute; */
     background-image: url("../assets/light.png");
     margin-left: 18px;
     margin-top: auto;
@@ -144,9 +135,7 @@ select{
     margin-bottom: auto;
     margin-left: 26px;
     font-weight: 500;
-    font-family: 'Pretendard-Regular';
     font-size: 13px;
-    /* line-height: 75px; */
 }
 
 .container .button{
@@ -155,13 +144,13 @@ select{
     height: 75px;
     bottom: 50px;
     left: 50%;
-      transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
     line-height: 75px;
     background-color: #D2FBC4;
     border-radius: 25px;
     color: #0A7800;
-    font-family: 'Pretendard-Regular';
     font-size: 25px;
+    font-weight: 600;
     text-decoration: none;
     margin-left: auto;
     margin-right: auto;

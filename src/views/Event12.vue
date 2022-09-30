@@ -1,8 +1,8 @@
 <template>
     <div class="container">
-            <div id = "title"> 응모완료! </div>
-            <div id = "content"> 당첨시 이메일을 통해 안내드릴게요! </div>
-            <router-link to= "/Contest" class="start"> 홈으로 가기 </router-link>
+        <div id = "title"> 응모 완료! </div>
+        <div id = "content"> 당첨시 이메일을 통해 안내드릴게요! </div>
+        <router-link to= "/Contest" class="start"> 홈으로 </router-link>
     </div>
 </template>
 
@@ -16,9 +16,8 @@ export default {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
     background-color: #FFFFFF;
 }
 
@@ -26,7 +25,7 @@ export default {
 .container #title{
     color: #191F28;
     font-weight: 700;
-    font-size: 23px;   
+    font-size: 25px;   
     margin-top: 50%;
 }
 
@@ -34,6 +33,7 @@ export default {
     color: #6B7684;
     font-weight: 600;
     font-size: 15px;
+    line-height: 18px;
     margin-top: 13px;   
 }
 
@@ -41,7 +41,9 @@ export default {
     width:330px;
     height: 75px;
     line-height: 75px;
-    color: #474747;
+    font-weight: 600;
+    font-size: 25px;
+    color: #0A7800;
     background-color: #D2FBC4;
     border-radius: 20px;
     text-decoration: none;

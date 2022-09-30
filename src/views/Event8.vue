@@ -1,38 +1,41 @@
 <template>
   <div class="container" >
+      <div class = "icon"> </div>
       <div class = "text"> 오순할매와 상의중 </div>
       <div class = "spinner">
         <pulse-loader1 :loading="loading" :color="'#464646'" :size="'12px'"></pulse-loader1>
         <pulse-loader2 :loading="loading" :color="'#464646'" :size="'12px'"></pulse-loader2>
       </div>
-      <div class="container-image">
-          <swiper
-          :style="{
-              '--swiper-navigation-color': '#fff',
-              '--swiper-pagination-color': '#fff',
-          }"
-          :autoplay="{
-              delay: 1000,
-              disableOnInteraction: false,
-          }"
-          :modules="modules"
-          effect="fade"
-          :slides-per-view="1"
-          :speed="1200"
-          @swiper="onSwiper"
-          @slideChange="onSlideChange">
-          <swiper-slide class="wrap-swiper">  
-              <img src="../assets/Rectangle.png"  alt="" class="swiper-img" />
-          </swiper-slide>
-          <swiper-slide class="wrap-swiper">
-              <img src="../assets/Rectangle.png"  alt="" class="swiper-img" />
-          </swiper-slide>
-          <swiper-slide class="wrap-swiper">
-              <img src="../assets/Rectangle.png"  alt="" class="swiper-img" />
-          </swiper-slide>
-          </swiper>
+      <div class = "block">
+        <div class="container-image">
+            <swiper
+            :style="{
+                '--swiper-navigation-color': '#fff',
+                '--swiper-pagination-color': '#fff',
+            }"
+            :autoplay="{
+                delay: 1000,
+                disableOnInteraction: false,
+            }"
+            :modules="modules"
+            effect="fade"
+            :slides-per-view="1"
+            :speed="1200"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange">
+            <swiper-slide class="wrap-swiper">  
+                <img src="../assets/Rectangle.png"  alt="" class="swiper-img" />
+            </swiper-slide>
+            <swiper-slide class="wrap-swiper">
+                <img src="../assets/Rectangle.png"  alt="" class="swiper-img" />
+            </swiper-slide>
+            <swiper-slide class="wrap-swiper">
+                <img src="../assets/Rectangle.png"  alt="" class="swiper-img" />
+            </swiper-slide>
+            </swiper>
+        </div>
       </div>
-      <div class="buttom-text"> 오류 2동에 위치한 버들시장이야! <p /> 천왕역이랑 가깝다는데?</div>
+      <div class="buttom-text"> 그거 알아? <br> 버들시장 주변에 고인돌이 있어 <br> 두 눈 크게 뜨고 찾아봐라!</div>
   </div>
 </template>
 
@@ -90,26 +93,26 @@
 </script>
 
 <style scoped>
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
 .container{
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  min-height: 100vh;
 }
-
+.container .icon{
+  height: 35px;
+  width: 35px;
+  margin-left: 15px;
+  margin-top: 15px;
+  background-image: url("../assets/backIcon.png");
+}
 .container .text{
-    color: #000000;
-    margin-top: 80px;
-    font-weight: 900;
-    font-size: 30px;
+  color: #000000;
+  margin: auto;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .container .spinner {
@@ -118,22 +121,21 @@
   justify-content: center;
   margin-top: 10px;
 }
-
-.container .container-image{
-    margin-top: 81px;
-    width: 330px;
-    height: 398px;
-    margin-left: auto;
-    margin-right: auto;
+.container .block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  flex: 1;
+}
+.container .block .container-image{
+  max-width: 330px;
+  min-height: 398px;
 }
 .container .buttom-text{
-    position: absolute;
-    left: 50%;
-    bottom: 50px;
-    transform: translate(-50%, 0%);
-    font-family: 'Pretendard-Regular';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 156.02%;
+  margin-bottom: 80px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 156.02%;
 }
 </style>

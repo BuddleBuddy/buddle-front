@@ -1,6 +1,6 @@
 <template>
   <div class="container" >
-      <div class = "text"> 채점중 </div>
+      <div class = "text"> 도손할배와 상의중 </div>
       <div class = "spinner">
         <pulse-loader1 :loading="loading" :color="'#464646'" :size="'12px'"></pulse-loader1>
         <pulse-loader2 :loading="loading" :color="'#464646'" :size="'12px'"></pulse-loader2>

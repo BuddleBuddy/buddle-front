@@ -1,28 +1,28 @@
 <template>
 <div class="container">
     <div class = "icon"> </div>
-    <div class="text"> 오순 할머니의 <p />
+    <div class="text"> 오순 할머니의 <br>
         mbti는 뭘까?</div>
     <div class="block">
         <div class="block-container">
             <div :class="{'left-item' : selectBox1 == 0, 'left-item-click' : selectBox1 == 1 && dir1 == 1, 'left-item-unclick' : selectBox1 == 1 && dir1 == 2}" @click="clickEvent1(1, 1)"> E </div> 
             <div :class="{'right-item' : selectBox1 == 0, 'right-item-click': selectBox1 == 1 && dir1 == 2, 'right-item-unclick' : selectBox1 == 1 && dir1 == 1}" @click="clickEvent1(2, 1)"> I </div>
-            <div class= "text-item"> 'Story 공감’에서 혼자 독서 <p /> 하기를 좋아혀~ </div>
+            <div class= "text-item"> 'Story 공감’에서 혼자 독서 <br> 하기를 좋아혀~ </div>
         </div>
         <div class="block-container"> 
             <div :class="{'left-item' : selectBox2 == 0, 'left-item-click' : selectBox2 == 1 && dir2 == 1, 'left-item-unclick' : selectBox2 == 1 && dir2 == 2}" @click="clickEvent2(1, 1)"> S </div> 
             <div :class="{'right-item' : selectBox2 == 0, 'right-item-click': selectBox2 == 1 && dir2 == 2, 'right-item-unclick' : selectBox2 == 1 && dir2 == 1}" @click="clickEvent2(2, 1)"> N </div>
-            <div class= "text-item"> ‘항동 철길’을 걸을 떄면 추  <p /> 억에 잠기곤 혀 </div>
+            <div class= "text-item"> ‘항동 철길’을 걸을 떄면 추  <br> 억에 잠기곤 혀 </div>
         </div>
         <div class="block-container"> 
             <div :class="{'left-item' : selectBox3 == 0, 'left-item-click' : selectBox3 == 1 && dir3 == 1, 'left-item-unclick' : selectBox3 == 1 && dir3 == 2}" @click="clickEvent3(1, 1)"> F </div> 
             <div :class="{'right-item' : selectBox3 == 0, 'right-item-click': selectBox3 == 1 && dir3 == 2, 'right-item-unclick' : selectBox3 == 1 && dir3 == 1}" @click="clickEvent3(2, 1)"> T </div> 
-            <div class= "text-item"> 할멈은 속이 깊어~ 그 모습 <p /> 에 반해부렸지 뭐~ </div>
+            <div class= "text-item"> 할멈은 속이 깊어~ 그 모습 <br> 에 반해부렸지 뭐~ </div>
         </div>
         <div class="block-container"> 
             <div :class="{'left-item' : selectBox4 == 0, 'left-item-click' : selectBox4 == 1 && dir4 == 1, 'left-item-unclick' : selectBox4 == 1 && dir4 == 2}" @click="clickEvent4(1, 1)"> J </div> 
             <div :class="{'right-item' : selectBox4 == 0, 'right-item-click': selectBox4 == 1 && dir4 == 2, 'right-item-unclick' : selectBox4 == 1 && dir4 == 1}" @click="clickEvent4(2, 1)"> P </div> 
-            <div class= "text-item"> ‘옹심이집’에서 골목식당 촬 <p /> 영한다는 소리에 즉흥적으로 <p />달려가드라고~  </div>
+            <div class= "text-item"> ‘옹심이집’에서 골목식당 촬 <br> 영한다는 소리에 즉흥적으로 <br> 달려가드라고~  </div>
         </div>
     </div>
     <div class="button" @click="click()"> 정답 제출하기 </div>
@@ -84,39 +84,34 @@ export default {
 </script>
 
 <style scoped>
-
-
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
-
 .container{
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
 }
 .container .icon{
     height: 35px;
     width: 35px;
-    margin-left: 19px;
-    margin-top: 53px;
+    margin-left: 15px;
+    margin-top: 15px;
     background-image: url("../assets/backIcon.png");
 }
 .container .text{
     margin: auto;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     color: #000000;
 }
 
 .container .block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: auto;
+    flex: 1;
 }
 
 .container .block .block-container{
@@ -197,9 +192,7 @@ export default {
     margin-bottom: auto;
     /* font-weight: 400; */
     font-size: 16px;    
-    line-height: 1px;
     text-align: left;
-    font-family: 'Pretendard-Regular';
 }
 
 .container .button{
@@ -213,8 +206,8 @@ export default {
     text-decoration: none;
     line-height: 75px;
     color: #0A7800; 
-    font-family: 'Pretendard-Regular';
     font-size: 25px;
+    font-weight: 600;
 }
 
 </style>
