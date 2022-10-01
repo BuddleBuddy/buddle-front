@@ -1,40 +1,47 @@
 <template>
-    <div class="event1">
-        <router-link to= "/event2_1" class="start"> 도전하기 </router-link>
-    </div>
+<div class="container" @click="click()">
+  <router-link to = "/contest" class="icon"> </router-link>
+  <div class="touch"> </div>
+</div>
 </template>
 
 <script>
 export default {
-  name: "Event1"
+  name: "Event1",
+  methods: {
+    click(){
+      this.$router.push('Event2_1');
+    }
+  }
 };
 </script>
 
 <style scoped>
-.event1 {
-  max-width: 500px;
-  min-height: 100vh;
-  height: 100%;
-  background-image: url("../assets/hbti.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.container{
+    max-width: 500px;
+    min-height: 100vh;
+    background-image: url("../assets/ev1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.event1 .start{
+.container .icon {
+  height: 35px;
+  width: 35px;
+  left: 15px;
+  top: 15px;
   position: absolute;
-  bottom: 50px;
-  width: 330px;
-  height: 75px;
-  background-color: #F3F4D4;
-  border: 1px solid #F3F4D4;
-  box-shadow: 0px 1px 11px rgba(232, 232, 232, 0.1);
-  border-radius: 25px;
-  line-height: 75px;
-  font-size: 25px;
-  font-weight: 600;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  text-decoration: none;
-  color: #448A4F;
+  background-image: url("../assets/backIcon.png");
 }
+
+.container .touch{
+  width: 274px;
+  height: 50px;
+  position: absolute;
+    left: 50%;
+  transform: translate(-50%, 0%);
+  background-image: url("../assets/touch.png");
+  bottom: 61px;
+}
+
 </style>

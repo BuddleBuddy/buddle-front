@@ -1,5 +1,6 @@
 <template>
 <div class="container" @click="click()">
+  <div class="touch"> </div>
 </div>
 </template>
 
@@ -25,4 +26,13 @@ export default {
     background-size: cover;
 }
 
+.container .touch{
+  width: 274px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-image: url("../assets/touch.png");
+  bottom: 61px;
+}
 </style>
