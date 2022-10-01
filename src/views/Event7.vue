@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <div class = "icon"> </div>
+    <div class = "icon" @click="back()"> </div>
     <div class="text"> 오순 할머니의 <br>
         mbti는 뭘까?</div>
     <div class="block">
@@ -77,6 +77,9 @@ export default {
             window.localStorage.setItem('four', four);
             console.log(one + " " + two + " " + three + " " + four);
             this.$router.push('Event8');
+        },
+        back(){
+        this.$router.go(-1);
         }
     },
     props: true
@@ -94,8 +97,8 @@ export default {
 .container .icon{
     height: 35px;
     width: 35px;
-    margin-left: 15px;
-    margin-top: 15px;
+    /* margin-left: 15px;
+    margin-top: 15px; */
     background-image: url("../assets/backIcon.png");
 }
 .container .text{

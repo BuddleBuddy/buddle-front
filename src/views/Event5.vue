@@ -1,32 +1,32 @@
 <template>
 <div class="container">
-    <div class = "icon"> </div>
+    <div class = "icon" @click="back()"> </div>
     <div class="text"> 땡! <br> </div>
     <div class="text2"> 다시 한번 생각해봐~ </div>
     <div class="block">
         <div class="block-container">
             <div :class="{'left-item' : selectBox1 == -1, 'left-item-click' : selectBox1 == 1 && dir1 == 1, 'left-item-unclick' : selectBox1 == 1 && dir1 == 2}" @click="clickEvent1(1, 1)"> E </div> 
-            <div :class="{'right-item' : selectBox1 == 1, 'right-item-red': selectBox1 == -1, 'right-item-click': selectBox1 == 1 && dir1 == 2, 'right-item-unclick' : selectBox1 == 1 && dir1 == 1}" @click="clickEvent1(2, 1)"> I </div>
+            <div :class="{'right-item-red': selectBox1 == -1, 'right-item-click': selectBox1 == 1 && dir1 == 2, 'right-item-unclick' : selectBox1 == 1 && dir1 == 1}" @click="clickEvent1(2, 1)"> I </div>
             <div class= "text-item"> 영감은 버들시장에서 유명 <br> 한 초특급 인싸여~ </div>
         </div>
         <div class="block-container"> 
             <div :class="{'left-item' : selectBox2 == -1, 'left-item-click' : selectBox2 == 1 && dir2 == 1, 'left-item-unclick' : selectBox2 == 1 && dir2 == 2}" @click="clickEvent2(1, 1)"> S </div> 
-            <div :class="{'right-item' : selectBox2 == 1, 'right-item-red': selectBox2 == -1, 'right-item-click': selectBox2 == 1 && dir2 == 2, 'right-item-unclick' : selectBox2 == 1 && dir2 == 1}" @click="clickEvent2(2, 1)"> N </div>
+            <div :class="{'right-item-red': selectBox2 == -1, 'right-item-click': selectBox2 == 1 && dir2 == 2, 'right-item-unclick' : selectBox2 == 1 && dir2 == 1}" @click="clickEvent2(2, 1)"> N </div>
             <div class= "text-item"> 현실적인 얘기만 좋아혀! <br>  ㅡㅡ </div>
         </div>
         <div class="block-container"> 
-            <div :class="{'left-item' : selectBox3 == 1, 'left-item-red': selectBox3 == -1, 'left-item-click' : selectBox3 == 1 && dir3 == 1, 'left-item-unclick' : selectBox3 == 1 && dir3 == 2}" @click="clickEvent3(1, 1)"> F </div> 
+            <div :class="{'left-item-red': selectBox3 == -1, 'left-item-click' : selectBox3 == 1 && dir3 == 1, 'left-item-unclick' : selectBox3 == 1 && dir3 == 2}" @click="clickEvent3(1, 1)"> F </div> 
             <div :class="{'right-item' : selectBox3 == -1, 'right-item-click': selectBox3 == 1 && dir3 == 2, 'right-item-unclick' : selectBox3 == 1 && dir3 == 1}" @click="clickEvent3(2, 1)"> T </div> 
             <div class= "text-item">피도 눈물도 없는 영감.. <br>  공감능력 0% 예상헌다잉 </div>
         </div>
         <div class="block-container"> 
             <div :class="{'left-item' : selectBox4 == -1, 'left-item-click' : selectBox4 == 1 && dir4 == 1, 'left-item-unclick' : selectBox4 == 1 && dir4 == 2}" @click="clickEvent4(1, 1)"> J </div> 
-            <div :class="{'right-item' : selectBox4 == 1, 'right-item-red': selectBox4 == -1, 'right-item-click': selectBox4 == 1 && dir4 == 2, 'right-item-unclick' : selectBox4 == 1 && dir4 == 1}" @click="clickEvent4(2, 1)"> P </div> 
+            <div :class="{'right-item-red': selectBox4 == -1, 'right-item-click': selectBox4 == 1 && dir4 == 2, 'right-item-unclick' : selectBox4 == 1 && dir4 == 1}" @click="clickEvent4(2, 1)"> P </div> 
             <div class= "text-item"> 영감은 아주 계획적이고 <br>  철저해. 가끔은 융통성 없 <br> 지만.. 나와 달라서 반했지 <br> 
              뭐~ </div>
         </div>
     </div>
-    <router-link to= "/event5_1" class="button"> 정답 제출하기 </router-link>
+    <div class="button" @click="click()"> 정답 제출하기 </div>
 </div>
 </template>
 
@@ -61,6 +61,27 @@ export default {
         clickEvent4(dir, num){
             this.dir4 = dir;
             this.selectBox4 = num;
+        },
+        click(){
+            window.localStorage.setItem('dir1', this.dir1);
+            window.localStorage.setItem('dir2', this.dir2);
+            window.localStorage.setItem('dir3', this.dir3);
+            window.localStorage.setItem('dir4', this.dir4);
+
+            const one = this.dir1 == 2 ? -1 : 1;
+            const two = this.dir2 == 2 ? -1 : 1;
+            const three = this.dir3 == 1 ? -1 : 1;
+            const four = this.dir4 == 2 ? -1 : 1;
+            console.log(one + " " + two + " " + three + " " + four);
+            
+            window.localStorage.setItem('one', one);
+            window.localStorage.setItem('two', two);
+            window.localStorage.setItem('three', three);
+            window.localStorage.setItem('four', four);
+            this.$router.push('Event4');
+        },
+        back(){
+            this.$router.go(-1);
         }
     },
     props: true
@@ -80,8 +101,8 @@ export default {
 .container .icon{
     height: 35px;
     width: 35px;
-    margin-left: 15px;
-    margin-top: 15px;
+    /* margin-left: 15px;
+    margin-top: 15px; */
     background-image: url("../assets/backIcon.png");
 }
 .container .text{
