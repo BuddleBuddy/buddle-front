@@ -120,7 +120,7 @@ export default {
 }
 
 .container .button{
-    bottom: 50px;
+    margin-bottom: 50px;
     width: 330px;
     height: 75px;
     background-color: #D2FBC4;
