@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <router-link to = "/event7" class = "icon"> </router-link>
+    <div class = "icon" @click="back()"> </div>
     <div class="title">
         <img class = "left-item" src="../assets/happy.png">
         <div class="text"> 정답! </div> <img class = "right-item" src="../assets/happy.png">
@@ -22,7 +22,12 @@
 
 <script>
 export default {
-  name: "Event9_1"
+    name: "Event9_1",
+    methods: {
+        back(){
+            this.$router.go(-1);
+        }
+    },
 };
 </script>
 
@@ -47,8 +52,8 @@ export default {
 .container .icon{
     height: 35px;
     width: 35px;
-    margin-left: 15px;
-    margin-top: 15px;
+    /* margin-left: 15px;
+    margin-top: 15px; */
     background-image: url("../assets/backIcon.png");
 }
 .container .title{

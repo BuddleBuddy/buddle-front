@@ -1,5 +1,5 @@
 <template>
-  <div class="container" >
+  <div class="container">
       <div class = "text"> 도손할배와 상의중 </div>
       <div class = "spinner">
         <pulse-loader1 :loading="loading" :color="'#464646'" :size="'12px'"></pulse-loader1>
@@ -78,7 +78,6 @@
         modules: [Pagination, EffectFade, Autoplay, Parallax],
       };
     },
-
     mounted() {
       setTimeout(() => {
         if(this.dir1 == 1 && this.dir2 == 1 && this.dir3 == 2 && this.dir4 == 1){

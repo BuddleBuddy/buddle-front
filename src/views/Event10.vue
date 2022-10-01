@@ -1,6 +1,6 @@
 <template>
     <div class="root">
-        <router-link to = "/event9_1" class = "icon"> </router-link>
+        <div class = "icon" @click="back()"> </div>
         <img class = "content" src="../assets/ev10.png"> 
         <div class="third"> 
             <img class="vector" alt="vector" src="../assets/vector.png">
@@ -17,8 +17,13 @@
 <script>
 import Clipboard from "@/components/Clipboard";
 export default {
-  name: "Event10",
-  components: {Clipboard},
+    name: "Event10",
+    components: {Clipboard},
+    methods: {
+        back(){
+            this.$router.go(-1);
+        }
+    },
 };
 </script>
 
@@ -33,8 +38,8 @@ export default {
 .root .icon{
     height: 35px;
     width: 35px;
-    margin-left: 15px;
-    margin-top: 15px;
+    /* margin-left: 15px;
+    margin-top: 15px; */
     background-image: url("../assets/backIcon.png");
 }
 

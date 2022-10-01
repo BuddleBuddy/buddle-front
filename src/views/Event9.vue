@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <div class = "icon"> </div>
+    <div class = "icon" @click="back()"> </div>
     <div class="text"> 땡! <br> </div>
     <div class="text2"> 다시 한번 생각해봐~ </div>
     <div class="block">
@@ -60,6 +60,9 @@ export default {
         clickEvent4(dir, num){
             this.dir4 = dir;
             this.selectBox4 = num;
+        },
+        back(){
+            this.$router.go(-1);
         }
     },
     props: true
@@ -79,8 +82,6 @@ export default {
 .container .icon{
     height: 35px;
     width: 35px;
-    margin-left: 19px;
-    margin-top: 53px;
     background-image: url("../assets/backIcon.png");
 }
 .container .text{

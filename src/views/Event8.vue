@@ -1,6 +1,5 @@
 <template>
   <div class="container" >
-      <div class = "icon"> </div>
       <div class = "text"> 오순할매와 상의중 </div>
       <div class = "spinner">
         <pulse-loader1 :loading="loading" :color="'#464646'" :size="'12px'"></pulse-loader1>
@@ -80,7 +79,6 @@
         modules: [Pagination, EffectFade, Autoplay, Parallax],
       };
     },
-
     mounted() {
       setTimeout(() => {
         if(this.dir1 == 2 && this.dir2 == 2 && this.dir3 == 1 && this.dir4 == 2){
@@ -100,13 +98,7 @@
   max-width: 500px;
   min-height: 100vh;
 }
-.container .icon{
-  height: 35px;
-  width: 35px;
-  margin-left: 15px;
-  margin-top: 15px;
-  background-image: url("../assets/backIcon.png");
-}
+
 .container .text{
   color: #000000;
   margin: auto;

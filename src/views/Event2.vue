@@ -1,5 +1,6 @@
 <template>
 <div class="container" @click="click()">
+  <div class="icon" @click="back()"></div>
   <div class="touch"> </div>
 </div>
 </template>
@@ -10,6 +11,9 @@ export default {
   methods: {
     click(){
       this.$router.push('Event3');
+    },
+    back(){
+      this.$router.go(-1);
     }
 }
 };
@@ -25,6 +29,15 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.container .icon {
+  height: 35px;
+  width: 35px;
+  left: 15px;
+  top: 15px;
+  background-image: url("../assets/backIcon.png");
+  z-index: 1;
 }
 
 .container .touch{

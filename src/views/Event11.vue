@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class = "icon"> </div>
+        <div class = "icon" @click="back()"> </div>
         <div class = "top-container">
             <div class = "first">
                 <div class = "item1"> 이름 </div>
@@ -32,7 +32,12 @@
 
 <script>
 export default {
-  name: "Event11"
+    name: "Event11",
+    methods: {
+        back(){
+            this.$router.go(-1);
+        }
+    },
 };
 </script>
 
@@ -54,8 +59,8 @@ select{
 .container .icon{
     height: 35px;
     width: 35px;
-    margin-left: 15px;
-    margin-top: 15px;
+    /* margin-left: 15px;
+    margin-top: 15px; */
     background-image: url("../assets/backIcon.png");
 }
 .container .top-container{
