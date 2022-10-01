@@ -1,26 +1,7 @@
 <template>
   <div class="root">
-    <img class="hbti" alt="hbti" src="../assets/ev0.png">
-    <div class="gradient">
-      <div class="first">
-        <div class="title"> 참여 방법</div>
-        <div class="content"> 1. 버들부부의 MBTI를 맞춰주세요 <p/>
-          2. 마지막 응모하기 버튼 클릭 후 이메일 남기기
-        </div>
-      </div>
-      <div class="second">
-        <div class="title"> 이벤트 경품</div>
-        <div class="set">
-          <div class="item">
-            <img class="gift1" alt="gift1" src="../assets/gift1.png">
-            <div class="content2"> 2명</div>
-          </div>
-          <div class="item">
-            <img class="gift1" alt="gift2" src="../assets/gift2.png">
-            <div class="content2"> 5명</div>
-          </div>
-        </div>
-      </div>
+    <div class="event_con">
+      <img class="hbti" alt="hbti" src="../assets/event.png">
       <router-link to="/event0" class="part"> 참여하기</router-link>
     </div>
     <div class="third">
@@ -33,7 +14,7 @@
     </div>
     <div class="fourth">
       <img class="vector" alt="vector" src="../assets/vector.png">
-      <div class="txt"> 공유하기</div>
+      <div class="txt">친구들한테도 좀 알려줘바바</div>
       <div class="fifth">
         <div class="logo">
           <KakaoShare/>
@@ -194,7 +175,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 97px;
+    margin-top: 160px;
 }
 
 .root .third .box{
@@ -203,16 +184,25 @@ export default {
 }
 
 .root .third .itemfont1{
-    font-size: 70px;
-    color: #50A65D;
-    font-weight: 900;
-    display: block;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 85px;
+  text-align: center;
+  color: #50A65D;
+  display: block;
 }
 
 .root .third .itemfont2{
-    font-size: 24px;
-    color: #000000;
-    font-weight: 900;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #343434;
+
 }
 
 .root .third .rectangle {
@@ -233,15 +223,25 @@ export default {
 .root .fourth .txt{
     position: absolute;
     left: 50%;
-
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #343434;
     transform: translate(-50%, -33%);
 }
 
+.root.event_con{
+  display: flex;
+
+}
 .part{
     display: flex;
     align-items:center;
     justify-content:center;
-    margin-top: 50px;
+    margin-top: -30%;
     border-radius: 25px;
     background-color: #50A65D;
     color: #FFFFFF;
@@ -250,8 +250,12 @@ export default {
     margin-left: auto;
     margin-right: auto;
     text-decoration: none;
-    font-weight: 900;
-    font-size: larger;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 24px;
+    position: relative;
+    z-index: 0;
 }
 
 .root .fifth {

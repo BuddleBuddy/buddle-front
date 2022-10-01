@@ -23,6 +23,7 @@ export default {
     background-image: url("../assets/ev2_1.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .container .icon {
@@ -30,7 +31,7 @@ export default {
   width: 35px;
   left: 15px;
   top: 15px;
-  position: absolute;
+  /*position: absolute;*/
   background-image: url("../assets/backIcon.png");
 }
 

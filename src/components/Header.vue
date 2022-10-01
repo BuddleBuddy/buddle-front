@@ -19,6 +19,7 @@ export default {
     data() {
         return {
             selectTab : 1,
+            path: () => this.$router.currentRoute.value.path,
         }
     },
     methods: {
@@ -52,14 +53,24 @@ export default {
 }
 
 .tag{
+    font-family: 'Pretendard';
     color: #686868;
     text-decoration: none;
     flex: 1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .active {
     color: #50A65D;
     text-decoration: none;
     flex: 1;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
 }
 </style>

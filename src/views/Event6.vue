@@ -21,6 +21,7 @@ export default {
     background-image: url("../assets/ev6.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 </style>

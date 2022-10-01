@@ -37,16 +37,17 @@
           <div class="text" id="hash">#매운맛 #간장맛 #맥주안주~?</div>
         </div>
 
-        <div class="address" onclick = "location.href='https://map.naver.com/v5/entry/place/34481600?c=14120226.1293303,4508047.9332878,13,0,0,0,dh&placePath=%2Fhome&entry=plt'" style="cursor: pointer;">
+        <a class="address" href="https://map.naver.com/v5/entry/place/34481600?c=14120226.1293303,4508047.9332878,13,0,0,0,dh&placePath=%2Fhome&entry=plt" style="cursor: pointer" target="_blank">
           <div class="addCon">
-            <a class="addTitle">87닭강정 오류동본점</a>
-            <div class="addContent">서울 구로구 서해안로30길 17 87닭강정 오류동본점</div>
+            <div class="addContent">주소: 서울 구로구 서해안로30길 17</div>
+            <div>
+              <img src="../assets/to_naver.png" class="toNaverImg">
+            </div>
           </div>
           <div>
             <img class="tn" src="../assets/store1_tn.png"/>
           </div>
-        </div>
-        <Address/>
+        </a>
       </div>
 
       <div :class="{ 'tab-container': true, active: selectTab === 0 }">
@@ -64,17 +65,18 @@
         <div class="text" id="hash">#매콤달달 #시장떡볶이 #가성비굿</div>
         </div>
 
-        <div class="address" onclick = "location.href='https://map.naver.com/v5/search/%EC%86%8C%EB%AC%B8%EB%82%9C%20%EB%96%A1%EB%B3%B6%EC%9D%B4%20%EC%88%9C%EB%8C%80/place/20902761?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14119288.4081124,4508073.0844164,15,0,0,0,dh'" style="cursor: pointer;">
+        <a class="address" href="https://map.naver.com/v5/search/%EC%86%8C%EB%AC%B8%EB%82%9C%20%EB%96%A1%EB%B3%B6%EC%9D%B4%20%EC%88%9C%EB%8C%80/place/20902761?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14119288.4081124,4508073.0844164,15,0,0,0,dh" style="cursor: pointer" target="_blank">
           <div class="addCon">
-            <a href= "https://map.naver.com/v5/search/%EC%86%8C%EB%AC%B8%EB%82%9C%20%EB%96%A1%EB%B3%B6%EC%9D%B4%20%EC%88%9C%EB%8C%80/place/20902761?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14119288.4081124,4508073.0844164,15,0,0,0,dh"
-            class="addTitle">소문난떡볶이순대</a>
-
-            <div class="addContent">서울 구로구 서해안로30길 13</div>
+            <div class="addContent">주소: 서울 구로구 서해안로30길 13</div>
+            <div>
+              <img src="../assets/to_naver.png" class="toNaverImg">
+            </div>
           </div>
           <div>
             <img class="tn" src="../assets/store2_tn.jpeg"/>
           </div>
-        </div>
+        </a>
+
       </div>
       <div :class="{ 'tab-container': true, active: selectTab === 0 }">
         <div class="addContainer">
@@ -91,16 +93,17 @@
         <div class="text" id="hash">#다양한사이드메뉴 #매운맛조절가능 </div>
         </div>
 
-        <div class="address" onclick = "location.href='https://map.naver.com/v5/search/%ED%99%A9%EC%A0%9C%EC%AD%88%EA%BE%B8%EB%AF%B8/place/1688266830?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14119075.4427993,4507952.5233604,15,0,0,0,dh'" style="cursor: pointer;">
+        <a class="address" href="https://map.naver.com/v5/search/%ED%99%A9%EC%A0%9C%EC%AD%88%EA%BE%B8%EB%AF%B8/place/1688266830?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14119075.4427993,4507952.5233604,15,0,0,0,dh" style="cursor: pointer" target="_blank">
           <div class="addCon">
-            <a href= "https://map.naver.com/v5/search/%ED%99%A9%EC%A0%9C%EC%AD%88%EA%BE%B8%EB%AF%B8/place/1688266830?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14119075.4427993,4507952.5233604,15,0,0,0,dh"
-               class="addTitle">황제쭈꾸미</a>
-            <div class="addContent">서울 구로구 서해안로26길 10 1층</div>
+            <div class="addContent">주소: 서울 구로구 서해안로26길 10</div>
+            <div>
+              <img src="../assets/to_naver.png" class="toNaverImg">
+            </div>
           </div>
           <div>
             <img class="tn" src="../assets/store3_tn.jpeg">
           </div>
-        </div>
+        </a>
 
       </div>
       <div :class="{ 'tab-container': true, active: selectTab === 0 }">
@@ -118,16 +121,17 @@
         <div class="text" id="hash">#삼삼한맛 #웨이팅필수 #찐맛집</div>
         </div>
 
-        <div class="address" onclick = "location.href='https://map.naver.com/v5/entry/place/1904170793?c=14120264.6033345,4508075.8614081,13,0,0,0,dh&placePath=%2Fhom'" style="cursor: pointer;">
+        <a class="address" href="https://map.naver.com/v5/entry/place/1904170793?c=14120264.6033345,4508075.8614081,13,0,0,0,dh&placePath=%2Fhom" style="cursor: pointer" target="_blank">
           <div class="addCon">
-            <a href= "https://map.naver.com/v5/entry/place/1904170793?c=14120264.6033345,4508075.8614081,13,0,0,0,dh&placePath=%2Fhome"
-               class="addTitle">옹기종기감자옹심이</a>
-            <div class="addContent">서울 구로구 서해안로30길 13-8 1층</div>
+            <div class="addContent">주소: 서울 구로구 서해안로30길 13-8</div>
+            <div>
+              <img src="../assets/to_naver.png" class="toNaverImg">
+            </div>
           </div>
           <div>
             <img class="tn" src="../assets/store4_tn.jpeg">
           </div>
-        </div>
+        </a>
 
         </div>
       <div :class="{ 'tab-container': true, active: selectTab === 0 }">
@@ -145,16 +149,17 @@
         <div class="text" id="hash">#인스타맛집 #데이트코스 #다양한메뉴</div>
         </div>
 
-        <div class="address" onclick = "location.href='https://map.naver.com/v5/entry/place/1713322772?c=14119988.7584944,4507805.0550129,13,0,0,0,dh&placePath=%2Fhome&entry=plt'" style="cursor: pointer;">
+        <a class="address" href="https://map.naver.com/v5/entry/place/1713322772?c=14119988.7584944,4507805.0550129,13,0,0,0,dh&placePath=%2Fhome&entry=plt" style="cursor: pointer" target="_blank">
           <div class="addCon">
-            <a href= "https://map.naver.com/v5/entry/place/1713322772?c=14119988.7584944,4507805.0550129,13,0,0,0,dh&placePath=%2Fhome&entry=plt"
-               class="addTitle">사생활</a>
-            <div class="addContent">서울 구로구 오류로8길 22 2층 사생활</div>
+            <div class="addContent">주소: 서울 구로구 오류로8길 22</div>
+            <div>
+              <img src="../assets/to_naver.png" class="toNaverImg">
+            </div>
           </div>
           <div>
             <img class="tn" src="../assets/store5_tn.jpg">
           </div>
-        </div>
+        </a>
 
       </div>
       <div :class="{ 'tab-container': true, active: selectTab === 0 }">
@@ -172,16 +177,17 @@
         <div class="text" id="hash">#우동사리추가필수 #28년역사 #야채곱창</div>
         </div>
 
-        <div class="address" onclick = "location.href='https://map.naver.com/v5/search/%EC%B6%98%EC%B2%9C%EA%B3%A8/place/18494000?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14119140.6203619,4507890.9455642,15,0,0,0,dh'" style="cursor: pointer;">
+        <a class="address" href="https://map.naver.com/v5/search/%EC%B6%98%EC%B2%9C%EA%B3%A8/place/18494000?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14119140.6203619,4507890.9455642,15,0,0,0,dh" style="cursor: pointer" target="_blank">
           <div class="addCon">
-            <a href= "https://map.naver.com/v5/search/%EC%B6%98%EC%B2%9C%EA%B3%A8/place/18494000?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14119140.6203619,4507890.9455642,15,0,0,0,dh"
-               class="addTitle">춘천골</a>
-            <div class="addContent">서울 구로구 오류로8길 41</div>
+            <div class="addContent">주소: 서울 구로구 오류로8길 41</div>
+            <div>
+              <img src="../assets/to_naver.png" class="toNaverImg">
+            </div>
           </div>
           <div>
             <img class="tn" src="../assets/store6_tn.jpeg">
           </div>
-        </div>
+        </a>
 
       </div>
       <div :class="{ 'tab-container': true, active: selectTab === 1 }">
@@ -198,16 +204,17 @@
         <div class="text" id="hash">#인생샷성지 #추억 #스냅사진</div>
         </div>
 
-        <div class="address" onclick = "location.href='https://map.naver.com/v5/search/%ED%96%A5%EB%8F%99%EC%B2%A0%EA%B8%B8/place/38327950?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14118291.4196259,4507434.2934463,15,0,0,0,dh'" style="cursor: pointer;">
+        <a class="address" href="https://map.naver.com/v5/search/%ED%96%A5%EB%8F%99%EC%B2%A0%EA%B8%B8/place/38327950?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14118291.4196259,4507434.2934463,15,0,0,0,dh" style="cursor: pointer" target="_blank">
           <div class="addCon">
-            <a href= "https://map.naver.com/v5/search/%ED%96%A5%EB%8F%99%EC%B2%A0%EA%B8%B8/place/38327950?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14118291.4196259,4507434.2934463,15,0,0,0,dh"
-               class="addTitle">향동철길</a>
-            <div class="addContent">서울 구로구 오리로 1189</div>
+            <div class="addContent">주소: 서울 구로구 오리로 1189</div>
+            <div>
+              <img src="../assets/to_naver.png" class="toNaverImg">
+            </div>
           </div>
           <div>
             <img class="tn" src="../assets/place1_tn.jpeg">
           </div>
-        </div>
+        </a>
 
       </div>
       <div :class="{ 'tab-container': true, active: selectTab === 1 }">
@@ -225,16 +232,17 @@
         <div class="text" id="hash">#힐링 #산책 #정원 #항동저수지</div>
         </div>
 
-        <div class="address" onclick = "location.href='https://map.naver.com/v5/entry/place/32581850?c=14117958.3985711,4506443.2350194,13,0,0,0,dh&placePath=%2Fhome&entry=plt'" style="cursor: pointer;">
+        <a class="address" href="https://map.naver.com/v5/entry/place/32581850?c=14117958.3985711,4506443.2350194,13,0,0,0,dh&placePath=%2Fhome&entry=plt" style="cursor: pointer" target="_blank">
           <div class="addCon">
-            <a href= "https://map.naver.com/v5/entry/place/32581850?c=14117958.3985711,4506443.2350194,13,0,0,0,dh&placePath=%2Fhome&entry=plt"
-               class="addTitle">푸른수목원</a>
-            <div class="addContent">서울 구로구 서해안로 2117</div>
+            <div class="addContent">주소: 서울 구로구 서해안로 2117</div>
+            <div>
+              <img src="../assets/to_naver.png" class="toNaverImg">
+            </div>
           </div>
           <div>
             <img class="tn" src="../assets/place2_tn.jpeg">
           </div>
-        </div>
+        </a>
 
       </div>
       <div :class="{ 'tab-container': true, active: selectTab === 1 }">
@@ -252,9 +260,12 @@
           <div class="text" id="hash">#깔끔한 #아늑한 #만남의장소</div>
         </div>
 
-        <a class="address" onclick = "location.href='https://map.naver.com/v5/search/story%20%EA%B3%B5%EA%B0%90/place/1852466944?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14119176.1535427,4507938.1144883,15,0,0,0,dh'" style="cursor: pointer" target="_blank">
+        <a class="address" href="https://map.naver.com/v5/search/story%20%EA%B3%B5%EA%B0%90/place/1852466944?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14119176.1535427,4507938.1144883,15,0,0,0,dh" style="cursor: pointer" target="_blank">
             <div class="addCon">
-              <div class="addContent">서울 구로구 오류로8길 51</div>
+              <div class="addContent">주소: 서울 구로구 오류로8길 51</div>
+              <div>
+                <img src="../assets/to_naver.png" class="toNaverImg">
+              </div>
             </div>
             <div>
               <img class="tn" src="../assets/place3_tn.jpeg">
@@ -291,16 +302,27 @@ export default {
 }
 
 .tab.active {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 600;
   font-size: 20px;
-  font-weight: bold;
-  color: #000000;
+  line-height: 24px;
+  text-align: center;
+  color: #3D3D3D;
+  border-bottom: #000000 5px solid;
+}
+.tab {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #898989;
+  margin-bottom: 53px;
+  flex: 1;
 }
 
-.tab {
-  font-size: 20px;
-  margin-bottom: 5px;
-  color: #808080;
-}
 
 .tab-container {
   background-color: aqua;
@@ -340,18 +362,32 @@ export default {
 }
 
 #title{
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 700;
   font-size: 25px;
-  font-weight: bold;
+  line-height: 30px;
+  color: #3D3D3D;
 }
 
 #description{
-  font-size: 15px;
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3D3D3D;
+
 }
 
 #hash{
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 500;
   font-size: 17px;
-  font-weight: bold;
+  line-height: 20px;
   color: #50A65D;
+
 }
 
 .line.active {
@@ -370,7 +406,7 @@ export default {
   display: block;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   border: hidden;
   border-color: #808080;
   /*border-: 0.1rem outset #d3d3d3;*/
@@ -378,7 +414,7 @@ export default {
   /*width: 95%;*/
   margin-right: 3%;
   margin-left: 3%;
-
+  text-decoration: none;
 }
 .address .tn {
   width: 80px;
@@ -389,19 +425,25 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.addTitle{
-  text-decoration: none;
-  font-weight: bolder;
-  color: #000000;
-}
 .addContent{
   font-weight: bold;
   color: #686868;
+}
+.toNaverImg {
+  width: 200px;
+  animation: 2s infinite;
+  animation-name: to-naver;
+}
+
+@keyframes to-naver{
+  0% {visibility: hidden; opacity: 100%}
+  50% {visibility: visible; opacity: 0%}
+  100% {visibility: hidden; opacity: 100%}
 }
 </style>

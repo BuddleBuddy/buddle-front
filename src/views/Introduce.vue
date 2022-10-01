@@ -6,9 +6,11 @@
     <KakaoMap/>
   </div>
   <div class="location">
-    <h2>버들시장</h2>
-    <h3>📍서울 구로구 오류동 65-6 일대</h3>
-    <h3>🚃 오류동역 2번출구</h3>
+    <div class="title">버들시장</div>
+    <div class="content">
+      <div>📍서울 구로구 오류동 65-6 일대</div>
+      <div>🚃 오류동역 2번출구</div>
+    </div>
   </div>
   <div>
     <IntroTab/>
@@ -48,6 +50,23 @@ export default {
   text-align: left ;
 }
 
+.title{
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+.content{
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+
+}
 .map {
   width: 100%;
   height: 100%;

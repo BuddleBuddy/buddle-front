@@ -24,6 +24,7 @@ export default {
     background-image: url("../assets/storyPapa.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .container .touch{
