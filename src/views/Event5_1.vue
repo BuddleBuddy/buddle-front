@@ -1,25 +1,19 @@
 <template>
 <div class="container">
     <div class = "icon"> </div>
-    <div class="text"> 정답~! <br />
-        오순할멈은 어려울껴~ </div>
+    <div class="title">
+        <img class = "left-item" src="../assets/happy.png">
+        <div class="text"> 정답! </div> <img class = "right-item" src="../assets/happy.png">
+    </div>
+    <div class="text2"> 오순 할멈은 어려울껴~ </div>
     <div class = "content">
-        <div class = "mid-icon"> </div>
         <div class = "mid-content">
             <div class ="content-item"> E </div>
             <div class ="content-item"> S </div>
             <div class ="content-item"> T </div>
             <div class ="content-item"> J </div>
         </div>
-        <div class = "buttom-content"> 
-            <div class="buttom-img"> </div>
-            <div class="buttom-text"> 그려!!
-                내가 바로 <br>
-                엄격한 관리자 <br>
-                형인 <br>
-                ESTJ여~~
-            </div>
-        </div>
+        <img class = "last-content" src="../assets/ment0.png">
     </div>
     <router-link to= "/event6" class="button"> 다음으로 </router-link>
 </div>
@@ -56,15 +50,37 @@ export default {
     margin-top: 15px;
     background-image: url("../assets/backIcon.png");
 }
-.container .text{
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
+.container .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: #000000;
-    margin-top: 33px;
+}
+.container .left-item{
+    width: 46px;
+    height: 46px;
+    margin-right: 11px;
 }
 
+.container .right-item{
+    width: 46px;
+    height: 46px;
+    margin-left: 11px;
+}
+
+.container .text{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+}
+.container .text2{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3D3D3D;
+}
 .container .content{
     margin: auto;
     display: flex;
@@ -72,18 +88,10 @@ export default {
     justify-content: center;
     flex: 1;
 }
-.container .content .mid-icon{
-    width: 72px;
-    height: 72px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("../assets/midIcon.png");
-}
+
 
 .container .content .mid-content{
     display: flex;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 .container .content .mid-content .content-item{
@@ -99,31 +107,20 @@ export default {
     font-style: normal;
     line-height: 87px;
     text-align: center;
-    color: #232323;
+    color: #78D956;
     
     margin-left: auto;
     margin-right: auto;
 }
 
-.container .content .buttom-content{
-    display: flex;
-    margin-bottom: 57px;
-    margin-top: 50px;
-}
+.container .content .last-content{
+    width: 391px;
+    height: 355px;
 
-.container .content .buttom-content .buttom-img{
-    width: 170px;
-    height: 201px;
-    background-image: url("../assets/papa.png");
-}
-
-.container .content .buttom-content .buttom-text{
-    text-align: left;
 }
 
 .container .button{
-    position: absolute;
-    bottom: 50px;
+    margin-bottom: 50px;
     width: 330px;
     height: 75px;
     background-color: #D2FBC4;
@@ -131,10 +128,9 @@ export default {
     line-height: 75px;
     font-weight: 600;
     font-size: 25px;
-    left: 50%;
-    transform: translate(-50%, 0%);
     text-decoration: none;
     color: #0A7800;
-    font-family: 'Pretendard-Regular';
+    margin-left: auto;
+    margin-right: auto;
 }
 </style>

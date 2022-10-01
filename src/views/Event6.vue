@@ -18,7 +18,7 @@ export default {
 .container{
     max-width: 500px;
     min-height: 100vh;
-    background-image: url("../assets/storyPapa.png");
+    background-image: url("../assets/ev6.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

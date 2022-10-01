@@ -1,22 +1,20 @@
 <template>
 <div class="container">
-    <div class = "icon"> </div>
-    <div class="text"> 정답~! <br />
-        정말 천재구나?? </div>
+    <router-link to = "/event7" class = "icon"> </router-link>
+    <div class="title">
+        <img class = "left-item" src="../assets/happy.png">
+        <div class="text"> 정답! </div> <img class = "right-item" src="../assets/happy.png">
+    </div>
+    <div class="text2"> 너 정말 천재구나? </div>
     <div class = "content">
-        <div class = "mid-icon"> </div>
         <div class = "mid-content">
             <div class ="content-item"> I </div>
             <div class ="content-item"> N </div>
             <div class ="content-item"> F </div>
             <div class ="content-item"> P </div>
         </div>
-        <div class = "buttom-content"> 
-            <div class="buttom-img"> </div>
-            <div class="buttom-text"> 내가 바로 <br>
-                열정적인 중재자?
-            </div>
-        </div>
+        <img class = "last-content" src="../assets/ment.png">
+    
     </div>
     <router-link to= "/event10" class="button"> 다음으로 </router-link>
 </div>
@@ -53,15 +51,37 @@ export default {
     margin-top: 15px;
     background-image: url("../assets/backIcon.png");
 }
-.container .text{
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
+.container .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: #000000;
-    margin-top: 33px;
+}
+.container .left-item{
+    width: 46px;
+    height: 46px;
+    margin-right: 11px;
 }
 
+.container .right-item{
+    width: 46px;
+    height: 46px;
+    margin-left: 11px;
+}
+
+.container .text{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+}
+.container .text2{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3D3D3D;
+}
 .container .content{
     margin: auto;
     display: flex;
@@ -69,13 +89,7 @@ export default {
     justify-content: center;
     flex: 1;
 }
-.container .content .mid-icon{
-    width: 72px;
-    height: 72px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("../assets/midIcon.png");
-}
+
 
 .container .content .mid-content{
     display: flex;
@@ -94,26 +108,16 @@ export default {
     font-style: normal;
     line-height: 87px;
     text-align: center;
-    color: #232323;
+    color: #78D956;
     
     margin-left: auto;
     margin-right: auto;
 }
 
-.container .content .buttom-content{
-    display: flex;
-    margin-bottom: 57px;
-    margin-top: 50px;
-}
+.container .content .last-content{
+    width: 391px;
+    height: 355px;
 
-.container .content .buttom-content .buttom-img{
-    width: 208px;
-    height: 282px;
-    background-image: url("../assets/grandma.png");
-}
-
-.container .content .buttom-content .buttom-text{
-    text-align: left;
 }
 
 .container .button{

@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Intro from "../views/Introduce.vue";
 import Contest from "../views/Contest.vue";
 import History from "../views/History.vue";
+import Event0 from "../views/Event0.vue";
 import Event1 from "../views/Event1.vue";
 import Event2 from "../views/Event2.vue";
 import Event2_1 from "../views/Event2_1.vue";
@@ -53,7 +54,11 @@ const routes = [
       name: 'emptyHeader',
       component: EmptyHeader,
       children: [
-          {
+            {
+              path: "/event0",
+              component: Event0,
+            },
+            {
               path: "/event1",
               component: Event1,
             },

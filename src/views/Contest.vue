@@ -1,6 +1,6 @@
 <template>
   <div class="root">
-    <img class="hbti" alt="hbti" src="../assets/hbti.png">
+    <img class="hbti" alt="hbti" src="../assets/ev0.png">
     <div class="gradient">
       <div class="first">
         <div class="title"> 참여 방법</div>
@@ -21,7 +21,7 @@
           </div>
         </div>
       </div>
-      <router-link to="/event1" class="part"> 참여하기</router-link>
+      <router-link to="/event0" class="part"> 참여하기</router-link>
     </div>
     <div class="third">
       <div class="rectangle"></div>

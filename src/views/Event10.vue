@@ -1,22 +1,7 @@
 <template>
     <div class="root">
-        <div class = "icon"> </div>
-        <div class="title"> 오~ 축하혀~ <br> 우리 MBTI를 <br> 모두 맞혔네? </div>
-        <div class="img"> </div>
-        <div class="mid-text"> 우리 강아지~ <br> 다 맞췄으니 선물을 줘야겠구나! </div>
-        <div class="second"> 
-            <div class="title"> 버들부부의 선물보따리 </div>
-            <div class="set">
-                <div class="item">
-                    <img class="gift1" alt="gift1" src="../assets/logo.png">
-                    <div class="content2"> 2명 </div>
-                </div>
-                <div class="item">
-                    <img class="gift1" alt="gift2" src="../assets/logo.png">
-                    <div class="content2"> 5명 </div>
-                </div>
-            </div>
-        </div>
+        <router-link to = "/event9_1" class = "icon"> </router-link>
+        <img class = "content" src="../assets/ev10.png"> 
         <div class="third"> 
             <img class="vector" alt="vector" src="../assets/vector.png">
             <div class="txt"> 공유하기 </div>
@@ -41,8 +26,8 @@ export default {
 .root {
     max-width: 500px;
     min-height: 100vh;
-    height: 100%;
-    overflow: auto;
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
 }
 .root .icon{
@@ -53,80 +38,9 @@ export default {
     background-image: url("../assets/backIcon.png");
 }
 
-.root .title{
-    margin-top: 60px;
-    width: 180px;
-    height: 108px;
-    font-size: 30px;
-    font-weight: 900;
-    margin-left: auto;
-    margin-right: auto;
-    color: #000000;
-}
-
-.root .img {
-    background-image: url("../assets/Rectangle.png");
-    margin-top: 47px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 336px;
-    height: 408px;
-}
-
-.root .mid-text{
-    margin-top: 53px;
-    font-style: normal;
-    font-weight: 600;  
-    font-size: 21px; 
-    color: #626262;   
-}
-.root .second{
-    display: flex;
-    flex-direction: column;
-    margin-top: 114px;
-}
-
-.root .second .title{
-    width: 310px;
-    height: 32px;
-    font-weight: 600;
-    font-size: 21px;
-    text-align: center;
-    color: #626262;
-}
-
-.root .second .set{
-    display: flex;
-    width: 297px;
-    height: 204px;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.root .second .set .item{
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
-
-.root .second .set .item .gift1{
-    width: 141px;
-    height: 202px;
-}
-
-.root .second .set .item .content2{
-    position: relative;
-    width: 58px;
-    height: 58px;
-    line-height: 58px;
-    background-color: #CBF8CF;
-    color: #0B871E;
-    border-radius: 50px;
-    margin-left: auto;
-    margin-right: auto;
+.root .content{
+    width: 391px;
+    height: 907px;
 }
 
 .root .third{

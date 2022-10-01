@@ -24,7 +24,7 @@
             @swiper="onSwiper"
             @slideChange="onSlideChange">
             <swiper-slide class="wrap-swiper">  
-                <img src="../assets/Rectangle.png"  alt="" class="swiper-img" />
+                <img src="../assets/swipe1.png"  alt="" class="swiper-img" />
             </swiper-slide>
             <swiper-slide class="wrap-swiper">
                 <img src="../assets/Rectangle.png"  alt="" class="swiper-img" />
@@ -137,5 +137,10 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 156.02%;
+}
+
+.swiper-img{
+  width: 330px;
+  height: 420px;
 }
 </style>
