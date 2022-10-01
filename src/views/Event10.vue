@@ -46,6 +46,7 @@ export default {
 .root .content{
     width: 391px;
     height: 907px;
+    margin: auto;
 }
 
 .root .third{

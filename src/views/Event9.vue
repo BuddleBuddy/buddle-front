@@ -5,27 +5,27 @@
     <div class="text2"> 다시 한번 생각해봐~ </div>
     <div class="block">
         <div class="block-container">
-            <div :class="{'left-item' : selectBox1 == 0, 'left-item-red' : selectBox1 == -1, 'left-item-click' : selectBox1 == 1 && dir1 == 1, 'left-item-unclick' : selectBox1 == 1 && dir1 == 2}" @click="clickEvent1(1, 1)"> E </div> 
-            <div :class="{'right-item' : selectBox1 == 0, 'right-item-click': selectBox1 == 1 && dir1 == 2, 'right-item-unclick' : selectBox1 == 1 && dir1 == 1}" @click="clickEvent1(2, 1)"> I </div>
+            <div :class="{'left-item-red' : selectBox1 == -1, 'left-item-click' : selectBox1 == 1 && dir1 == 1, 'left-item-unclick' : selectBox1 == 1 && dir1 == 2}" @click="clickEvent1(1, 1)"> E </div> 
+            <div :class="{'right-item' : selectBox1 == -1, 'right-item-click': selectBox1 == 1 && dir1 == 2, 'right-item-unclick' : selectBox1 == 1 && dir1 == 1}" @click="clickEvent1(2, 1)"> I </div>
             <div class= "text-item"> 할머니의 취미는 카페에서 <br> 혼자 독서하시는 것! </div>
         </div>
         <div class="block-container"> 
-            <div :class="{'left-item' : selectBox2 == 0, 'left-item-red' : selectBox2 == -1, 'left-item-click' : selectBox2 == 1 && dir2 == 1, 'left-item-unclick' : selectBox2 == 1 && dir2 == 2}" @click="clickEvent2(1, 1)"> S </div> 
+            <div :class="{'left-item-red' : selectBox2 == -1, 'left-item-click' : selectBox2 == 1 && dir2 == 1, 'left-item-unclick' : selectBox2 == 1 && dir2 == 2}" @click="clickEvent2(1, 1)"> S </div> 
             <div :class="{'right-item' : selectBox2 == -1, 'right-item-click': selectBox2 == 1 && dir2 == 2, 'right-item-unclick' : selectBox2 == 1 && dir2 == 1}" @click="clickEvent2(2, 1)"> N </div>
             <div class= "text-item"> 할머니는 종종 생각에 잘 잠 <br> 기는 편! </div>
         </div>
         <div class="block-container"> 
             <div :class="{'left-item' : selectBox3 == -1, 'left-item-click' : selectBox3 == 1 && dir3 == 1, 'left-item-unclick' : selectBox3 == 1 && dir3 == 2}" @click="clickEvent3(1, 1)"> F </div> 
-            <div :class="{'right-item' : selectBox3 == 0, 'right-item-red' : selectBox3 == -1, 'right-item-click': selectBox3 == 1 && dir3 == 2, 'right-item-unclick' : selectBox3 == 1 && dir3 == 1}" @click="clickEvent3(2, 1)"> T </div> 
+            <div :class="{'right-item-red' : selectBox3 == -1, 'right-item-click': selectBox3 == 1 && dir3 == 2, 'right-item-unclick' : selectBox3 == 1 && dir3 == 1}" @click="clickEvent3(2, 1)"> T </div> 
             <div class= "text-item"> 할아버지를 반하게 한 할머 <br> 니의 매력은 속 깊은 공감능 <br> 력! </div>
         </div>
         <div class="block-container"> 
-            <div :class="{'left-item' : selectBox4 == 0, 'left-item-red' : selectBox4 == -1, 'left-item-click' : selectBox4 == 1 && dir4 == 1, 'left-item-unclick' : selectBox4 == 1 && dir4 == 2}" @click="clickEvent4(1, 1)"> J </div> 
-            <div :class="{'right-item' : selectBox4 == 0, 'right-item-click': selectBox4 == 1 && dir4 == 2, 'right-item-unclick' : selectBox4 == 1 && dir4 == 1}" @click="clickEvent4(2, 1)"> P </div> 
+            <div :class="{'left-item-red' : selectBox4 == -1, 'left-item-click' : selectBox4 == 1 && dir4 == 1, 'left-item-unclick' : selectBox4 == 1 && dir4 == 2}" @click="clickEvent4(1, 1)"> J </div> 
+            <div :class="{'right-item' : selectBox4 == -1, 'right-item-click': selectBox4 == 1 && dir4 == 2, 'right-item-unclick' : selectBox4 == 1 && dir4 == 1}" @click="clickEvent4(2, 1)"> P </div> 
             <div class= "text-item"> 할머니는 촬영 소식에 바로 <br> 즉흥적으로 나갈 수 있는 사  <br> 람! </div>
         </div>
     </div>
-    <router-link to= "/event5_1" class="button"> 정답 제출하기 </router-link>
+    <div class="button" @click="click()"> 정답 제출하기 </div>
 </div>
 </template>
 
@@ -63,7 +63,24 @@ export default {
         },
         back(){
             this.$router.go(-1);
-        }
+        },
+        click(){
+            window.localStorage.setItem('dir1', this.dir1);
+            window.localStorage.setItem('dir2', this.dir2);
+            window.localStorage.setItem('dir3', this.dir3);
+            window.localStorage.setItem('dir4', this.dir4);
+            const one = this.dir1 == 1 ? -1 : 1;
+            const two = this.dir2 == 1 ? -1 : 1;
+            const three = this.dir3 == 2 ? -1 : 1;
+            const four = this.dir4 == 1 ? -1 : 1;
+            
+            window.localStorage.setItem('one', one);
+            window.localStorage.setItem('two', two);
+            window.localStorage.setItem('three', three);
+            window.localStorage.setItem('four', four);
+            console.log(one + " " + two + " " + three + " " + four);
+            this.$router.push('Event8');
+        },
     },
     props: true
 };
@@ -218,6 +235,7 @@ export default {
     margin-left: auto;
     margin-right: auto;
     text-decoration: none;
+    font-weight: 600;
     color: #0A7800;
 }
 </style>

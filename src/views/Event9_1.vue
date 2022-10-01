@@ -14,7 +14,6 @@
             <div class ="content-item"> P </div>
         </div>
         <img class = "last-content" src="../assets/ment.png">
-    
     </div>
     <router-link to= "/event10" class="button"> 다음으로 </router-link>
 </div>
@@ -120,8 +119,8 @@ export default {
 }
 
 .container .content .last-content{
-    width: 391px;
-    height: 355px;
+    max-width: 330px;
+    max-height: 330px;
 
 }
 

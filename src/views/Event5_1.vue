@@ -119,8 +119,8 @@ export default {
 }
 
 .container .content .last-content{
-    width: 391px;
-    height: 355px;
+    max-width: 330px;
+    max-height: 330px;
 
 }
 
