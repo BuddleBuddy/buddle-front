@@ -15,6 +15,9 @@ export default {
       });
       this.$router.push('Event1');
     },
+    back(){
+      this.$router.go(-1);
+    }
   },
 
 };
