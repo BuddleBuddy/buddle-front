@@ -1,6 +1,6 @@
 <template>
     <div class="container" @click="click()">
-        <div class = "icon" @click="back()"> </div>
+      <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
     </div>
 </template>
 
@@ -31,7 +31,6 @@ export default {
 .container .icon{
   height: 35px;
   width: 35px;
-  background-image: url("../assets/backIcon.png");
 }
 
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class = "icon" @click="back()"> </div>
+        <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
         <div class = "top-container">
             <div class = "first">
                 <div class = "item1"> 이름 </div>
@@ -12,14 +12,13 @@
                     <input type="text" class = "left-item" placeholder = "이메일 아이디" id="item2" style="border: none;">
                     <div id = "item-text"> @ </div> 
                     <select class="right-item" style="border: none;"> 
-                        <option value="naver">naver.com</option>
-			            <option value="google">google.com</option>
-                        <option value="hanmain">hanmail.net</option>
-                        <option value="nate">nate.com</option>
+                        <option value="naver.com">naver.com</option>
+			            <option value="google.com">google.com</option>
+                        <option value="hanmain.net">hanmail.net</option>
+                        <option value="nate.com">nate.com</option>
                     </select>
                 </div>
             </div>
-  
             <div class ="item4">
                 <div class = "left-img"> </div>
                 <div class="right-text"> 개인정보(이메일)은 이벤트 추첨 목적으로만
@@ -40,10 +39,14 @@ export default {
         submit(){
             const nameVal = document.getElementById('item1').value;
             const emailVal = document.getElementById('item2').value;
+
+
             if(nameVal.length == 0 || emailVal.length == 0 || nameVal == '' || emailVal == ''){
                 alert('모든 항목을 기입해주세요')
             }
-            else this.$router.push('Event12');
+            else {
+                this.$router.push('Event12');
+            }
         }
     },
 };
@@ -67,9 +70,6 @@ select{
 .container .icon{
     height: 35px;
     width: 35px;
-    /* margin-left: 15px;
-    margin-top: 15px; */
-    background-image: url("../assets/backIcon.png");
 }
 .container .top-container{
     margin-top: 73px;
