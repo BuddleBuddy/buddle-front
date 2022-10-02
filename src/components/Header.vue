@@ -4,10 +4,20 @@
             <img class="logo" alt="logo" src="../assets/logo.png">
         </div>
         <div class="nav">
+          <div class="nav_con">
             <router-link to='/intro' :class="selectTab == 0 ? 'active' : 'tag'" @click="setColor(0)"> 시장소개 </router-link>
-            <router-link to='/contest' :class="selectTab == 1 ? 'active' : 'tag'" @click="setColor(1)"> 콘테스트 </router-link>
+            <div :class="{line: true, active: selectTab === 0 }" @click="setColor(0)"></div>
+          </div>
+          <div class="nav_con">
+            <router-link to='/contest' :class="selectTab == 1 ? 'active' : 'tag'" @click="setColor(1)"> EVENT </router-link>
+            <div :class="{line: true, active: selectTab === 1 }" @click="setColor(1)"></div>
+          </div>
+          <div class="nav_con">
             <router-link to="/history" :class="selectTab == 2 ? 'active' : 'tag'" @click="setColor(2)"> 히스토리 </router-link>
-        </div>
+            <div :class="{line: true, active: selectTab === 2 }" @click="setColor(2)"></div>
+          </div>
+          </div>
+
         <router-view></router-view>
     </div>
 
@@ -40,6 +50,7 @@ export default {
 
 .nav{
     display: flex;
+    flex-direction: row;
     position: sticky;
     top: 0px;
     z-index: 1;  
@@ -52,11 +63,15 @@ export default {
     background-color: #ffffff;
 }
 
+.nav_con{
+  flex: 1;
+}
+
+
 .tag{
     font-family: 'Pretendard';
     color: #686868;
     text-decoration: none;
-    flex: 1;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -66,11 +81,21 @@ export default {
 .active {
     color: #50A65D;
     text-decoration: none;
-    flex: 1;
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+}
+.line{
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+}
+.line.active {
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+  background: #50A65D;
 }
 </style>
