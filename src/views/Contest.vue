@@ -30,6 +30,7 @@
   </div>
 </template>
 
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script>
 import KakaoShare from "@/components/Share";
 import Facebook from "@/components/Facebook";
@@ -44,7 +45,7 @@ export default {
   },
   methods: {
     get() {
-      this.axios.get("/part").then((response) => {
+      axios.get("https://buddlebuddy.shop/part").then((response) => {
         console.log(response);
         this.count = response.data;
       });
