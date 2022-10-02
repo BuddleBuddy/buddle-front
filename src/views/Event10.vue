@@ -1,7 +1,7 @@
 <template>
   <div class="root">
     <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
-    <img class="content" src="../assets/ev10.png" />
+    <img class="content" align ="center" src="../assets/ev10.png" />
     <div class="third">
       <img class="vector" alt="vector" src="../assets/vector.png" />
       <div class="txt">공유하기</div>
@@ -40,6 +40,12 @@ export default {
 .root .icon {
   height: 35px;
   width: 35px;
+}
+
+.root .content{
+  max-width: 391px;
+  height: 907px;
+  margin: auto
 }
 
 .root .third {
