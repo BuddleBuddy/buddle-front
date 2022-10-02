@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <div class = "icon" @click="back()"> </div>
+    <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
     <div class="text"> 오순 할머니의 <br>
         mbti는 뭘까?</div>
     <div class="block">
@@ -102,9 +102,6 @@ export default {
 .container .icon{
     height: 35px;
     width: 35px;
-    /* margin-left: 15px;
-    margin-top: 15px; */
-    background-image: url("../assets/backIcon.png");
 }
 .container .text{
     margin: auto;

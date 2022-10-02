@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <div class = "icon" @click="back()"> </div>
+    <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
     <div class="title">
         <img class = "left-item" src="../assets/happy.png">
         <div class="text"> 정답! </div> <img class = "right-item" src="../assets/happy.png">
@@ -51,9 +51,6 @@ export default {
 .container .icon{
     height: 35px;
     width: 35px;
-    /* margin-left: 15px;
-    margin-top: 15px; */
-    background-image: url("../assets/backIcon.png");
 }
 .container .title{
     display: flex;

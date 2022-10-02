@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <router-link to = "/contest" class="icon"> </router-link>
+    <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
     <div class="start" @click="post()"> 도전하기 </div>
   </div>
 </template>
@@ -34,10 +34,7 @@ export default {
 .container .icon {
   height: 35px;
   width: 35px;
-  left: 15px;
-  top: 15px;
-  position: absolute;
-  background-image: url("../assets/backIcon.png");
+  z-index: 1;
 }
 
 .container .start {

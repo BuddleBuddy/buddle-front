@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class = "icon" @click="back()"> </div>
+        <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
         <div class = "top-container">
             <div class = "first">
                 <div class = "item1"> 이름 </div>
@@ -70,9 +70,6 @@ select{
 .container .icon{
     height: 35px;
     width: 35px;
-    /* margin-left: 15px;
-    margin-top: 15px; */
-    background-image: url("../assets/backIcon.png");
 }
 .container .top-container{
     margin-top: 73px;

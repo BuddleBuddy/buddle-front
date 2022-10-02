@@ -1,6 +1,6 @@
 <template>
   <div class="root">
-    <div class="icon" @click="back()"></div>
+    <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
     <img class="content" src="../assets/ev10.png" />
     <div class="third">
       <img class="vector" alt="vector" src="../assets/vector.png" />
@@ -40,15 +40,6 @@ export default {
 .root .icon {
   height: 35px;
   width: 35px;
-  /* margin-left: 15px;
-    margin-top: 15px; */
-  background-image: url("../assets/backIcon.png");
-}
-
-.root .content {
-  width: 391px;
-  height: 907px;
-  margin: auto;
 }
 
 .root .third {

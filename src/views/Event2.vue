@@ -1,7 +1,6 @@
 <template>
 <div class="container" @click="click()">
-  <div class="icon" @click="back()"></div>
-  <div class="touch"> </div>
+  <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
 </div>
 </template>
 
@@ -34,19 +33,7 @@ export default {
 .container .icon {
   height: 35px;
   width: 35px;
-  left: 15px;
-  top: 15px;
-  background-image: url("../assets/backIcon.png");
   z-index: 1;
 }
 
-.container .touch{
-  width: 274px;
-  height: 50px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  background-image: url("../assets/touch.png");
-  bottom: 61px;
-}
 </style>

@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <div class = "icon" @click="back()"> </div>
+    <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
     <div class="text"> 땡! <br> </div>
     <div class="text2"> 다시 한번 생각해봐~ </div>
     <div class="block">
@@ -99,7 +99,6 @@ export default {
 .container .icon{
     height: 35px;
     width: 35px;
-    background-image: url("../assets/backIcon.png");
 }
 .container .text{
     font-weight: 700;
