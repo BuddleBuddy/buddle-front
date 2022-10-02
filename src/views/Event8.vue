@@ -136,6 +136,7 @@ export default {
 .container .block .container-image {
   max-width: 330px;
   min-height: 398px;
+
 }
 .container .block .buttom-text {
   margin-top: 36px;
@@ -147,5 +148,6 @@ export default {
 .swiper-img {
   width: 330px;
   height: 420px;
+  border-radius: 30px;
 }
 </style>
