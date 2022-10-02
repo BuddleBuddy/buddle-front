@@ -8,3 +8,4 @@ const VueApp = createApp(App);
 VueApp.config.globalProperties.axios = axios;
 VueApp.use(router);
 VueApp.mount("#app");
+axios.defaults.baseURL = "https://buddlebuddy.shop";

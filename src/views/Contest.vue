@@ -34,6 +34,7 @@
 import KakaoShare from "@/components/Share";
 import Facebook from "@/components/Facebook";
 import Clipboard from "@/components/Clipboard";
+import axios from "axios";
 export default {
   name: "Contest",
   components: { Clipboard, Facebook, KakaoShare },
