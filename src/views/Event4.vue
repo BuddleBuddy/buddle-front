@@ -146,5 +146,6 @@ export default {
 .swiper-img {
   width: 330px;
   height: 420px;
+  border-radius: 30px;
 }
 </style>
