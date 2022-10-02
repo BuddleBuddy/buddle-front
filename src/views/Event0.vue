@@ -1,13 +1,22 @@
 <template>
   <div class="container">
     <router-link to = "/contest" class="icon"> </router-link>
-    <router-link to="/event1" class="start"> 도전하기 </router-link>
+    <div class="start" @click="post()"> 도전하기 </div>
   </div>
 </template>
 
 <script>
 export default {
   name: "Event0",
+  methods: {
+    post() {
+      this.axios.post("/participation").then((response) => {
+        console.log(response);
+      });
+      this.$router.push('Event1');
+    },
+  },
+
 };
 </script>
 
