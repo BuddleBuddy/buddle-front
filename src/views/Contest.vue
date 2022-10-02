@@ -45,7 +45,7 @@ export default {
   },
   methods: {
     get() {
-      axios.get("/part").then((response) => {
+      axios.get("https://buddlebuddy.shop/part").then((response) => {
         console.log(response);
         this.count = response.data;
       });

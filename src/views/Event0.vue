@@ -10,7 +10,7 @@ export default {
   name: "Event0",
   methods: {
     post() {
-      this.axios.post("/participation").then((response) => {
+      this.axios.post("https://buddlebuddy.shop/participation").then((response) => {
         console.log(response);
       });
       this.$router.push('Event1');

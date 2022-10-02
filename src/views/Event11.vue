@@ -52,7 +52,7 @@ export default {
                 alert('모든 항목을 기입해주세요')
             }
             else {
-                axios.post('/user/join',{
+                axios.post('https://buddlebuddy.shop/user/join',{
                   name: nameVal,
                   email: emailVal + this.selected
                 })
