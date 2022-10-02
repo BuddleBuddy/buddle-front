@@ -4,38 +4,38 @@
       <div class="text">오순할매와 상의중</div>
       <div class="spinner">
         <pulse-loader1
-          :loading="loading"
-          :color="'#464646'"
-          :size="'12px'"
+            :loading="loading"
+            :color="'#464646'"
+            :size="'12px'"
         ></pulse-loader1>
         <pulse-loader2
-          :loading="loading"
-          :color="'#464646'"
-          :size="'12px'"
+            :loading="loading"
+            :color="'#464646'"
+            :size="'12px'"
         ></pulse-loader2>
       </div>
       <div class="container-image">
         <swiper
-          :style="{
+            :style="{
             '--swiper-navigation-color': '#fff',
             '--swiper-pagination-color': '#fff',
           }"
-          :autoplay="{
+            :autoplay="{
             delay: 1000,
             disableOnInteraction: false,
           }"
-          :modules="modules"
-          effect="fade"
-          :slides-per-view="1"
-          :speed="1200"
-          @swiper="onSwiper"
-          @slideChange="onSlideChange"
+            :modules="modules"
+            effect="fade"
+            :slides-per-view="1"
+            :speed="1200"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
         >
           <swiper-slide class="wrap-swiper">
             <img src="../assets/swipe3.png" alt="" class="swiper-img" />
           </swiper-slide>
           <swiper-slide class="wrap-swiper">
-            <img src="../assets/swipe4.png" alt="" class="swiper-img" />
+            <img src="../assets/swipe2.png" alt="" class="swiper-img" />
           </swiper-slide>
         </swiper>
       </div>
@@ -51,16 +51,13 @@
 
 <script>
 import { Pagination, EffectFade, Autoplay, Parallax } from "swiper";
-
 import { Swiper, SwiperSlide } from "swiper/vue";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { createRouter as $router } from "vue-router/dist/vue-router.mjs";
 import PulseLoader1 from "../components/Spinner1";
 import PulseLoader2 from "../components/Spinner2";
-
 export default {
   name: "Event8",
   components: {
@@ -109,7 +106,6 @@ export default {
   max-width: 500px;
   min-height: 100vh;
 }
-
 .container .block {
   display: flex;
   flex-direction: column;
@@ -117,14 +113,12 @@ export default {
   margin: auto;
   flex: 1;
 }
-
 .container .block .text {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #757575;
 }
-
 .container .block .spinner {
   display: flex;
   flex-direction: row;
@@ -132,11 +126,9 @@ export default {
   margin-top: 18px;
   margin-bottom: 39px;
 }
-
 .container .block .container-image {
   max-width: 330px;
   min-height: 398px;
-
 }
 .container .block .buttom-text {
   margin-top: 36px;
@@ -144,7 +136,6 @@ export default {
   font-size: 14px;
   line-height: 156.02%;
 }
-
 .swiper-img {
   width: 330px;
   height: 420px;
