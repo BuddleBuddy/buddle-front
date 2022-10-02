@@ -32,13 +32,10 @@
           @slideChange="onSlideChange"
         >
           <swiper-slide class="wrap-swiper">
-            <img src="../assets/swipe1.png" alt="" class="swiper-img" />
+            <img src="../assets/swipe3.png" alt="" class="swiper-img" />
           </swiper-slide>
           <swiper-slide class="wrap-swiper">
-            <img src="../assets/Rectangle.png" alt="" class="swiper-img" />
-          </swiper-slide>
-          <swiper-slide class="wrap-swiper">
-            <img src="../assets/Rectangle.png" alt="" class="swiper-img" />
+            <img src="../assets/swipe4.png" alt="" class="swiper-img" />
           </swiper-slide>
         </swiper>
       </div>
