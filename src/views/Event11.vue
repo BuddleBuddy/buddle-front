@@ -11,11 +11,11 @@
                 <div class = "item-container"> 
                     <input type="text" class = "left-item" placeholder = "이메일 아이디" id="item2" style="border: none;">
                     <div id = "item-text"> @ </div> 
-                    <select class="right-item" style="border: none;"> 
-                        <option value="naver.com">naver.com</option>
-			            <option value="google.com">google.com</option>
-                        <option value="hanmain.net">hanmail.net</option>
-                        <option value="nate.com">nate.com</option>
+                    <select v-model="selected" class="right-item" style="border: none;">
+                        <option value="@naver.com">naver.com</option>
+			                  <option value="@google.com">google.com</option>
+                        <option value="@hanmail.net">hanmail.net</option>
+                        <option value="@nate.com">nate.com</option>
                     </select>
                 </div>
             </div>
@@ -30,8 +30,15 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
     name: "Event11",
+    data(){
+      return{
+        selected: ''
+      }
+    },
     methods: {
         back(){
             this.$router.go(-1);
@@ -45,7 +52,20 @@ export default {
                 alert('모든 항목을 기입해주세요')
             }
             else {
-                this.$router.push('Event12');
+                axios.post('/user/join',{
+                  name: nameVal,
+                  email: emailVal + this.selected
+                })
+                .then((response) => {
+                  console.log(response);
+                  console.log(response.data);
+                  if(response.data.message=="중복된 이메일입니다.") {
+                    alert('중복된 이메일입니다.')
+                  }
+                  else {
+                    this.$router.push('Event12');
+                  }
+                });
             }
         }
     },
