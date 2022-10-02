@@ -14,7 +14,6 @@
     "node-sass": "^7.0.3",
     "sass-loader": "^13.0.2",
     "swiper": "^8.4.2",
-    "vue": "^3.2.13",
     "vue-clipboard2": "^0.3.3",
     "vue-router": "^4.1.5",
     "vue-spinner": "^1.0.4"

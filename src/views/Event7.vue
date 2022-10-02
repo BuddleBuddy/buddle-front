@@ -62,21 +62,26 @@ export default {
             this.selectBox4 = num;
         },
         click(){
-            window.localStorage.setItem('dir1', this.dir1);
-            window.localStorage.setItem('dir2', this.dir2);
-            window.localStorage.setItem('dir3', this.dir3);
-            window.localStorage.setItem('dir4', this.dir4);
-            const one = this.dir1 == 1 ? -1 : 1;
-            const two = this.dir2 == 1 ? -1 : 1;
-            const three = this.dir3 == 2 ? -1 : 1;
-            const four = this.dir4 == 1 ? -1 : 1;
-            
-            window.localStorage.setItem('one', one);
-            window.localStorage.setItem('two', two);
-            window.localStorage.setItem('three', three);
-            window.localStorage.setItem('four', four);
-            console.log(one + " " + two + " " + three + " " + four);
-            this.$router.push('Event8');
+            if(this.dir1 == 0 || this.dir2 == 0 || this.dir3 == 0 || this.dir4 == 0){
+                alert('모든 항목을 선택해주세요 :) ')
+            }
+            else{
+                window.localStorage.setItem('dir1', this.dir1);
+                window.localStorage.setItem('dir2', this.dir2);
+                window.localStorage.setItem('dir3', this.dir3);
+                window.localStorage.setItem('dir4', this.dir4);
+                const one = this.dir1 == 1 ? -1 : 1;
+                const two = this.dir2 == 1 ? -1 : 1;
+                const three = this.dir3 == 2 ? -1 : 1;
+                const four = this.dir4 == 1 ? -1 : 1;
+                
+                window.localStorage.setItem('one', one);
+                window.localStorage.setItem('two', two);
+                window.localStorage.setItem('three', three);
+                window.localStorage.setItem('four', four);
+                console.log(one + " " + two + " " + three + " " + four);
+                this.$router.push('Event8');
+            }
         },
         back(){
         this.$router.go(-1);

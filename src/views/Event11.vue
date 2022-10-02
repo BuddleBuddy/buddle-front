@@ -4,12 +4,12 @@
         <div class = "top-container">
             <div class = "first">
                 <div class = "item1"> 이름 </div>
-                <input type= "text" placeholder = "이름을 입력해주세요" class = "item2" style="border: none;">
+                <input type= "text" placeholder = "이름을 입력해주세요" id="item1" class = "item2" style="border: none;">
             </div>
             <div class="second">
                 <div class = "item1"> 이메일 </div>
                 <div class = "item-container"> 
-                    <input type="text" class = "left-item" placeholder = "이메일 아이디" style="border: none;">
+                    <input type="text" class = "left-item" placeholder = "이메일 아이디" id="item2" style="border: none;">
                     <div id = "item-text"> @ </div> 
                     <select class="right-item" style="border: none;"> 
                         <option value="naver">naver.com</option>
@@ -26,7 +26,7 @@
                 활용하며, 추첨 종료 후 즉시 파기됩니다</div>
             </div>
         </div>
-        <router-link to= "/event12" class = "button"> 응모 완료! </router-link>
+        <div class = "button" @click="submit"> 응모 완료! </div>
     </div>
 </template>
 
@@ -36,6 +36,14 @@ export default {
     methods: {
         back(){
             this.$router.go(-1);
+        },
+        submit(){
+            const nameVal = document.getElementById('item1').value;
+            const emailVal = document.getElementById('item2').value;
+            if(nameVal.length == 0 || emailVal.length == 0 || nameVal == '' || emailVal == ''){
+                alert('모든 항목을 기입해주세요')
+            }
+            else this.$router.push('Event12');
         }
     },
 };

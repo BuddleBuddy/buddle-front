@@ -31,7 +31,7 @@
                 다 세워놓더라구~ </div>
         </div>
     </div>
-    <div class="button" @click="click()"> 정답 제출하기 </div>
+    <div class="button" @click="button"> 정답 제출하기 </div>
 </div>
 </template>
 
@@ -48,6 +48,7 @@ export default {
             dir3: 0,
             selectBox4: 0,
             dir4: 0,
+            boxOne: '',
         }
     },
     methods: {
@@ -67,23 +68,28 @@ export default {
             this.dir4 = dir;
             this.selectBox4 = num;
         },
-        click(){
-            window.localStorage.setItem('dir1', this.dir1);
-            window.localStorage.setItem('dir2', this.dir2);
-            window.localStorage.setItem('dir3', this.dir3);
-            window.localStorage.setItem('dir4', this.dir4);
+        button(){
+            if(this.dir1 == 0 || this.dir2 == 0 || this.dir3 == 0 || this.dir4 == 0){
+                alert('모든 항목을 선택해주세요 :) ')
+            }
+            else{
+                window.localStorage.setItem('dir1', this.dir1);
+                window.localStorage.setItem('dir2', this.dir2);
+                window.localStorage.setItem('dir3', this.dir3);
+                window.localStorage.setItem('dir4', this.dir4);
 
-            const one = this.dir1 == 2 ? -1 : 1;
-            const two = this.dir2 == 2 ? -1 : 1;
-            const three = this.dir3 == 1 ? -1 : 1;
-            const four = this.dir4 == 2 ? -1 : 1;
-            console.log(one + " " + two + " " + three + " " + four);
-            
-            window.localStorage.setItem('one', one);
-            window.localStorage.setItem('two', two);
-            window.localStorage.setItem('three', three);
-            window.localStorage.setItem('four', four);
-            this.$router.push('Event4');
+                const one = this.dir1 == 2 ? -1 : 1;
+                const two = this.dir2 == 2 ? -1 : 1;
+                const three = this.dir3 == 1 ? -1 : 1;
+                const four = this.dir4 == 2 ? -1 : 1;
+                console.log(one + " " + two + " " + three + " " + four);
+                
+                window.localStorage.setItem('one', one);
+                window.localStorage.setItem('two', two);
+                window.localStorage.setItem('three', three);
+                window.localStorage.setItem('four', four);
+                this.$router.push('Event4');
+            }
         },
         back(){
         this.$router.go(-1);
