@@ -14,7 +14,7 @@
     </div>
     <div class="fourth">
       <img class="vector" alt="vector" src="../assets/vector.png" />
-      <div class="txt">친구들한테도 좀 알려줘바바</div>
+      <div class="txt">친구들에게 알려줄까?</div>
       <div class="fifth">
         <div class="logo">
           <KakaoShare />
