@@ -4,25 +4,23 @@
     <div class="text"> 땡! <br> </div>
     <div class="text2"> 다시 한번 생각해봐~ </div>
     <div class="block">
+        <div class="hint-container">
+            <div class="hint-title" style="color: #FF4848; font-weight: 700;"> 조금 더 힌트를 줄게! </div>
+            <div class="hint-content" style="color: #565656; font-weight: 400;"> 내향적, 이상적, 감정적, 무계획적이란 단어가  <br>
+            잘 어울리는 성격이야! </div>
+        </div>
+        <div class="mid-content"> “ 빨간 부분만 고쳐봐! “ </div>
         <div class="block-container">
             <div :class="{'left-item-red' : selectBox1 == -1, 'left-item-click' : selectBox1 == 1 && dir1 == 1, 'left-item-unclick' : selectBox1 == 1 && dir1 == 2}" @click="clickEvent1(1, 1)"> E </div> 
-            <div :class="{'right-item' : selectBox1 == -1, 'right-item-click': selectBox1 == 1 && dir1 == 2, 'right-item-unclick' : selectBox1 == 1 && dir1 == 1}" @click="clickEvent1(2, 1)"> I </div>
-            <div class= "text-item"> 할머니의 취미는 카페에서 <br> 혼자 독서하시는 것! </div>
-        </div>
-        <div class="block-container"> 
             <div :class="{'left-item-red' : selectBox2 == -1, 'left-item-click' : selectBox2 == 1 && dir2 == 1, 'left-item-unclick' : selectBox2 == 1 && dir2 == 2}" @click="clickEvent2(1, 1)"> S </div> 
-            <div :class="{'right-item' : selectBox2 == -1, 'right-item-click': selectBox2 == 1 && dir2 == 2, 'right-item-unclick' : selectBox2 == 1 && dir2 == 1}" @click="clickEvent2(2, 1)"> N </div>
-            <div class= "text-item"> 할머니는 종종 생각에 잘 잠 <br> 기는 편! </div>
-        </div>
-        <div class="block-container"> 
             <div :class="{'left-item' : selectBox3 == -1, 'left-item-click' : selectBox3 == 1 && dir3 == 1, 'left-item-unclick' : selectBox3 == 1 && dir3 == 2}" @click="clickEvent3(1, 1)"> F </div> 
-            <div :class="{'right-item-red' : selectBox3 == -1, 'right-item-click': selectBox3 == 1 && dir3 == 2, 'right-item-unclick' : selectBox3 == 1 && dir3 == 1}" @click="clickEvent3(2, 1)"> T </div> 
-            <div class= "text-item"> 할아버지를 반하게 한 할머 <br> 니의 매력은 속 깊은 공감능 <br> 력! </div>
+            <div :class="{'left-item' : selectBox4 == -1, 'left-item-click': selectBox4 == 1 && dir4 == 1, 'left-item-unclick' : selectBox4 == 1 && dir4 == 2}" @click="clickEvent4(1, 1)"> P </div> 
         </div>
         <div class="block-container"> 
-            <div :class="{'left-item-red' : selectBox4 == -1, 'left-item-click' : selectBox4 == 1 && dir4 == 1, 'left-item-unclick' : selectBox4 == 1 && dir4 == 2}" @click="clickEvent4(1, 1)"> J </div> 
-            <div :class="{'right-item' : selectBox4 == -1, 'right-item-click': selectBox4 == 1 && dir4 == 2, 'right-item-unclick' : selectBox4 == 1 && dir4 == 1}" @click="clickEvent4(2, 1)"> P </div> 
-            <div class= "text-item"> 할머니는 촬영 소식에 바로 <br> 즉흥적으로 나갈 수 있는 사  <br> 람! </div>
+            <div :class="{'right-item' : selectBox1 == -1, 'right-item-click': selectBox1 == 1 && dir1 == 2, 'right-item-unclick' : selectBox1 == 1 && dir1 == 1}" @click="clickEvent1(2, 1)"> I </div>
+            <div :class="{'right-item' : selectBox2 == -1, 'right-item-click': selectBox2 == 1 && dir2 == 2, 'right-item-unclick' : selectBox2 == 1 && dir2 == 1}" @click="clickEvent2(2, 1)"> N </div>
+            <div :class="{'right-item-red' : selectBox3 == -1, 'right-item-click': selectBox3 == 1 && dir3 == 2, 'right-item-unclick' : selectBox3 == 1 && dir3 == 1}" @click="clickEvent3(2, 1)"> T </div> 
+            <div :class="{'right-item-red' : selectBox4 == -1, 'right-item-click' : selectBox4 == 1 && dir4 == 2, 'right-item-unclick' : selectBox4 == 1 && dir4 == 1}" @click="clickEvent4(2, 1)"> J </div> 
         </div>
     </div>
     <div class="button" @click="click()"> 정답 제출하기 </div>
@@ -61,26 +59,27 @@ export default {
             this.dir4 = dir;
             this.selectBox4 = num;
         },
-        back(){
-            this.$router.go(-1);
-        },
         click(){
             window.localStorage.setItem('dir1', this.dir1);
             window.localStorage.setItem('dir2', this.dir2);
             window.localStorage.setItem('dir3', this.dir3);
             window.localStorage.setItem('dir4', this.dir4);
+
             const one = this.dir1 == 1 ? -1 : 1;
             const two = this.dir2 == 1 ? -1 : 1;
             const three = this.dir3 == 2 ? -1 : 1;
-            const four = this.dir4 == 1 ? -1 : 1;
+            const four = this.dir4 == 2 ? -1 : 1;
+            console.log(one + " " + two + " " + three + " " + four);
             
             window.localStorage.setItem('one', one);
             window.localStorage.setItem('two', two);
             window.localStorage.setItem('three', three);
             window.localStorage.setItem('four', four);
-            console.log(one + " " + two + " " + three + " " + four);
             this.$router.push('Event8');
         },
+        back(){
+            this.$router.go(-1);
+        }
     },
     props: true
 };
@@ -102,18 +101,15 @@ export default {
 }
 .container .text{
     font-weight: 700;
-    font-size: 44px;
-    line-height: 52.81px;
-    text-align: center;
-    color: #000000;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FF4848;
 }
-
 .container .text2{
     font-weight: 700;
-    font-size: 25px;
-    line-height: 36px;
-    text-align: center;
-    color: #000000;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3D3D3D;
 }
 
 .container .block{
@@ -123,11 +119,30 @@ export default {
     margin: auto;
     flex: 1;
 }
+.container .block .hint-container{
+    width: 342px;
+    /* height: 169px; */
+    background: #FFE6E6;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    padding: 47px 0;
+}
+
+.container .block .mid-content{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #BBBBBB;
+    margin-top: 33px;
+}
 
 .container .block .block-container{
     display: flex;
-    width: 330px;
-    height: 94px;
+    flex-direction: row;
+    margin: 8px;
 }
 
 .left-item{
@@ -137,8 +152,8 @@ export default {
     border-radius: 6.55607px;
     font-size: 35px;
     line-height: 70px;
+    margin-left: 20px;
 }
-
 .left-item-red{
     width: 55px;
     height: 70px;
@@ -147,6 +162,7 @@ export default {
     font-size: 35px;
     line-height: 70px;
     color: #F66D6D;
+    margin-left: 20px;
 }
 
 .left-item-click{
@@ -158,6 +174,7 @@ export default {
     box-shadow: 0px 2.83321px 6.37471px rgba(0, 0, 0, 0.05);
     border-radius: 6.55607px;
     line-height: 70px;
+    margin-left: 20px;
 }
 
 .left-item-unclick{
@@ -169,6 +186,7 @@ export default {
     box-shadow: 0px 2.83321px 6.37471px rgba(0, 0, 0, 0.05);
     border-radius: 6.55607px;
     line-height: 70px;
+    margin-left: 20px;
 }
 
 .right-item{
@@ -177,21 +195,19 @@ export default {
     box-shadow: 0px 2.83321px 6.37471px rgba(0, 0, 0, 0.05);
     border-radius: 6.55607px;
     font-size: 35px;
-    margin-left: 23px;
     line-height: 70px;
+    margin-left: 20px;
 }
-
 .right-item-red{
     width: 55px;
     height: 70px;
     box-shadow: 0px 2.83321px 6.37471px rgba(0, 0, 0, 0.05);
     border-radius: 6.55607px;
     font-size: 35px;
-    margin-left: 23px;
     line-height: 70px;
+    margin-left: 20px;
     color: #F66D6D;
 }
-
 .right-item-click{
     width: 55px;
     height: 70px;
@@ -200,7 +216,7 @@ export default {
     font-size: 35px;
     box-shadow: 0px 2.83321px 6.37471px rgba(0, 0, 0, 0.05);
     border-radius: 6.55607px;
-    margin-left: 23px;
+    margin-left: 20px;
     line-height: 70px;
 }
 
@@ -212,7 +228,7 @@ export default {
     font-size: 35px;
     box-shadow: 0px 2.83321px 6.37471px rgba(0, 0, 0, 0.05);
     border-radius: 6.55607px;
-    margin-left: 23px;
+    margin-left: 20px;
     line-height: 70px;
 }
 .text-item{
@@ -220,11 +236,11 @@ export default {
     margin-top: auto;
     margin-bottom: auto;
     /* font-weight: 400; */
-    font-size: 16px;    
+    font-size: 16px;
+    margin-left: 20px;    
     text-align: left;
 }
 .container .button{
-    margin-bottom: 50px;
     width: 330px;
     height: 75px;
     background-color: #D2FBC4;
@@ -233,8 +249,9 @@ export default {
     font-size: 25px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     text-decoration: none;
-    font-weight: 600;
     color: #0A7800;
+    font-weight: 600;
 }
 </style>
