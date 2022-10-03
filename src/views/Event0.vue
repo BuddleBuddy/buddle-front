@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 .container {
-  position: relative;
+  /*position: relative;*/
   max-width: 500px;
   min-height: 100vh;
   background-image: url("../assets/ev0.png");
@@ -43,7 +43,9 @@ export default {
 .container .start {
   position: absolute;
   bottom: 50px;
-  width: 330px;
+  /*width: 330px;*/
+  width: 90%;
+  max-width: 480px;
   height: 75px;
   background-color: #f3f4d4;
   border: 1px solid #f3f4d4;

@@ -39,15 +39,16 @@
 
         <a class="address" href="https://map.naver.com/v5/entry/place/34481600?c=14120226.1293303,4508047.9332878,13,0,0,0,dh&placePath=%2Fhome&entry=plt" style="cursor: pointer" target="_blank">
           <div class="addCon">
-            <div class="addContent">주소: 서울 구로구 서해안로30길 17</div>
+              <div class="addContent">주소: 서울 구로구 서해안로30길 17</div>
+              <div>
+                <img src="../assets/to_naver.png" class="toNaverImg">
+              </div>
+          </div>
             <div>
-              <img src="../assets/to_naver.png" class="toNaverImg">
+              <img class="tn" src="../assets/store1_tn.png"/>
             </div>
-          </div>
-          <div>
-            <img class="tn" src="../assets/store1_tn.png"/>
-          </div>
         </a>
+
       </div>
 
       <div :class="{ 'tab-container': true, active: selectTab === 0 }">
@@ -67,14 +68,14 @@
 
         <a class="address" href="https://map.naver.com/v5/search/%EC%86%8C%EB%AC%B8%EB%82%9C%20%EB%96%A1%EB%B3%B6%EC%9D%B4%20%EC%88%9C%EB%8C%80/place/20902761?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14119288.4081124,4508073.0844164,15,0,0,0,dh" style="cursor: pointer" target="_blank">
           <div class="addCon">
-            <div class="addContent">주소: 서울 구로구 서해안로30길 13</div>
-            <div>
-              <img src="../assets/to_naver.png" class="toNaverImg">
+              <div class="addContent">주소: 서울 구로구 서해안로30길 13</div>
+              <div>
+                <img src="../assets/to_naver.png" class="toNaverImg">
+              </div>
             </div>
-          </div>
-          <div>
-            <img class="tn" src="../assets/store2_tn.jpeg"/>
-          </div>
+            <div>
+              <img class="tn" src="../assets/store2_tn.jpeg"/>
+            </div>
         </a>
 
       </div>
@@ -99,7 +100,7 @@
             <div>
               <img src="../assets/to_naver.png" class="toNaverImg">
             </div>
-          </div>
+            </div>
           <div>
             <img class="tn" src="../assets/store3_tn.jpeg">
           </div>
@@ -127,7 +128,7 @@
             <div>
               <img src="../assets/to_naver.png" class="toNaverImg">
             </div>
-          </div>
+            </div>
           <div>
             <img class="tn" src="../assets/store4_tn.jpeg">
           </div>
@@ -155,7 +156,7 @@
             <div>
               <img src="../assets/to_naver.png" class="toNaverImg">
             </div>
-          </div>
+            </div>
           <div>
             <img class="tn" src="../assets/store5_tn.jpg">
           </div>
@@ -339,6 +340,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 1;
 }
 
 .photo {
@@ -347,6 +349,7 @@ export default {
   border-radius: 25px;
   /*margin-top: 40px;*/
   margin-bottom: 20px;
+  object-fit: cover;
 
 }
 
@@ -425,7 +428,9 @@ export default {
   margin-right: 5%;
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 100%;
 }
+
 .addContent{
   font-weight: bold;
   color: #686868;
@@ -440,5 +445,10 @@ export default {
   0% {visibility: hidden; opacity: 100%}
   50% {visibility: visible; opacity: 0%}
   100% {visibility: hidden; opacity: 100%}
+}
+@media screen and (max-width: 330px) {
+  .address{
+    flex-wrap: wrap;
+  }
 }
 </style>

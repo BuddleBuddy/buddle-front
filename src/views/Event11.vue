@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
+        <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()">
         <div class = "top-container">
             <div class = "first">
                 <div class = "item1"> 이름 </div>
@@ -8,9 +8,9 @@
             </div>
             <div class="second">
                 <div class = "item1"> 이메일 </div>
-                <div class = "item-container"> 
+                <div class = "item-container">
                     <input type="text" class = "left-item" placeholder = "이메일 아이디" id="item2" style="border: none;">
-                    <div id = "item-text"> @ </div> 
+                    <div id = "item-text"> @ </div>
                     <select v-model="selected" class="right-item" style="border: none;">
                         <option value="@naver.com">naver.com</option>
 			                  <option value="@gmail.com">gmail.com</option>
@@ -92,6 +92,7 @@ select{
     width: 35px;
 }
 .container .top-container{
+    width: 01;
     margin-top: 73px;
     display: flex;
     flex-direction: column;
@@ -108,7 +109,8 @@ select{
     color: #000000;
 }
 .container .top-container .item2{
-    width: 330px;
+    /*width: 330px;*/
+    width: 100%;
     height: 55px;
     background-color: #FFF9DA;
     border-radius: 20px;
@@ -171,21 +173,23 @@ select{
     font-size: 13px;
 }
 
-.container .button{
-    position: absolute;
-    width: 330px;
-    height: 75px;
-    bottom: 50px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    line-height: 75px;
-    background-color: #D2FBC4;
-    border-radius: 25px;
-    color: #0A7800;
-    font-size: 25px;
-    font-weight: 600;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
+.container .button {
+  position: absolute;
+  /*width: 330px;*/
+  width: 90%;
+  max-width: 330px;
+  height: 75px;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  line-height: 75px;
+  background-color: #D2FBC4;
+  border-radius: 25px;
+  color: #0A7800;
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

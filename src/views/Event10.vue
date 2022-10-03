@@ -43,6 +43,8 @@ export default {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
+  justify-content: center;
+  align-content: center;
 }
 .root .icon {
   height: 35px;
@@ -50,8 +52,9 @@ export default {
 }
 
 .root .content{
-  max-width: 391px;
-  height: 907px;
+  /*max-width: 391px;
+  height: 907px;*/
+  width: 100%;
   margin: auto
 }
 
@@ -75,8 +78,8 @@ export default {
   line-height: 30px;
 }
 .root .fourth .first-item {
-  width: 330px;
-  height: 75px;
+  width: 100%;
+  /*height: 75px;*/
   background-color: #d2fbc4;
   color: #0a7800;
   text-decoration: none;
@@ -89,8 +92,8 @@ export default {
 }
 
 .root .fourth .second-item {
-  width: 330px;
-  height: 75px;
+  width: 100%;
+  /*height: 75px;*/
   margin-top: 20px;
   color: #0a7800;
   font-size: 25px;

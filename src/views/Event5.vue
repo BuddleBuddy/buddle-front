@@ -118,9 +118,14 @@ export default {
     justify-content: center;
     margin: auto;
     flex: 1;
+    width: 100%;
+    align-content: center;
+  align-items: center;
 }
+
 .container .block .hint-container{
-    width: 342px;
+    /*width: 342px;*/
+    width: 90%;
     /* height: 169px; */
     background: #FFE6E6;
     border-radius: 10px;
@@ -152,7 +157,8 @@ export default {
     border-radius: 6.55607px;
     font-size: 35px;
     line-height: 70px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .left-item-red{
     width: 55px;
@@ -162,7 +168,9 @@ export default {
     font-size: 35px;
     line-height: 70px;
     color: #F66D6D;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .left-item-click{
@@ -174,7 +182,9 @@ export default {
     box-shadow: 0px 2.83321px 6.37471px rgba(0, 0, 0, 0.05);
     border-radius: 6.55607px;
     line-height: 70px;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .left-item-unclick{
@@ -186,7 +196,9 @@ export default {
     box-shadow: 0px 2.83321px 6.37471px rgba(0, 0, 0, 0.05);
     border-radius: 6.55607px;
     line-height: 70px;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .right-item{
@@ -196,7 +208,9 @@ export default {
     border-radius: 6.55607px;
     font-size: 35px;
     line-height: 70px;
-    margin-left: 20px;
+    /*margin-left: 10px;*/
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .right-item-red{
     width: 55px;
@@ -205,8 +219,10 @@ export default {
     border-radius: 6.55607px;
     font-size: 35px;
     line-height: 70px;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     color: #F66D6D;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .right-item-click{
     width: 55px;
@@ -216,8 +232,10 @@ export default {
     font-size: 35px;
     box-shadow: 0px 2.83321px 6.37471px rgba(0, 0, 0, 0.05);
     border-radius: 6.55607px;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     line-height: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .right-item-unclick{
@@ -228,8 +246,10 @@ export default {
     font-size: 35px;
     box-shadow: 0px 2.83321px 6.37471px rgba(0, 0, 0, 0.05);
     border-radius: 6.55607px;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     line-height: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .text-item{
     margin-left: 22px;
@@ -241,7 +261,8 @@ export default {
     text-align: left;
 }
 .container .button{
-    width: 330px;
+    /*width: 330px;*/
+    width: 90%;
     height: 75px;
     background-color: #D2FBC4;
     border-radius: 25px;
@@ -253,5 +274,40 @@ export default {
     text-decoration: none;
     color: #0A7800;
     font-weight: 600;
+}
+
+@media screen and (max-width: 300px) {
+  .left-item {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .left-item-click {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .left-item-red {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .left-item-unclick {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .right-item {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .right-item-click {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .right-item-red {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .right-item-unclick {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
 }
 </style>

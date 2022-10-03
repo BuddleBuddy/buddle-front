@@ -241,7 +241,9 @@ export default {
   border-radius: 25px;
   background-color: #50a65d;
   color: #ffffff;
-  width: 330px;
+  /*width: 330px;
+  height: 50px;*/
+  width: 90%;
   height: 50px;
   margin-left: auto;
   margin-right: auto;

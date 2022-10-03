@@ -88,18 +88,21 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex: 1;
 }
 
 
 .container .content .mid-content{
     display: flex;
+    width: 90%;
 }
 
 .container .content .mid-content .content-item{
     margin-top: 27px;
-    width: 69px;
-    height: 87px;
+    /*width: 69px;
+    height: 87px;*/
+    width: 100%;
     border: 2px solid #7AD75A;
     box-shadow: 0px 0px 30px -2px rgba(122, 215, 90, 0.15);
     border-radius: 12.1172px;
@@ -113,20 +116,21 @@ export default {
     
     margin-left: auto;
     margin-right: auto;
+    flex: 1;
 }
 
 .container .content .last-content{
-    max-width: 330px;
-    max-height: 330px;
+    /*max-width: 330px;
+    max-height: 330px;*/
+    width: 100%;
 
 }
 
 .container .button{
     margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 330px;
-    height: 75px;
+    /*width: 330px;
+    height: 75px;*/
+    width: 90%;
     background-color: #D2FBC4;
     border-radius: 25px;
     line-height: 75px;
@@ -134,5 +138,7 @@ export default {
     font-size: 25px;
     text-decoration: none;
     color: #0A7800;
+    margin-left: auto;
+    margin-right: auto;
 }
 </style>

@@ -111,6 +111,8 @@ export default {
   justify-content: center;
   margin: auto;
   flex: 1;
+  width: 100%;
+  align-items: center;
 }
 .container .block .text {
   font-weight: 700;
@@ -127,8 +129,9 @@ export default {
 }
 .container .block .container-image {
   /* margin-top: 81px; */
-  width: 330px;
-  height: 398px;
+  /*width: 330px;
+  height: 398px;*/
+  width: 100%;
 }
 .container .block .buttom-text {
   margin-top: 36px;
@@ -137,8 +140,13 @@ export default {
   line-height: 156.02%;
 }
 .swiper-img {
-  width: 330px;
-  height: 420px;
+  /*width: 330px;*/
+  /*height: 420px;*/
   border-radius: 30px;
+  width: 90%;
+  height: 90%;
+}
+.wrap-swiper {
+  width: 100%;
 }
 </style>
