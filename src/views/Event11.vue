@@ -13,7 +13,7 @@
                     <div id = "item-text"> @ </div> 
                     <select v-model="selected" class="right-item" style="border: none;">
                         <option value="@naver.com">naver.com</option>
-			                  <option value="@google.com">google.com</option>
+			                  <option value="@gmail.com">gmail.com</option>
                         <option value="@hanmail.net">hanmail.net</option>
                         <option value="@nate.com">nate.com</option>
                     </select>
