@@ -51,7 +51,6 @@ export default {
 }
 
 .title{
-  font-family: 'Pretendard';
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -65,7 +64,6 @@ export default {
   text-align: left;
 }
 .contentCon{
-  font-family: 'Pretendard';
   font-style: normal;
   font-weight: 500;
   font-size: 15px;

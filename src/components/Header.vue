@@ -48,6 +48,10 @@ export default {
     margin: 0 auto;
 }
 
+.logo {
+  width: 30%;
+}
+
 .nav{
     display: flex;
     flex-direction: row;
@@ -69,7 +73,6 @@ export default {
 
 
 .tag{
-    font-family: 'Pretendard';
     color: #686868;
     text-decoration: none;
     font-style: normal;
@@ -81,7 +84,6 @@ export default {
 .active {
     color: #50A65D;
     text-decoration: none;
-    font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;

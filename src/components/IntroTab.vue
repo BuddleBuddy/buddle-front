@@ -302,7 +302,6 @@ export default {
 }
 
 .tab.active {
-  font-family: 'Pretendard';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -312,7 +311,6 @@ export default {
   border-bottom: #000000 5px solid;
 }
 .tab {
-  font-family: 'Pretendard';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -362,7 +360,6 @@ export default {
 }
 
 #title{
-  font-family: 'Pretendard';
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -371,7 +368,6 @@ export default {
 }
 
 #description{
-  font-family: 'Pretendard';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -381,7 +377,6 @@ export default {
 }
 
 #hash{
-  font-family: 'Pretendard';
   font-style: normal;
   font-weight: 500;
   font-size: 17px;

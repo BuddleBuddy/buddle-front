@@ -29,16 +29,16 @@ export default {
           imageUrl:
               'https://s3.ap-northeast-2.amazonaws.com/front.buddlebuddy.shop/hbti2.png',
           link: {
-            mobileWebUrl: 'http://localhost:8080',
-            webUrl: 'http://localhost:8080',
+            mobileWebUrl: 'https://front.buddlebuddy.shop',
+            webUrl: 'https://front.buddlebuddy.shop',
           },
         },
         buttons: [
           {
             title: '웹으로 보기',
             link: {
-              mobileWebUrl: 'http://localhost:8080',
-              webUrl: 'http://localhost:8080',
+              mobileWebUrl: 'https://front.buddlebuddy.shop',
+              webUrl: 'https://front.buddlebuddy.shop',
             },
           },
         ],

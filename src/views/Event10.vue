@@ -5,7 +5,11 @@
     <div class="third">
       <img class="vector" alt="vector" src="../assets/vector.png" />
       <div class="txt">공유하기</div>
-      <div class="clip"><Clipboard /></div>
+      <div class="share_con">
+        <div class="logo"><share/></div>
+        <div class="logo"><facebook/></div>
+        <div class="logo"><Clipboard /></div>
+      </div>
     </div>
     <div class="fourth">
       <router-link to="/event11" class="first-item">
@@ -18,9 +22,12 @@
 
 <script>
 import Clipboard from "@/components/Clipboard";
+import Facebook from "@/components/Facebook";
+import Share from "@/components/Share";
+
 export default {
   name: "Event10",
-  components: { Clipboard },
+  components: { Clipboard, Facebook, Share },
   methods: {
     back() {
       this.$router.go(-1);
@@ -94,5 +101,13 @@ export default {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 118px;
+}
+.share_con{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo{
+  margin-top: 30px;
 }
 </style>
