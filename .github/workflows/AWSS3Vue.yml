@@ -41,4 +41,6 @@ jobs:
             --recursive \
             --region ap-northeast-2 \
             dist s3://front.buddlebuddy.shop
+      - name: Invalidate CloudFront Cache
+        run: aws cloudfront create-invalidation --distribution-id ${{secrets.DISTRIBUTION_ID}} --paths "/*"
 
