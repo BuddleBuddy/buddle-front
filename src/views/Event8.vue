@@ -89,7 +89,7 @@ export default {
   },
   mounted() {
     setTimeout(() => {
-      if(this.dir1 == 2 && this.dir2 == 2 && this.dir3 == 1 && this.dir4 == 2){
+      if(this.dir1 == 2 && this.dir2 == 2 && this.dir3 == 1 && this.dir4 == 1){
         this.$router.push('Event9_1');
       }
       else this.$router.push('Event9');
