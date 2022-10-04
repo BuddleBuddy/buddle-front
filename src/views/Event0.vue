@@ -43,12 +43,11 @@ export default {
 .container .start {
   position: absolute;
   bottom: 50px;
-  /*width: 330px;*/
   width: 90%;
   max-width: 480px;
   height: 75px;
-  background-color: #f3f4d4;
-  border: 1px solid #f3f4d4;
+  background-color: #D2FBC4;
+  border: 1px solid #D2FBC4;
   box-shadow: 0px 1px 11px rgba(232, 232, 232, 0.1);
   border-radius: 25px;
   line-height: 75px;
@@ -57,7 +56,7 @@ export default {
   left: 50%;
   transform: translate(-50%, 0%);
   text-decoration: none;
-  color: #448a4f;
+  color: #0A7800;
 }
 
 /* iOS only */
