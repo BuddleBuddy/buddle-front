@@ -27,7 +27,7 @@ export default {
           title: '맞혀봐! 할BTI',
           description: '버들부부의 MBTI를 맞추고 경품까지!',
           imageUrl:
-              'https://s3.ap-northeast-2.amazonaws.com/front.buddlebuddy.shop/hbti2.png',
+              'https://s3.ap-northeast-2.amazonaws.com/front.buddlebuddy.shop/someNail.png',
           link: {
             mobileWebUrl: 'https://front.buddlebuddy.shop',
             webUrl: 'https://front.buddlebuddy.shop',
