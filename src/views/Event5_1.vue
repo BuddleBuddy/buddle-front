@@ -128,9 +128,8 @@ export default {
 
 .container .button{
     margin-bottom: 50px;
-    /*width: 330px;
-    height: 75px;*/
-    width: 90%;
+    max-width: 330px;
+    width: 100%;
     background-color: #D2FBC4;
     border-radius: 25px;
     line-height: 75px;

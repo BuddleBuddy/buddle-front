@@ -15,7 +15,7 @@
       <router-link to="/event11" class="first-item">
         선물 받으러 가기!
       </router-link>
-      <router-link to="/event12" class="second-item"> 홈으로 가기 </router-link>
+      <router-link to="/contest" class="second-item"> 홈으로 가기 </router-link>
     </div>
   </div>
 </template>
@@ -78,6 +78,7 @@ export default {
   line-height: 30px;
 }
 .root .fourth .first-item {
+  max-width:330px;
   width: 100%;
   /*height: 75px;*/
   background-color: #d2fbc4;
@@ -92,6 +93,7 @@ export default {
 }
 
 .root .fourth .second-item {
+  max-width:330px;
   width: 100%;
   /*height: 75px;*/
   margin-top: 20px;

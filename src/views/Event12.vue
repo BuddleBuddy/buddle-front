@@ -38,8 +38,8 @@ export default {
 }
 
 .container .start{
-    /*width:330px;
-    height: 75px;*/
+    max-width:330px;
+    /* height: 75px; */
     width: 100%;
     line-height: 75px;
     font-weight: 600;
