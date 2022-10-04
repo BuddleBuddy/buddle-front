@@ -17,13 +17,13 @@ export default {
 }
 
 html{
-  /* width: 100%; */
+  width: 100%;
   height: -webkit-fill-available;
 }
 
 body{
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  /* height: 100%; */
   /* min-height: 100vh; */
   min-height: -webkit-fill-available;
   margin: 0;

@@ -42,16 +42,13 @@ export default {
 
 
 <style scoped>
-
 .logo-container{
     background-color: #ffffff;
     margin: 0 auto;
 }
-
 .logo {
   width: 30%;
 }
-
 .nav{
     display: flex;
     flex-direction: row;
@@ -66,38 +63,33 @@ export default {
     color: #898645;
     background-color: #ffffff;
 }
-
 .nav_con{
   flex: 1;
+  height: 55px;
 }
-
-
 .tag{
     color: #686868;
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 55px;
 }
-
 .active {
     color: #50A65D;
     text-decoration: none;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 50px;
 }
 .line{
   width: 100%;
   height: 5px;
-  margin-top: 10px;
 }
 .line.active {
   width: 100%;
   height: 5px;
-  margin-top: 10px;
   background: #50A65D;
 }
 </style>
