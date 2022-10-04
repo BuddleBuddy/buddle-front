@@ -23,8 +23,8 @@ html{
 
 body{
   width: 100%;
-  /* height: 100%; */
-  /* min-height: 100vh; */
+  min-height: 100vh;
+  /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
   margin: 0;
   padding: 0;
@@ -43,4 +43,5 @@ body{
   color: #2c3e50;
   background-color: #ffffff;
 }
+
 </style>
