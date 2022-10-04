@@ -6,7 +6,7 @@
     <div class="block">
         <div class="hint-container">
             <div class="hint-title" style="color: #FF4848; font-weight: 700;"> 조금 더 힌트를 줄게! </div>
-            <div class="hint-content" style="color: #565656; font-weight: 400;"> 내향적, 이상적, 감정적, 무계획적이란 단어가  <br>
+            <div class="hint-content" style="color: #565656; font-weight: 400;"> 내향적, 이상적, 감정적, 즉흥적이란 단어가  <br>
             잘 어울리는 성격이야! </div>
         </div>
         <div class="mid-content"> “ 빨간 부분만 고쳐봐! “ </div>
