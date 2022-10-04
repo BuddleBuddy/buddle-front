@@ -27,7 +27,7 @@ export default {
 .container {
   /*position: relative;*/
   max-width: 500px;
-  min-height: 100vh;
+  min-height: -webkit-fill-available;
   background-image: url("../assets/ev0.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,9 +60,9 @@ export default {
 }
 
 /* iOS only */
-@supports (-webkit-touch-callout: none) { 
+@supports (-webkit-touch-callout: none) {
   .container{
-    height: -webkit-fill-available;
+    min-height: -webkit-fill-available;
   }
 }
 </style>
