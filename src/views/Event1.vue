@@ -35,5 +35,10 @@ export default {
   
   z-index: 1;
 }
-
+/* iOS only */
+@supports (-webkit-touch-callout: none) { 
+  .container{
+    height: -webkit-fill-available;
+  }
+}
 </style>
