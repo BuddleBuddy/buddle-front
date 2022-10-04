@@ -36,7 +36,7 @@ export default {
   z-index: 1;
 }
 /* iOS only */
-@supports (-webkit-touch-callout: none) { 
+@supports (-webkit-touch-callout: none) {
   .container{
     min-height: -webkit-fill-available;
   }

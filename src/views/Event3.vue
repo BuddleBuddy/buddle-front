@@ -357,7 +357,7 @@ export default {
   font-weight: 600;
 }
 /* iOS only */
-@supports (-webkit-touch-callout: none) { 
+@supports (-webkit-touch-callout: none) {
   .container{
     min-height: -webkit-fill-available;
   }
