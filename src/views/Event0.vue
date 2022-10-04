@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img class="icon" align = "left" src="../assets/backIconWhite.png" @click="back()"> 
+    <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
     <div class="start" @click="post()"> 도전하기 </div>
   </div>
 </template>
@@ -27,7 +27,7 @@ export default {
 .container {
   /*position: relative;*/
   max-width: 500px;
-  min-height: -webkit-fill-available;
+  min-height: 100vh;
   background-image: url("../assets/ev0.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,8 +43,9 @@ export default {
 .container .start {
   position: absolute;
   bottom: 50px;
-  width: 100%;
-  max-width: 330px;
+  /*width: 330px;*/
+  width: 90%;
+  max-width: 480px;
   height: 75px;
   background-color: #f3f4d4;
   border: 1px solid #f3f4d4;
