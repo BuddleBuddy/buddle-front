@@ -4,5 +4,6 @@ module.exports = defineConfig({
     proxy: 'https://buddlebuddy.shop'
   },
   transpileDependencies: true,
+  experimentalWebKitSupport: true,
   lintOnSave:false
 })

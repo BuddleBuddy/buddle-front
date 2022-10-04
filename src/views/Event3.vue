@@ -178,7 +178,7 @@ export default {
   display: flex;
   flex-direction: column;
   max-width: 500px;
-  min-height: 100vh;
+  min-height: -webkit-fill-available;;
 }
 .container .icon {
   height: 35px;
@@ -359,7 +359,7 @@ export default {
 /* iOS only */
 @supports (-webkit-touch-callout: none) { 
   .container{
-    height: -webkit-fill-available;
+    min-height: -webkit-fill-available;
   }
 }
 
