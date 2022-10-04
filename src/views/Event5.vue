@@ -261,8 +261,8 @@ export default {
     text-align: left;
 }
 .container .button{
-    /*width: 330px;*/
-    width: 90%;
+    max-width: 330px;
+    width: 100%;
     height: 75px;
     background-color: #D2FBC4;
     border-radius: 25px;
@@ -276,7 +276,7 @@ export default {
     font-weight: 600;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 330px) {
   .left-item {
     margin-right: 5px;
     margin-left: 5px;
