@@ -182,8 +182,6 @@ export default {
 }
 
 .root .third .itemfont1 {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
   font-size: 70px;
   line-height: 85px;
@@ -193,8 +191,6 @@ export default {
 }
 
 .root .third .itemfont2 {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -220,14 +216,12 @@ export default {
 .root .fourth .txt {
   position: absolute;
   left: 50%;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 18px;
   text-align: center;
   color: #343434;
-  transform: translate(-50%, -33%);
+  transform: translate(-50%, -35%);
 }
 
 .root.event_con {
@@ -241,8 +235,6 @@ export default {
   border-radius: 25px;
   background-color: #50a65d;
   color: #ffffff;
-  /*width: 330px;
-  height: 50px;*/
   width: 90%;
   height: 50px;
   margin-left: auto;
@@ -250,7 +242,6 @@ export default {
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;
-  font-style: normal;
   line-height: 24px;
   position: relative;
   z-index: 0;

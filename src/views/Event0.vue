@@ -58,4 +58,11 @@ export default {
   text-decoration: none;
   color: #448a4f;
 }
+
+/* iOS only */
+@supports (-webkit-touch-callout: none) { 
+  .container{
+    height: -webkit-fill-available;
+  }
+}
 </style>

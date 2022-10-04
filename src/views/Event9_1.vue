@@ -39,8 +39,6 @@ export default {
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
-
 .container{
     background-color: #FFFFFF;
     display: flex;
