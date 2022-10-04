@@ -261,8 +261,7 @@ export default {
     text-align: left;
 }
 .container .button{
-    max-width: 330px;
-    width: 100%;
+    width: 850%;
     height: 75px;
     background-color: #D2FBC4;
     border-radius: 25px;

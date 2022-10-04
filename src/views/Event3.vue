@@ -178,7 +178,7 @@ export default {
   display: flex;
   flex-direction: column;
   max-width: 500px;
-  min-height: -webkit-fill-available;;
+  min-height: 100vh;
 }
 .container .icon {
   height: 35px;

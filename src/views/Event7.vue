@@ -344,8 +344,7 @@ export default {
   color: #000000;
 }
 .container .button {
-  max-width: 330px;
-  width: 100%;
+  width: 85%;
   height: 75px;
   margin-bottom: 50px;
   background-color: #d2fbc4;
