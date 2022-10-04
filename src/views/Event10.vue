@@ -66,9 +66,13 @@ export default {
 }
 
 .root .third .txt {
-  position: relative;
+  position: absolute;
   left: 50%;
-  transform: translate(-50%, -100%);
+  text-align: center;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  transform: translate(-50%, -35%);
 }
 .root .fourth {
   display: flex;
@@ -78,9 +82,7 @@ export default {
   line-height: 30px;
 }
 .root .fourth .first-item {
-  max-width:330px;
-  width: 100%;
-  /*height: 75px;*/
+  width: 80%;
   background-color: #d2fbc4;
   color: #0a7800;
   text-decoration: none;
@@ -93,9 +95,7 @@ export default {
 }
 
 .root .fourth .second-item {
-  max-width:330px;
-  width: 100%;
-  /*height: 75px;*/
+  width: 80%;
   margin-top: 20px;
   color: #0a7800;
   font-size: 25px;

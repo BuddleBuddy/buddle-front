@@ -343,8 +343,7 @@ export default {
   color: #000000;
 }
 .container .button {
-  max-width: 330px;
-  width: 100%;
+  width: 85%;
   height: 75px;
   margin-bottom: 50px;
   background-color: #d2fbc4;
@@ -356,6 +355,12 @@ export default {
   color: #0a7800;
   font-size: 25px;
   font-weight: 600;
+}
+/* iOS only */
+@supports (-webkit-touch-callout: none) { 
+  .container{
+    height: -webkit-fill-available;
+  }
 }
 
 @media screen and (max-width: 330px) {

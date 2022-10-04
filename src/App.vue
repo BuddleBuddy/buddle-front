@@ -18,6 +18,7 @@ export default {
 
 html{
   width: 100%;
+  min-height: 100vh;
   height: -webkit-fill-available;
 }
 
@@ -44,4 +45,13 @@ body{
   background-color: #ffffff;
 }
 
+/* iOS only */
+@supports (-webkit-touch-callout: none) { 
+  body{
+    height: -webkit-fill-available;
+  }
+  html{
+    height: -webkit-fill-available;
+  }
+}
 </style>
