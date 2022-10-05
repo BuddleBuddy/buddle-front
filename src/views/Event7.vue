@@ -4,7 +4,7 @@
       class="icon"
       align="left"
       src="../assets/backIcon.png"
-      @click="back()"
+      @click.stop="back()"
     />
     <div class="text">오순 할매의</div>
     <div class="text2">mbti를 맞춰봐!</div>
@@ -344,8 +344,7 @@ export default {
   color: #000000;
 }
 .container .button {
-  max-width: 330px;
-  width: 100%;
+  width: 85%;
   height: 75px;
   margin-bottom: 50px;
   background-color: #d2fbc4;

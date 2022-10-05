@@ -4,7 +4,7 @@
       class="icon"
       align="left"
       src="../assets/backIcon.png"
-      @click="back()"
+      @click.stop="back()"
     />
     <div class="text">도손 할아범의</div>
     <div class="text2">mbti를 맞춰봐!</div>
@@ -178,7 +178,7 @@ export default {
   display: flex;
   flex-direction: column;
   max-width: 500px;
-  min-height: -webkit-fill-available;;
+  min-height: 100vh;
 }
 .container .icon {
   height: 35px;
@@ -357,7 +357,7 @@ export default {
   font-weight: 600;
 }
 /* iOS only */
-@supports (-webkit-touch-callout: none) { 
+@supports (-webkit-touch-callout: none) {
   .container{
     min-height: -webkit-fill-available;
   }

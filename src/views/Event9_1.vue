@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
+    <img class="icon" align = "left" src="../assets/backIcon.png" @click.stop="back()"> 
     <div class="title">
         <img class = "left-item" src="../assets/happy.png">
         <div class="text"> 정답! </div> <img class = "right-item" src="../assets/happy.png">
@@ -118,17 +118,12 @@ export default {
 }
 
 .container .content .last-content{
-    /*max-width: 330px;
-    max-height: 330px;*/
     width: 100%;
-
 }
 
 .container .button{
     margin-bottom: 50px;
-    max-width: 330px;
-    /* height: 75px; */
-    width: 100%;
+    width: 85%;
     background-color: #D2FBC4;
     border-radius: 25px;
     line-height: 75px;

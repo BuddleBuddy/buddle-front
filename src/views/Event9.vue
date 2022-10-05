@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
+    <img class="icon" align = "left" src="../assets/backIcon.png" @click.stop="back()"> 
     <div class="text"> 땡! <br> </div>
     <div class="text2"> 다시 한번 생각해봐~ </div>
     <div class="block">
@@ -232,7 +232,6 @@ export default {
     font-size: 35px;
     box-shadow: 0px 2.83321px 6.37471px rgba(0, 0, 0, 0.05);
     border-radius: 6.55607px;
-    /*margin-left: 20px;*/
     line-height: 70px;
   margin-left: 10px;
   margin-right: 10px;
@@ -246,7 +245,6 @@ export default {
     font-size: 35px;
     box-shadow: 0px 2.83321px 6.37471px rgba(0, 0, 0, 0.05);
     border-radius: 6.55607px;
-    /*margin-left: 20px;*/
     line-height: 70px;
   margin-left: 10px;
   margin-right: 10px;
@@ -255,14 +253,12 @@ export default {
     margin-left: 22px;
     margin-top: auto;
     margin-bottom: auto;
-    /* font-weight: 400; */
     font-size: 16px;
     margin-left: 20px;    
     text-align: left;
 }
 .container .button{
-    max-width: 330px;
-    width: 100%;
+    width: 85%;
     height: 75px;
     background-color: #D2FBC4;
     border-radius: 25px;

@@ -141,8 +141,6 @@ export default {
   line-height: 156.02%;
 }
 .swiper-img {
-  /*width: 330px;*/
-  /*height: 420px;*/
   border-radius: 30px;
   width: 90%;
   height: 90%;

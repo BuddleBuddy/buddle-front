@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()">
+        <img class="icon" align = "left" src="../assets/backIcon.png" @click.stop="back()">
         <div class = "top-container">
             <div class = "first">
                 <div class = "item1"> 이름 </div>
@@ -79,6 +79,7 @@ input{
 select{
    text-align:center;
 }
+
 .container {
     width: 100%;
     height: 100%;
@@ -92,13 +93,13 @@ select{
     width: 35px;
 }
 .container .top-container{
-    width: 01;
-    margin-top: 73px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
+  /*width: 90%;*/
+  margin-top: 73px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container .top-container .second{
     margin-top: 30px;
@@ -174,14 +175,14 @@ select{
 }
 
 .container .button {
-  position: absolute;
+  position: static;
   /*width: 330px;*/
   width: 90%;
   max-width: 330px;
   height: 75px;
   bottom: 50px;
   left: 50%;
-  transform: translate(-50%, 0%);
+  /*transform: translate(-50%, 0%);*/
   line-height: 75px;
   background-color: #D2FBC4;
   border-radius: 25px;
@@ -191,5 +192,6 @@ select{
   text-decoration: none;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
 }
 </style>

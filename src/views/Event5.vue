@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
+    <img class="icon" align = "left" src="../assets/backIcon.png" @click.stop="back()"> 
     <div class="text"> 땡! <br> </div>
     <div class="text2"> 다시 한번 생각해봐~ </div>
     <div class="block">
@@ -261,8 +261,7 @@ export default {
     text-align: left;
 }
 .container .button{
-    max-width: 330px;
-    width: 100%;
+    width: 85%;
     height: 75px;
     background-color: #D2FBC4;
     border-radius: 25px;
