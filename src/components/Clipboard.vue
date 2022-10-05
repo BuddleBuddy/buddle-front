@@ -1,7 +1,9 @@
 <template>
   <a @click="copyToClipBoard()">
     <img src="../assets/icon-clipboard.png" />
-    <div id="textArea" hidden>https://front.buddlebuddy.shop</div>
+    <div id="textArea" hidden>
+      https://front.buddlebuddy.shop/?utm_source=clipboard&utm_medium=share&utm_campaign=buddleshop
+    </div>
   </a>
 </template>
 
@@ -9,21 +11,22 @@
 export default {
   name: "Clipboard",
 
-  methods:{
-    copyToClipBoard(){
-      var content = document.getElementById('textArea').innerHTML;
+  methods: {
+    copyToClipBoard() {
+      var content = document.getElementById("textArea").innerHTML;
 
-      navigator.clipboard.writeText(content)
-          .then(() => {
-            console.log("Text copied to clipboard...")
-            alert("주소가 복사되었습니다.")
-          })
-          .catch(err => {
-            console.log('Something went wrong', err);
-          })
-    }
-  }
-}
+      navigator.clipboard
+        .writeText(content)
+        .then(() => {
+          console.log("Text copied to clipboard...");
+          alert("주소가 복사되었습니다.");
+        })
+        .catch((err) => {
+          console.log("Something went wrong", err);
+        });
+    },
+  },
+};
 </script>
 
 
@@ -33,5 +36,4 @@ export default {
 
 
 <style scoped>
-
 </style>
