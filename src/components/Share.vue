@@ -29,16 +29,16 @@ export default {
           imageUrl:
               'https://s3.ap-northeast-2.amazonaws.com/front.buddlebuddy.shop/someNail.png',
           link: {
-            mobileWebUrl: 'https://front.buddlebuddy.shop',
-            webUrl: 'https://front.buddlebuddy.shop',
+            mobileWebUrl: 'https://front.buddlebuddy.shop/?utm_source=kakao&utm_medium=share&utm_campaign=buddleshop',
+            webUrl: 'https://front.buddlebuddy.shop/?utm_source=kakao&utm_medium=share&utm_campaign=buddleshop',
           },
         },
         buttons: [
           {
             title: '웹으로 보기',
             link: {
-              mobileWebUrl: 'https://front.buddlebuddy.shop',
-              webUrl: 'https://front.buddlebuddy.shop',
+              mobileWebUrl: 'https://front.buddlebuddy.shop/?utm_source=kakao&utm_medium=share&utm_campaign=buddleshop',
+              webUrl: 'https://front.buddlebuddy.shop/?utm_source=kakao&utm_medium=share&utm_campaign=buddleshop',
             },
           },
         ],
