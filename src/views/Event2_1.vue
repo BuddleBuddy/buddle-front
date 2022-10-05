@@ -29,13 +29,11 @@ export default {
     background-position: center;
     position: relative;
 }
-
 .container .icon {
   height: 35px;
   width: 35px;
   z-index: 1;
 }
-
 .container .bottom{
   position: absolute;
   width: 85%;
@@ -43,5 +41,4 @@ export default {
   left: 50%;
   transform: translate(-50%, 0);
 }
-
 </style>
