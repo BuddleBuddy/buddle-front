@@ -1,6 +1,6 @@
 <template>
     <div class="container" @click="click()">
-      <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
+      <img class="icon" align = "left" src="../assets/backIcon.png" @click.stop="back()"> 
     </div>
 </template>
 

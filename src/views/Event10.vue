@@ -1,6 +1,6 @@
 <template>
   <div class="root">
-    <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
+    <img class="icon" align = "left" src="../assets/backIcon.png" @click.stop="back()"> 
     <img class="content" align ="center" src="../assets/ev10.png" />
     <div class="third">
       <img class="vector" alt="vector" src="../assets/vector.png" />

@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()">
+        <img class="icon" align = "left" src="../assets/backIcon.png" @click.stop="back()">
         <div class = "top-container">
             <div class = "first">
                 <div class = "item1"> 이름 </div>

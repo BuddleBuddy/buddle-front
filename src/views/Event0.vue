@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img class="icon" align = "left" src="../assets/backIcon.png" @click="back()"> 
+    <img class="icon" align = "left" src="../assets/backIcon.png" @click.stop="back()"> 
     <div class="start" @click="post()"> 도전하기 </div>
   </div>
 </template>

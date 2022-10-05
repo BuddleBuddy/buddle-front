@@ -4,7 +4,7 @@
       class="icon"
       align="left"
       src="../assets/backIcon.png"
-      @click="back()"
+      @click.stop="back()"
     />
     <div class="text">오순 할매의</div>
     <div class="text2">mbti를 맞춰봐!</div>
