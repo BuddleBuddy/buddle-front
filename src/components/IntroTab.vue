@@ -6,9 +6,6 @@
           @click="setSelectTab(0)"
       >
         # 맛집
-        <div :class="{line: true, active: selectTab === 0 }"
-             @click="setSelectTab(0)"
-        ></div>
       </div>
 
       <div
@@ -16,9 +13,6 @@
           @click="setSelectTab(1)"
       >
         # 가볼만한 곳
-        <div :class="{line: true, active: selectTab === 1 }"
-             @click="setSelectTab(1)"
-        ></div>
       </div>
     </div>
     <div class="tab-containers">
@@ -320,6 +314,7 @@ export default {
   color: #898989;
   margin-bottom: 53px;
   flex: 1;
+  border-bottom: #898989 2px solid;
 }
 
 
@@ -390,9 +385,10 @@ export default {
 
 .line.active {
   min-width: 130px;
-  height: 5px;
+  /*height: 5px;*/
   margin-top: 10px;
   background: black;
+  z-index: 1;
 }
 .line{
   min-width: 130px;
