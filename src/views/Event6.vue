@@ -68,27 +68,27 @@ export default {
 <style scoped>
 .title {
   opacity: 0;
-  transition: opacity 2s 1s;
+  transition: opacity 1s 1s;
 }
 
 .test1 {
   opacity: 0;
-  transition: opacity 2s 3s;
+  transition: opacity 1s 2s;
 }
 
 .test2 {
   opacity: 0;
-  transition: opacity 2s 5s;
+  transition: opacity 1s 3s;
 }
 
 .test3 {
   opacity: 0;
-  transition: opacity 2s 7s;
+  transition: opacity 1s 4s;
 }
 
 .test4 {
   opacity: 0;
-  transition: opacity 2s 9s;
+  transition: opacity 1s 5s;
 }
 
 .container {
