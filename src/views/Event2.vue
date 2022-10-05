@@ -142,7 +142,7 @@ img.active {
   height: 35px;
   width: 35px;
   z-index: 1;
-  }
+}
 
 .container .bottom {
   position: absolute;
