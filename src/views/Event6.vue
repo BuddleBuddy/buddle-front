@@ -56,7 +56,7 @@ export default {
       console.log("on load", this.loaded);
     },
     click() {
-      //this.$router.push("Event7");
+      this.$router.push("Event7");
     },
     back() {
       this.$router.go(-1);
