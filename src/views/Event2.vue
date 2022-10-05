@@ -53,7 +53,7 @@
 
 <script>
 export default {
-  name: "Event2_1",
+  name: "Event2",
   data: function () {
     return {
       loaded: false,
@@ -64,7 +64,7 @@ export default {
       this.loaded = true;
     },
     click() {
-      this.$router.push("Event2");
+      this.$router.push("Event3");
     },
     back() {
       this.$router.go(-1);
