@@ -66,6 +66,13 @@ export default {
 </script>
 
 <style scoped>
+/* iOS only */
+@supports (-webkit-touch-callout: none) {
+  .container{
+    min-height: -webkit-fill-available;
+  }
+}
+
 .title {
   opacity: 0;
   transition: opacity 1s 1s;
@@ -93,7 +100,7 @@ export default {
 
 .container {
   max-width: 500px;
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("../assets/ev6_bg.png");
   background-repeat: no-repeat;
   background-size: cover;

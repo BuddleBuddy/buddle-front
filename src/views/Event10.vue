@@ -37,9 +37,15 @@ export default {
 </script>
 
 <style scoped>
+/* iOS only */
+@supports (-webkit-touch-callout: none) {
+  .container {
+    min-height: -webkit-fill-available;
+  }
+}
 .root {
   max-width: 500px;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;

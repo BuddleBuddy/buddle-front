@@ -38,13 +38,18 @@ export default {
     font-weight: normal;
     font-style: normal;
 }
-
+/* iOS only */
+@supports (-webkit-touch-callout: none) {
+  .container{
+    min-height: -webkit-fill-available;
+  }
+}
 .container{
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    min-height: 100vh;
+    height: 100vh;
 }
 .container .icon{
     height: 35px;

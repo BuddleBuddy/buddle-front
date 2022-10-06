@@ -174,12 +174,18 @@ export default {
 </script>
 
 <style scoped>
+/* iOS only */
+@supports (-webkit-touch-callout: none) {
+  .container{
+    min-height: -webkit-fill-available;
+  }
+}
 .container {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   max-width: 500px;
-  min-height: 100vh;
+  height: 100vh;
 }
 .container .icon {
   height: 35px;

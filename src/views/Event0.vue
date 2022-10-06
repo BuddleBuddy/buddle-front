@@ -27,7 +27,7 @@ export default {
 .container {
   /*position: relative;*/
   max-width: 500px;
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("../assets/ev0.png");
   background-repeat: no-repeat;
   background-size: cover;
