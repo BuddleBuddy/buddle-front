@@ -98,7 +98,7 @@ export default {
 /* iOS only */
 @supports (-webkit-touch-callout: none) {
   .container {
-    min-height: -webkit-fill-available;
+    height: -webkit-fill-available;
   }
 }
 input {

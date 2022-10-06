@@ -18,12 +18,12 @@ export default {
 
 html{
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 body{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -33,7 +33,7 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   max-width: 500px;
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
   margin-left: auto; 
   margin-right: auto;

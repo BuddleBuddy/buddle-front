@@ -56,7 +56,7 @@ export default {
       console.log("on load", this.loaded);
     },
     click() {
-      //this.$router.push("Event7");
+      this.$router.push("Event7");
     },
     back() {
       this.$router.go(-1);
@@ -69,7 +69,7 @@ export default {
 /* iOS only */
 @supports (-webkit-touch-callout: none) {
   .container{
-    min-height: -webkit-fill-available;
+    height: -webkit-fill-available;
   }
 }
 
