@@ -33,7 +33,6 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   max-width: 500px;
-  height: 100%;
   width: 100%;
   margin-left: auto; 
   margin-right: auto;

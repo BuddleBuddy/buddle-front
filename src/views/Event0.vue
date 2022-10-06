@@ -24,6 +24,12 @@ export default {
 </script>
 
 <style scoped>
+/* iOS only */
+@supports (-webkit-touch-callout: none) {
+  .container{
+    height: -webkit-fill-available;
+  }
+}
 .container {
   /*position: relative;*/
   max-width: 500px;
@@ -59,10 +65,5 @@ export default {
   color: #0A7800;
 }
 
-/* iOS only */
-@supports (-webkit-touch-callout: none) {
-  .container{
-    height: -webkit-fill-available;
-  }
-}
+
 </style>
