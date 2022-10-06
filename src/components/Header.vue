@@ -8,6 +8,7 @@
             <router-link to='/intro' :class="selectTab == 0 ? 'active' : 'tag'" @click="setColor(0)"> 시장소개 </router-link>
             <div :class="{line: true, active: selectTab === 0 }" @click="setColor(0)"></div>
           </div>
+
           <div class="nav_con">
             <router-link to='/contest' :class="selectTab == 1 ? 'active' : 'tag'" @click="setColor(1)"> EVENT </router-link>
             <div :class="{line: true, active: selectTab === 1 }" @click="setColor(1)"></div>
@@ -32,10 +33,21 @@ export default {
             path: () => this.$router.currentRoute.value.path,
         }
     },
-    methods: {
+    mounted() {
+      console.log("select")
+      if (this.$route.path === '/intro') {
+        console.log("intro")
+        this.selectTab = 0
+      }
+      else if (this.$route.path === '/contest') {
+        console.log("contest")
+        this.selectTab = 1
+      }
+    },
+  methods: {
         setColor(num) {
             this.selectTab = num;
-        }
+        },
     }
 }
 </script>
