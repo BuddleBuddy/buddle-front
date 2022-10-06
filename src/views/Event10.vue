@@ -15,7 +15,7 @@
       <router-link to="/event11" class="first-item">
         선물 받으러 가기!
       </router-link>
-      <router-link to="/contest" class="second-item"> 홈으로 가기 </router-link>
+      <router-link to="/intro" class="second-item"> 홈으로 가기 </router-link>
     </div>
   </div>
 </template>
