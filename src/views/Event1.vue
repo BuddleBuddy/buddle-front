@@ -22,7 +22,7 @@ export default {
 <style scoped>
 .container{
     max-width: 500px;
-    min-height: 100vh;
+    height: 100vh;
     background-image: url("../assets/ev1.png");
     background-repeat: no-repeat;
     background-size: cover;

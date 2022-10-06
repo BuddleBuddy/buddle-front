@@ -168,12 +168,18 @@ export default {
 
 
 <style scoped>
+/* iOS only */
+@supports (-webkit-touch-callout: none) {
+  .container {
+    min-height: -webkit-fill-available;
+  }
+}
 .container {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   max-width: 500px;
-  min-height: 100vh;
+  height: 100vh;
   text-align: center;
 }
 .container .icon {
@@ -205,7 +211,6 @@ export default {
 }
 
 .container .block .hint-container {
-  /*width: 342px;*/
   width: 90%;
   /* height: 169px; */
   background: #ffe6e6;

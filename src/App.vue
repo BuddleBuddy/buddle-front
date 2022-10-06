@@ -18,15 +18,12 @@ export default {
 
 html{
   width: 100%;
-  min-height: 100vh;
-  height: -webkit-fill-available;
+  height: 100vh;
 }
 
 body{
   width: 100%;
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }

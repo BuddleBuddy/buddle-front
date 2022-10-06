@@ -130,7 +130,7 @@ img.active {
 }
 .container {
   max-width: 500px;
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("../assets/papaEvent/background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -150,5 +150,12 @@ img.active {
   bottom: 20px;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+/* iOS only */
+@supports (-webkit-touch-callout: none) {
+  .container{
+    min-height: -webkit-fill-available;
+  }
 }
 </style>
