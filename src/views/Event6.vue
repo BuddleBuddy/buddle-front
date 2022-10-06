@@ -11,7 +11,6 @@
 
     <div class="ev6_con">
       <div class="bubble-con"><img
-
           :class="{ title: true, active: loaded}"
           src="../assets/ev6_pic.png"
       /><img
@@ -72,6 +71,15 @@ export default {
     height: -webkit-fill-available;
   }
 }
+.container {
+  max-width: 500px;
+  height: 100vh;
+  background-image: url("../assets/ev6_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
 
 .title {
   opacity: 0;
@@ -98,15 +106,6 @@ export default {
   transition: opacity 1s 5s;
 }
 
-.container {
-  max-width: 500px;
-  height: 100vh;
-  background-image: url("../assets/ev6_bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
 
 .container .icon {
   height: 35px;
