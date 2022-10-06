@@ -2,7 +2,7 @@
     <div class="container">
         <div id = "title"> 응모 완료! </div>
         <div id = "content"> 당첨시 이메일을 통해 안내드릴게요! </div>
-        <router-link to= "/Contest" class="start"> 홈으로 </router-link>
+        <router-link to= "/Intro" class="start"> 홈으로 </router-link>
     </div>
 </template>
 
