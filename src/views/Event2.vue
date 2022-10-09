@@ -18,32 +18,32 @@
         src="../assets/papaEvent/first_1.png"
       />
       </div>
-      <div class="bubble-container">
+      <div class="bubble-container left">
       <img
         :class="{ second: true, active: loaded }"
         src="../assets/papaEvent/second.png"
-        style="height: 3.9vh"
+        style="width: 85%"
       />
       </div>
       <div class="bubble-container right">
       <img
         :class="{ third: true, active: loaded }"
         src="../assets/papaEvent/third.png"
-        style="height: 3.9vh"
+        style="width: 70%"
       />
       </div>
       <div class="bubble-container left">
       <img
         :class="{ fourth: true, active: loaded }"
         src="../assets/papaEvent/fourth.png"
-        style="height: 9.5vh"
+        style="width: 85%"
       />
       </div>
       <div class="bubble-container right">
       <img
         :class="{ fifth: true, active: loaded }"
         src="../assets/papaEvent/fifth.png"
-        style="height: 7.1%"
+        style="width: 85%"
       />
       </div>
     </div>

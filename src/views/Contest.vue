@@ -1,7 +1,7 @@
 <template>
   <div class="root">
     <div class="event_con">
-      <img class="hbti" alt="hbti" src="../assets/event.png" />
+      <img class="hbti" alt="hbti" src="../assets/event.jpeg" />
       <router-link to="/event0" class="part"> 참여하기</router-link>
     </div>
     <div class="third">
