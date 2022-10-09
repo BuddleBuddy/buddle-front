@@ -12,10 +12,7 @@
       <img
         :class="{ first: true, active: loaded }"
         src="../assets/papaEvent/first.png"
-      />
-      <img
-        :class="{ first: true, active: loaded }"
-        src="../assets/papaEvent/first_1.png"
+        style="width: 100%"
       />
       </div>
       <div class="bubble-container left">
