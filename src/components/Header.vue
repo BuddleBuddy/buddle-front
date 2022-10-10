@@ -13,10 +13,10 @@
             <router-link to='/contest' :class="selectTab == 1 ? 'active' : 'tag'" @click="setColor(1)"> EVENT </router-link>
             <div :class="{line: true, active: selectTab === 1 }" @click="setColor(1)"></div>
           </div>
-<!--          <div class="nav_con">
+         <div class="nav_con">
             <router-link to="/history" :class="selectTab == 2 ? 'active' : 'tag'" @click="setColor(2)"> 히스토리 </router-link>
             <div :class="{line: true, active: selectTab === 2 }" @click="setColor(2)"></div>
-          </div>-->
+          </div>
           </div>
 
         <router-view></router-view>

@@ -37,7 +37,6 @@ body{
   margin-left: auto; 
   margin-right: auto;
   color: #2c3e50;
-  background-color: #ffffff;
 }
 
 /* iOS only */
