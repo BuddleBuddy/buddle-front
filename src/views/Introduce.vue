@@ -12,6 +12,7 @@
       <div class="content">🚃 오류동역 2번출구</div>
     </div>
   </div>
+
   <div>
     <IntroTab/>
   </div>
@@ -20,10 +21,12 @@
 <script>
 import KakaoMap from "../components/Map";
 import IntroTab from "@/components/IntroTab";
+import StoreMap from "@/components/StoreMap";
 
 export default {
   name: "Intro",
   components: {
+    StoreMap,
     IntroTab,
     KakaoMap,
   },

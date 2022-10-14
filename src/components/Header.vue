@@ -43,6 +43,10 @@ export default {
         console.log("contest")
         this.selectTab = 1
       }
+      else if (this.$route.path === '/history') {
+        console.log("history")
+        this.selectTab = 2
+      }
     },
   methods: {
         setColor(num) {
