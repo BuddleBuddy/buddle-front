@@ -70,7 +70,7 @@ export default {
         const overlay = new kakao.maps.CustomOverlay({
           clickable: true,
           content: '<div class="customoverlay">' +
-              `<a :href="${position.link}" target="_blank">` +
+              `<a href="${position.link}" target="_blank">` +
               `<div class="title">${position.title}</div>`+
               `<a/>` +
               '</div>',
